@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Rax';
-export const siteTitle = 'Rax Sample Website';
+const name = 'Robin Salih Axelsson';
+export const siteTitle = 'RSA Resume site';
 
 export default function Layout({ children, home }) {
     return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Learn how to build a personal website using Next.js"
+            content="content"
           />
           <meta
             property="og:image"
@@ -32,8 +32,8 @@ export default function Layout({ children, home }) {
                 priority
                 src="/images/profile.jpg"
                 className={utilStyles.borderCircle}
-                height={144}
-                width={144}
+                height={300}
+                width={300}
                 alt=""
               />
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
               <Link href="/">
                 <Image
                   priority
-                  src="/images/dove3.jpg"
+                  src="/images/profile.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
