@@ -54,8 +54,8 @@ function highlightedProjects(allHighlightedProjectsData){
   return (
     <ul className={utilStyles.list}>
     {allHighlightedProjectsData.map(({ id, title, content, start, end, company }) => (
-      <li className={utilStyles.listItem} key={id}>
-        <h3>{title}</h3>
+      <li className={utilStyles.listItemHighlightedProject} key={id}>
+        <p className={utilStyles.headingHighlightedProjects}>{title}</p>
         {company} {parseDate(start)}-{parseDate(end)}
         <br />
         <p>{parse(content)}</p>
@@ -69,8 +69,8 @@ function createWorkLifeItems(worklife){
   return (
     <ul className={utilStyles.list}>
     {worklife.map(({company, title, start, end}) => (
-      <li id={title}>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{company} | {title} | {parseDate(start)}-{parseDate(end)}
+      <li id={title} className={utilStyles.listItem}>
+        {parseDate(start)}-{parseDate(end)} | {company} | {title}
       </li>
     ))}
     </ul>
@@ -81,8 +81,8 @@ function createEducationItems(education){
   return (
     <ul className={utilStyles.list}>
     {education.map(({title, school, start, end}) => (
-      <li id={title}>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{title} | {school} | {parseDate(start)}-{parseDate(end)}
+      <li id={title} className={utilStyles.listItem}>
+        {parseDate(start)}-{parseDate(end)} | {title} | {school}
       </li>
     ))}
     </ul>
@@ -93,8 +93,8 @@ function createList(list){
   return (
     <ul className={utilStyles.list}>
     {list.map(lang => (
-      <li id={lang}>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{lang}
+      <li id={lang} className={utilStyles.listItem}>
+        {lang}
       </li>
     ))}
     </ul>

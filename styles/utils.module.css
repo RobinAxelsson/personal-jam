@@ -20,6 +20,14 @@
     margin: 1rem 0;
   }
   
+  .headingHighlightedProjects {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 1rem 0;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -38,13 +46,21 @@
   }
   
   .list {
+    font-size: 1.2rem;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: ;
   }
   
   .listItem {
-    margin: 0 0 1.25rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .listItemHighlightedProject {
+    margin-left: 1.5rem;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.2rem solid #bbb
   }
   
   .lightText {
