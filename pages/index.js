@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import { getPersonalData, getSortedHighlightedProjectsData, getSummary } from '../lib/markdownContent';
+import { getPersonalData, getSortedHighlightedProjectsData, getSummary, getWorkLife } from '../lib/markdownContent';
 import parse from 'html-react-parser';
 
 export async function getStaticProps() {
@@ -10,11 +10,12 @@ export async function getStaticProps() {
       allHighlightedProjectsData: getSortedHighlightedProjectsData(),
       summaryData: getSummary(),
       personalData: getPersonalData(),
+      worklife: getWorkLife()
     },
   };
 }
 
-export default function Home({ allHighlightedProjectsData, summaryData, personalData }) {
+export default function Home({ allHighlightedProjectsData, summaryData, personalData, worklife }) {
   return (
     <Layout home>
       <Head>
@@ -36,6 +37,10 @@ export default function Home({ allHighlightedProjectsData, summaryData, personal
         title={'Technologies'}
         func={() => createList(personalData.technologies)}
       />
+        <CollapableSection
+        title={'Work Experience'}
+        func={() => createWorkLifeItems(worklife)}
+      />
     </Layout>
   );
 }
@@ -49,6 +54,18 @@ function highlightedProjects(allHighlightedProjectsData){
         {company} {parseDate(start)}-{parseDate(end)}
         <br />
         <p>{parse(content)}</p>
+      </li>
+    ))}
+    </ul>
+  )
+}
+
+function createWorkLifeItems(worklife){
+  return (
+    <ul className={utilStyles.list}>
+    {worklife.map(({company, title, start, end}) => (
+      <li id={title}>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{company} | {title} | {parseDate(start)}-{parseDate(end)}
       </li>
     ))}
     </ul>
@@ -79,7 +96,13 @@ function CollapableSection({title, func}){
 }
 
 function parseDate(date){
-  return new Date(date).getMonth() + 1 + '/' + new Date(date).getFullYear().toString()
+  
+  let dateObj;
+  if(date === "" || date === null) 
+    return "ongoing"
+  
+  dateObj = new Date(date)
+  return dateObj.getMonth() + 1 + '/' + dateObj.getFullYear().toString()
 }
 
 function format(content){
