@@ -57,6 +57,12 @@
     margin-bottom: 0.2rem;
   }
 
+  .listItemDel {
+    margin-left: 1.5rem;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #bbb
+  }
+
   .listItemHighlightedProject {
     margin-left: 1.5rem;
     margin-bottom: 0.2rem;

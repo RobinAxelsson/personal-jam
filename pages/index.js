@@ -69,7 +69,7 @@ function createWorkLifeItems(worklife){
   return (
     <ul className={utilStyles.list}>
     {worklife.map(({company, title, start, end}) => (
-      <li id={title} className={utilStyles.listItem}>
+      <li id={title} className={utilStyles.listItemDel}>
         {parseDate(start)}-{parseDate(end)} | {company} | {title}
       </li>
     ))}
@@ -81,7 +81,7 @@ function createEducationItems(education){
   return (
     <ul className={utilStyles.list}>
     {education.map(({title, school, start, end}) => (
-      <li id={title} className={utilStyles.listItem}>
+      <li id={title} className={utilStyles.listItemDel}>
         {parseDate(start)}-{parseDate(end)} | {title} | {school}
       </li>
     ))}
