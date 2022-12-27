@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import { getPersonalData, getSortedHighlightedProjectsData, getSummary, getWorkLife } from '../lib/markdownContent';
+import { getPersonalData, getSortedHighlightedProjectsData, getSummary, getWorkLife, getEducation } from '../lib/markdownContent';
 import parse from 'html-react-parser';
 
 export async function getStaticProps() {
@@ -10,12 +10,13 @@ export async function getStaticProps() {
       allHighlightedProjectsData: getSortedHighlightedProjectsData(),
       summaryData: getSummary(),
       personalData: getPersonalData(),
-      worklife: getWorkLife()
+      worklife: getWorkLife(),
+      education: getEducation()
     },
   };
 }
 
-export default function Home({ allHighlightedProjectsData, summaryData, personalData, worklife }) {
+export default function Home({ allHighlightedProjectsData, summaryData, personalData, worklife, education }) {
   return (
     <Layout home>
       <Head>
@@ -40,6 +41,10 @@ export default function Home({ allHighlightedProjectsData, summaryData, personal
         <CollapableSection
         title={'Work Experience'}
         func={() => createWorkLifeItems(worklife)}
+      />
+        <CollapableSection
+        title={'Education'}
+        func={() => createEducationItems(education)}
       />
     </Layout>
   );
@@ -66,6 +71,18 @@ function createWorkLifeItems(worklife){
     {worklife.map(({company, title, start, end}) => (
       <li id={title}>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{company} | {title} | {parseDate(start)}-{parseDate(end)}
+      </li>
+    ))}
+    </ul>
+  )
+}
+
+function createEducationItems(education){
+  return (
+    <ul className={utilStyles.list}>
+    {education.map(({title, school, start, end}) => (
+      <li id={title}>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{title} | {school} | {parseDate(start)}-{parseDate(end)}
       </li>
     ))}
     </ul>
