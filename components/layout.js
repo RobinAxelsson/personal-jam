@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Robin Salih Axelsson';
-export const siteTitle = 'RSA Resume site';
+export const siteTitle = 'Fullstack Developer Robin Salih Axelsson';
 
 export default function Layout({ children, home }) {
     return (
