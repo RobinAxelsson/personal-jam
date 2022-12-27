@@ -1,0 +1,14 @@
+---
+title: '.NET SignalR Ludo Game Platform and Game Engine (voccational school
+project)'
+company: Teknikhögskolan
+start: '2021-5-10'
+end: '2021-5-31'
+---
+
+Responsible for building a Fullstack ASP.NET Web, Ludo Board Game Platform.
+Implementations: SQL server with Entity Framework for user and game data,
+email login, email game invitations, SignalR interactive gaming, token and
+cookie identification, multiple game rooms, AI players and server side logic. To
+enable multiple game rooms every game room has its own instance of an game
+engine IOC container. The project was developed in a two man team.

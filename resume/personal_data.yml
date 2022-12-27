@@ -1,0 +1,28 @@
+---
+languages:
+- C#
+- JavaScript/TypeScript
+- Python
+- PowerShell
+- Bash
+
+technologies:
+- .NET 5, 6
+- X-Unit
+- ASP.NET Web Api,
+- SignalR,
+- Entity Framework
+- Git
+- Docker
+- Postman/Newman
+- Azure DevOps
+- GitHub Actions
+- Node.js
+- Express.js
+- React.js
+- SystemWeaver
+- Daussalt CATIA V5
+- Siemens TeamCenter
+- Alias Autostudio
+- Microsoft Dependency Injection
+---

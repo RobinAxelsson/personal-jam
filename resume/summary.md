@@ -1,5 +1,5 @@
 ---
-title: personal summary
+title: Personal Summary
 ---
 I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for writing code I changed my career and never looked back.
 
