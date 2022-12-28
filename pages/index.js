@@ -113,13 +113,12 @@ function CollapableSection({title, func}){
 }
 
 function parseDate(date){
-  
-  let dateObj;
   if(date === "" || date === null) 
     return "ongoing"
   
-  dateObj = new Date(date)
-  return dateObj.getMonth() + 1 + '/' + dateObj.getFullYear().toString()
+  let year = date.split('-')[0];
+  let month = date.split('-')[1];
+  return month + '/' + year
 }
 
 function format(content){
