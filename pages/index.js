@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import { getPersonalData, getSortedHighlightedProjectsData, getSummary, getWorkLife, getEducation } from '../lib/markdownContent';
+import { getPersonalData, getSortedHighlightedProjectsData, getSummary, getWorkLife, getEducation } from '../data-access/resume-repository';
 import parse from 'html-react-parser';
 
 export async function getStaticProps() {
@@ -18,7 +18,7 @@ export async function getStaticProps() {
 
 export default function Home({ allHighlightedProjectsData, summaryData, personalData, worklife, education }) {
   return (
-    <Layout home>
+    <Layout home >
       <Head>
         <title>{siteTitle}</title>
       </Head>
