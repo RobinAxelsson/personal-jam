@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
 import { getPersonalData, getSortedHighlightedProjectsData, getSummary, getWorkLife, getEducation } from '../data-access/resume-repository';
 import parse from 'html-react-parser';
-
+import utilStyles from '../styles/utils.module.css'
 export async function getStaticProps() {
   return {
     props: {
@@ -18,9 +16,9 @@ export async function getStaticProps() {
 
 export default function Home({ allHighlightedProjectsData, summaryData, personalData, worklife, education }) {
   return (
-    <Layout home >
+    <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Full stack developer</title>
       </Head>
       <CollapableSection
         title={'Personal Summary'}
@@ -46,7 +44,7 @@ export default function Home({ allHighlightedProjectsData, summaryData, personal
         title={'Education'}
         func={() => createEducationItems(education)}
       />
-    </Layout>
+    </>
   );
 }
 
@@ -69,7 +67,7 @@ function createWorkLifeItems(worklife){
   return (
     <ul className={utilStyles.list}>
     {worklife.map(({company, title, start, end}) => (
-      <li id={title} className={utilStyles.listItemDel}>
+      <li id={title} className={utilStyles.listItemDel} key={title}>
         {parseDate(start)}-{parseDate(end)} | {company} | {title}
       </li>
     ))}
@@ -81,7 +79,7 @@ function createEducationItems(education){
   return (
     <ul className={utilStyles.list}>
     {education.map(({title, school, start, end}) => (
-      <li id={title} className={utilStyles.listItemDel}>
+      <li id={title} className={utilStyles.listItemDel} key={title}>
         {parseDate(start)}-{parseDate(end)} | {title} | {school}
       </li>
     ))}
@@ -93,7 +91,7 @@ function createList(list){
   return (
     <ul className={utilStyles.list}>
     {list.map(lang => (
-      <li id={lang} className={utilStyles.listItem}>
+      <li id={lang} className={utilStyles.listItem} key={lang}>
         {lang}
       </li>
     ))}
