@@ -28,3 +28,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
