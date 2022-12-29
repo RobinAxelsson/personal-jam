@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const Header = () => {
   return (
@@ -13,22 +12,27 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/projects" passHref>
+                <Link href="/summary" passHref>
+                  Summary
+                </Link>
+              </li>
+              <li>
+                <Link href="/" passHref>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/technologies" passHref>
+                <Link href="/" passHref>
                   Technologies
                 </Link>
               </li>
               <li>
-                <Link href="/workexperience" passHref>
+                <Link href="/" passHref>
                   Work Experience
                 </Link>
               </li>
               <li>
-                <Link href="/education" passHref>
+                <Link href="/" passHref>
                   Education
                 </Link>
               </li>
