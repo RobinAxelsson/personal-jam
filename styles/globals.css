@@ -43,14 +43,13 @@ header {
   align-items: center;
   background-color: var(--clr-dark-accent);
   border-width: 0px;
-  min-height: 4rem;
+  padding: 20px;
 }
 
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 0.3rem;
-  padding-inline-start: 0px;
+  gap: 0.5rem;
 }
 
 
