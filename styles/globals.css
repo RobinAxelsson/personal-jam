@@ -3,6 +3,7 @@
   --clr-primary: hsl(228, 39%, 23%);
   --clr-dark-accent: #333333;
   --clr-light-accent: #0070f3;
+  --clr-light-font: #ffffff;
 }
 
 * {
@@ -39,6 +40,10 @@ a:hover {
 }
 
 header {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--clr-dark-accent);
@@ -52,6 +57,20 @@ nav ul {
   gap: 0.5rem;
 }
 
+main {
+  margin-top: 100px;
+  background-color: bisque;
+}
+
+footer {
+  color: var(--clr-light-font);
+  background-color: var(--clr-dark-accent);
+  padding: 10px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 
 /* @media (min-width: var(--screen-small-px)) {
