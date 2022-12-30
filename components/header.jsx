@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header>
         <div>
-          <nav className="topNav">
+          <nav>
             <ul>
               <li>
                 <Link href="/" passHref>
