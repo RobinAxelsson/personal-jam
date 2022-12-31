@@ -1,10 +1,10 @@
 :root {
   --screen-small-px: 520px;
-  --clr-primary: hsl(228, 39%, 23%);
-  --clr-dark-accent: #333333;
+  --clr-primary: hsl(228, 29%, 18%);
+  --clr-dark-accent-opac: rgba(65, 65, 65, 0.929);;
   --clr-light-accent: #0070f3;
   --clr-light-font: #ffffff;
-  --clr-bg: rgb(238, 241, 226);
+  --clr-bg: rgb(251, 251, 245);;
 }
 
 * {
@@ -18,7 +18,6 @@
   border-style: solid;
 } */
 
-html,
 body {
   color: var(--clr-primary);
   background-color: var(--clr-bg);
@@ -27,8 +26,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   /* line-height: 1.6; */
   /* font-size: 18px; */
+}
+
+#__next {
+  background-image: url("https://pixabay.com/get/g57da3f552158291d315285764fbe214d735a6ba4c8caee246f600643e7139b1410a73745d5c38210dafdafffbe4cd7dd37101a01f7bcac6f9526b2f2c8c2d6384e82585d3e0c0a79b1af77687febb3f1_1920.jpg");
+  width: 100%;
+  height: 600px;
 }
 
 ul {
@@ -44,15 +50,30 @@ a:hover {
   text-decoration: underline;
 }
 
-header {
-  position: fixed;
-  overflow: hidden;
-  left:0;
-  top: 0;
+header, footer {
   width: 100%;
-  display: flex;
+  left:0;
+  overflow: hidden;
+  position: fixed;
   align-items: center;
-  background-color: var(--clr-dark-accent);
+  background-color: var(--clr-dark-accent-opac);
+}
+
+header a {
+  color: var(--clr-light-font);
+  font-size: large;
+  font-weight: bold;
+}
+
+footer {
+  color: var(--clr-light-font);
+  padding: 10px;
+  bottom: 0;
+}
+
+header {
+  top: 0;
+  display: flex;
   border-width: 0px;
   padding: 20px;
 }
@@ -71,16 +92,8 @@ main {
   background-color: bisque;
 }
 
-footer {
-  color: var(--clr-light-font);
-  background-color: var(--clr-dark-accent);
-  padding: 10px;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
+
+
 
 /* @media (min-width: var(--screen-small-px)) {
   nav ul {

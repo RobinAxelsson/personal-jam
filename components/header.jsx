@@ -17,22 +17,22 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/" passHref>
+                <Link href="#" passHref>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/" passHref>
+                <Link href="#" passHref>
                   Technologies
                 </Link>
               </li>
               <li>
-                <Link href="/" passHref>
+                <Link href="#" passHref>
                   Work Experience
                 </Link>
               </li>
               <li>
-                <Link href="/" passHref>
+                <Link href="#" passHref>
                   Education
                 </Link>
               </li>
