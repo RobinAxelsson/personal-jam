@@ -1,5 +1,5 @@
 import { getSummary } from '../data-access/resume-repository';
-import { Summary } from '../components/summary';
+import parse from 'html-react-parser';
 
 export async function getStaticProps() {
   return {
@@ -11,12 +11,14 @@ export async function getStaticProps() {
 
 export default function Page({ summaryData }) {
   return (
-    <>
-    <Summary 
-        title={summaryData.title}
-        content={summaryData.content}
-        />
-    </>
 
+    <div className="card-general">
+        <h2 className="card-title">{summaryData.title}</h2>
+        {format(summaryData.content)}
+    </div>
   );
+}
+
+function format(content){
+  return parse(content.replaceAll('\n', '<br />'))
 }

@@ -17,12 +17,12 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" passHref>
+                <Link href="/projects" passHref>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="#" passHref>
+                <Link href="/technologies" passHref>
                   Technologies
                 </Link>
               </li>
