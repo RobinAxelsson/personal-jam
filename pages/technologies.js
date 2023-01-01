@@ -10,15 +10,18 @@ export async function getStaticProps() {
       },
     };
   }
-export default function Technologies({ personalData }) {
+export default function TechnologiesPage({ personalData }) {
   return (
-
+<>
     <div className="card-general">
-        <h3>Languages</h3>
+        <h2 className="card-title">Languages</h2>
         {createList(personalData.languages)}
-        <h3>Technologies</h3>
+    </div>
+    <div className="card-general">
+        <h2 className="card-title">Technologies</h2>
         {createList(personalData.technologies)}
     </div>
+    </>
   );
 }
 

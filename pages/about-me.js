@@ -9,7 +9,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Page({ summaryData }) {
+export default function AboutPage({ summaryData }) {
   return (
 
     <div className="card-general">

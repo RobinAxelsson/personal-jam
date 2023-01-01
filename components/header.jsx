@@ -12,8 +12,8 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/summary" passHref>
-                  Summary
+                <Link href="/about-me" passHref>
+                  About me
                 </Link>
               </li>
               <li>
@@ -27,13 +27,8 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" passHref>
-                  Work Experience
-                </Link>
-              </li>
-              <li>
-                <Link href="#" passHref>
-                  Education
+                <Link href="/experience" passHref>
+                  Work Experience & Education
                 </Link>
               </li>
             </ul>
