@@ -1,74 +1,74 @@
 .heading2Xl {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 800;
     letter-spacing: -0.05rem;
-    margin: 1rem 0;
+    margin: 1rem 0; */
   }
   
   .headingXl {
-    font-size: 2rem;
+    /* font-size: 2rem;
     line-height: 1.3;
     font-weight: 800;
     letter-spacing: -0.05rem;
-    margin: 1rem 0;
+    margin: 1rem 0; */
   }
   
   .headingLg {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem;
     line-height: 1.4;
-    margin: 1rem 0;
+    margin: 1rem 0; */
   }
   
   .headingHighlightedProjects {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem;
     line-height: 1.4;
     margin: 1rem 0;
     font-weight: bold;
-    opacity: 0.8;
+    opacity: 0.8; */
   }
 
   .headingMd {
-    font-size: 1.2rem;
-    line-height: 1.5;
+    /* font-size: 1.2rem;
+    line-height: 1.5; */
   }
   
   .borderCircle {
-    border-radius: 9999px;
+    /* border-radius: 9999px; */
   }
   
   .colorInherit {
-    color: inherit;
+    /* color: inherit; */
   }
   
   .padding1px {
-    padding-top: 1px;
+    /* padding-top: 1px; */
   }
   
   .list {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem;
     list-style: none;
     padding: 0;
-    margin: ;
+    margin: ; */
   }
   
   .listItem {
-    margin-left: 1.5rem;
-    margin-bottom: 0.2rem;
+    /* margin-left: 1.5rem;
+    margin-bottom: 0.2rem; */
   }
 
   .listItemDel {
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem;
     margin-bottom: 0.2rem;
-    border-bottom: 0.1rem solid #bbb
+    border-bottom: 0.1rem solid #bbb */
   }
 
   .listItemHighlightedProject {
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem;
     margin-bottom: 0.2rem;
-    border-bottom: 0.2rem solid #bbb
+    border-bottom: 0.2rem solid #bbb */
   }
   
   .lightText {
-    color: #666;
+    /* color: #666; */
   }

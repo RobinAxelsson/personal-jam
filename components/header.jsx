@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header>
         <div>
-          <nav className="topNav">
+          <nav>
             <ul>
               <li>
                 <Link href="/" passHref>
@@ -12,28 +12,18 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/summary" passHref>
-                  Summary
-                </Link>
-              </li>
-              <li>
-                <Link href="/" passHref>
+                <Link href="/projects" passHref>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/" passHref>
+                <Link href="/technologies" passHref>
                   Technologies
                 </Link>
               </li>
               <li>
-                <Link href="/" passHref>
-                  Work Experience
-                </Link>
-              </li>
-              <li>
-                <Link href="/" passHref>
-                  Education
+                <Link href="/experience" passHref>
+                  Work Experience & Education
                 </Link>
               </li>
             </ul>
