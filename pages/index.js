@@ -1,7 +1,11 @@
-import { getPersonalData, getSortedHighlightedProjectsData, getSummary, getWorkLife, getEducation } from '../data-access/resume-repository';
-import parse from 'html-react-parser';
-import utilStyles from '../styles/utils.module.css'
-import CollapsableResume from '../components/collapsable-resume';
+import {
+  getPersonalData,
+  getSortedHighlightedProjectsData,
+  getSummary,
+  getWorkLife,
+  getEducation,
+} from "../data-access/resume-repository";
+import CollapsableResume from "../components/collapsable-resume";
 export async function getStaticProps() {
   return {
     props: {
@@ -9,19 +13,25 @@ export async function getStaticProps() {
       summaryData: getSummary(),
       personalData: getPersonalData(),
       worklife: getWorkLife(),
-      education: getEducation()
+      education: getEducation(),
     },
   };
 }
 
-export default function Home({ allHighlightedProjectsData, summaryData, personalData, worklife, education }) {
+export default function Home({
+  allHighlightedProjectsData,
+  summaryData,
+  personalData,
+  worklife,
+  education,
+}) {
   return (
-      <CollapsableResume 
+    <CollapsableResume
       allHighlightedProjectsData={allHighlightedProjectsData}
       summaryData={summaryData}
       personalData={personalData}
       worklife={worklife}
       education={education}
-      />
+    />
   );
 }

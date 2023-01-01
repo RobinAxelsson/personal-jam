@@ -29,8 +29,8 @@ export default function ProjectsPage({ allHighlightedProjectsData }) {
   );
 }
 
-function format(content){
-  return parse(content.replaceAll('\n', '<br />'))
+function format(content) {
+  return parse(content.replaceAll("\n", "<br />"));
 }
 
 function parseDate(date) {
