@@ -1,37 +1,25 @@
-import {
-  getPersonalData,
-  getSortedHighlightedProjectsData,
-  getSummary,
-  getWorkLife,
-  getEducation,
-} from "../data-access/resume-repository";
-import CollapsableResume from "../components/collapsable-resume";
+import { getSummary } from "../data-access/resume-repository";
+import parse from "html-react-parser";
+
 export async function getStaticProps() {
   return {
     props: {
-      allHighlightedProjectsData: getSortedHighlightedProjectsData(),
       summaryData: getSummary(),
-      personalData: getPersonalData(),
-      worklife: getWorkLife(),
-      education: getEducation(),
     },
   };
 }
 
-export default function Home({
-  allHighlightedProjectsData,
-  summaryData,
-  personalData,
-  worklife,
-  education,
-}) {
+export default function AboutPage({ summaryData }) {
   return (
-    <CollapsableResume
-      allHighlightedProjectsData={allHighlightedProjectsData}
-      summaryData={summaryData}
-      personalData={personalData}
-      worklife={worklife}
-      education={education}
-    />
+    <div className="card-collection">
+      <div className="card-general">
+        <h2 className="card-title">{summaryData.title}</h2>
+        <p>{format(summaryData.content)}</p>
+      </div>
+    </div>
   );
+}
+
+function format(content) {
+  return parse(content.replaceAll("\n", "<br />"));
 }

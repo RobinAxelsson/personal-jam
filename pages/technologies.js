@@ -9,7 +9,7 @@ export async function getStaticProps() {
 }
 export default function TechnologiesPage({ personalData }) {
   return (
-    <>
+    <div className="card-collection">
       <div className="card-general">
         <h2 className="card-title">Languages</h2>
         {createList(personalData.languages)}
@@ -18,7 +18,7 @@ export default function TechnologiesPage({ personalData }) {
         <h2 className="card-title">Technologies</h2>
         {createList(personalData.technologies)}
       </div>
-    </>
+    </div>
   );
 }
 

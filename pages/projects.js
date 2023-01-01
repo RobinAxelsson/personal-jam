@@ -1,5 +1,4 @@
 import { getSortedHighlightedProjectsData } from "../data-access/resume-repository";
-import parse from "html-react-parser";
 
 export async function getStaticProps() {
   return {
@@ -11,27 +10,23 @@ export async function getStaticProps() {
 
 export default function ProjectsPage({ allHighlightedProjectsData }) {
   return (
-    <div className="card-general">
-      <h2 className="card-title">Highlighted projects</h2>
-      <ul className="project-list">
+    <div className="card-collection">
         {allHighlightedProjectsData.map(
           ({ id, title, content, start, end, company }) => (
-            <li className="project-li" key={id}>
-              <h3 className="project-title">{title}</h3>
-              {company} {parseDate(start)}-{parseDate(end)}
-              <br />
-              <p>{format(content)}</p>
-            </li>
-          )
+            <div className="card-general" key={id}>
+            <h2 className="card-title">{title}</h2>
+            <h3>{company} {parseDate(start)}-{parseDate(end)}</h3>
+              {/* <p>{format(content)}</p> */}
+              <p>{content}</p>
+              </div>
+              )
         )}
-      </ul>
-    </div>
-  );
+    </div>);
 }
 
-function format(content) {
-  return parse(content.replaceAll("\n", "<br />"));
-}
+// function format(content) {
+//   return parse(content.replaceAll("\n", "<br />"));
+// }
 
 function parseDate(date) {
   if (date === "" || date === null) return "ongoing";
