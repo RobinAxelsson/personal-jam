@@ -26,11 +26,6 @@ export const Header = () => {
                   Work Experience & Education
                 </Link>
               </li>
-              <li>
-                <Link href="https://github.com/RobinAxelsson" passHref>
-                  GitHub
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>
