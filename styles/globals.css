@@ -1,5 +1,6 @@
 :root {
   --screen-small-px: 520px;
+  --main-max-width: 800px;
   --clr-primary: hsl(203, 53%, 75%);
   --clr-dark-accent: rgb(65, 65, 65);
   --clr-light-accent: #0070f3;
@@ -7,7 +8,7 @@
   --clr-font-contrast: #fff;
   --clr-bg: rgb(251, 248, 245);
   --default-margin: 1rem;
-  --fs-xl: 5rem;
+  --fs-xl: 4rem;
   --fs-800: 2.5rem;
   --fs-600: 2rem;
   --fs-500: 1.2rem;
@@ -49,6 +50,8 @@ h3 {
 
 p {
   font-size: var(--fs-400);
+  max-width: 70ch;
+  line-height: 1.5em;
 }
 
 .accent-word {
@@ -146,9 +149,10 @@ main {
 }
 
 .card-collection {
-  max-width: 800px;
+  max-width: var(--main-max-width);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4rem;
 }
 
@@ -167,10 +171,8 @@ main {
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
-}
-
-.card-grid-item {
-  margin: 0.5rem;
+  margin: var(--default-margin);
+  grid-gap: 1rem;
 }
 
 .collapsable-resume-container {
