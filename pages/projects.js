@@ -14,8 +14,8 @@ export default function ProjectsPage({ allHighlightedProjectsData }) {
         {allHighlightedProjectsData.map(
           ({ id, title, content, start, end, company }) => (
             <div className="card-general" key={id}>
-            <h2 className="card-title">{title}</h2>
-            <h3>{company} {parseDate(start)}-{parseDate(end)}</h3>
+            <h3 className="card-title">{title}</h3>
+            <h4>{company} {parseDate(start)}-{parseDate(end)}</h4>
               {/* <p>{format(content)}</p> */}
               <p>{content}</p>
               </div>

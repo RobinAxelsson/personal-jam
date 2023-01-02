@@ -22,10 +22,9 @@ export default function Home({ summaryData }) {
           width={250}
         />
         <div className="hero-section-content">
-          <h1><span className="accent-word">Robin</span> Salih Axelsson</h1>
-          <h2>Full Stack Cloud Developer</h2>
-          <p>Specialized in Object Oriented Design,</p>
-          <p>.NET, C#, Test Driven Development, CAD</p>
+          <h2><span className="accent-word">Robin</span> Salih Axelsson</h2>
+          <h3>Full Stack Cloud Developer</h3>
+          <p>Specialized in Object Oriented Design, .NET, C#, Test Driven Development, CAD</p>
         </div>
       </div>
       <div className="card-general">
