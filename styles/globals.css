@@ -13,20 +13,6 @@
   padding: 0px;
 }
 
-/* * :not(a, nav ul li) {
-  border-color: yellowgreen;
-  border-width: 1px;
-  border-style: solid;
-} */
-
-html, body, #__next {
-  position: absolute;
-  left: 0;
-  top:0;
-  right:0;
-  bottom: 0;
-}
-
 h1, h2, h3, h4, p, li {
   margin: var(--default-margin);
   line-height: 1.1em;
@@ -135,6 +121,8 @@ main {
   border-radius: 1px;
   color: var(--clr-font-primary);
   margin: 1rem;
+  text-align: center;
+  min-height: 200px;
 }
 
 .collapsable-resume-container {
@@ -156,16 +144,9 @@ main {
   border-style: solid;
 }
 
-.hero-section-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .hero-section-content > *{
-  margin: 0;
-  margin: 0 auto;
+  margin: 0px;
   line-height: 1.3em;
 }
 
@@ -182,6 +163,7 @@ header:active {
   .card-general {
     flex-direction: row;
     min-width: 500px;
+    text-align: left;
   }
 
   .hero-section-content {
