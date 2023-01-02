@@ -163,6 +163,16 @@ main {
   min-height: 200px;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+.card-grid-item {
+  margin: 0.5rem;
+}
+
 .collapsable-resume-container {
   margin-top: 170px;
 }

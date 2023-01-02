@@ -16,7 +16,6 @@ export default function ProjectsPage({ allHighlightedProjectsData }) {
             <div className="card-general" key={id}>
             <h3 className="card-title">{title}</h3>
             <h4>{company} {parseDate(start)}-{parseDate(end)}</h4>
-              {/* <p>{format(content)}</p> */}
               <p>{content}</p>
               </div>
               )
