@@ -22,9 +22,17 @@ export default function Home({ summaryData }) {
           width={250}
         />
         <div className="hero-section-content">
-          <h2><span className="accent-word">Robin</span> Salih Axelsson</h2>
+          <h2>
+            <span className="accent-word">Robin</span> Salih Axelsson
+          </h2>
           <h3>Full Stack Cloud Developer</h3>
-          <p>Specialized in Object Oriented Design, .NET, C#, Test Driven Development, CAD</p>
+          <p>
+            Specialized in Object Oriented Design, .NET, C#, Test Driven
+            Development, CAD. Consultant at{" "}
+            <a className="" href="https://quokka.se">
+              Software by Quokka
+            </a>
+          </p>
         </div>
       </div>
       <div className="card-general">

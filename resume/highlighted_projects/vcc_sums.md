@@ -1,6 +1,6 @@
 ---
 title: SUMS Document .NET
-ingress: Generating Software Update Management System traceability document for fulfilling eu-requirements.
+ingress: Generating Software Update Management System traceability document for variant certifications.
 company: Volvo Cars
 start: '2022-02'
 end: '2022-12' 
