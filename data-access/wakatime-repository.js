@@ -1,63 +1,36 @@
 import fetchJsonp from "fetch-jsonp";
 
-const total2022Url =
+const totalYearUrl =
   "https://wakatime.com/share/@d1211c1b-0278-49e5-8d9f-f430871ca943/a08ac7f9-615c-45b4-aa53-e2fdc9bd392e.json";
 
-const percentageUrl =
+const languagePercentageUrl =
   "https://wakatime.com/share/@d1211c1b-0278-49e5-8d9f-f430871ca943/a58ba9e3-e7b4-4c55-b99a-c61251cd980c.json";
-// export function getLanguagePercentages2022(setLoading, setData){
-//     setLoading(true);
-//     fetchJsonp(percentageUrl)
-//     .then(function(response) {
-//       return response.json()
-//     }).then(function(json) {
-//         let data = json.data;
-//       setData(data);
-//       setLoading(false);
-//       console.log(json.data[0]);
-//     }).catch(function(ex) {
-//       console.log('parsing failed', ex)
-//     })
-// }
 
-export async function getWakatime() {
-  //getLangPercentages
-  //getYearlyTime
-}
+let _totalYearResponse = null;
 
-// export async function getCodeStatsPreviousYear(setLoading, setData) {
-//   setLoading(true);
-//   let { totalHours, dailyAverage } = await getPreviousYearStats();
-
-//   const response = await fetchJsonp(percentageUrl);
-//   const json = await response.json();
-//   setData(json.data);
-//   setLoading(false);
-// }
-
-async function getCodeStatsPreviousYear() {
-  // setLoading(true);
-  let { totalHours, dailyAverage } = await getPreviousYearStats();
-
-  const response = await fetchJsonp(percentageUrl);
-  const json = await response.json();
-  return json.data;
-  // setData(json.data);
-  // setLoading(false);
+async function getTotalYearResponse() {
+  if(_totalYearResponse === null){
+    const response = await fetchJsonp(totalYearUrl);
+    const json = await response.json();
+    _totalYearResponse = json.data;
+  }
+  return _totalYearResponse;
 }
 
 export async function getPreviousYearStats() {
-  const seconds2022 = await getTotalSecondsPreviousYear();
+  const secondsYear = await getCodingSecondsYear();
+  const secondsWeek = await getCodingSecondsWeek();
+  const {start, end } = await getStartDateAndEndDate();
+  const totalHours = convertSeconds(secondsYear);
+  const totalHoursWeek = convertSeconds(secondsWeek);
+  const dailyAverage = convertSeconds(secondsYear / 365);
+  const top10 = await getTop10Languages(secondsYear);
 
-  let totalHours = convertSeconds(seconds2022);
-  let dailyAverage = convertSeconds(seconds2022 / 365);
-  const top10 = await getTop10Languages(seconds2022);
-
-  return { totalHours, dailyAverage, top10 };
+  return { start, end, totalHours, dailyAverage, top10, totalHoursWeek };
 }
 
 async function getTop10Languages(totalSeconds) {
-  const response = await fetchJsonp(percentageUrl);
+  const response = await fetchJsonp(languagePercentageUrl);
   const json = await response.json();
   let languages = json.data.slice(0, 11);
   languages = languages.filter((x) => x.name != "Other");
@@ -78,14 +51,30 @@ async function getTop10Languages(totalSeconds) {
   });
 }
 
-async function getTotalSecondsPreviousYear() {
-  const response = await fetchJsonp(total2022Url);
-  const json = await response.json();
-  let totalSeconds = json.data.reduce((prev, cur) => {
+async function getStartDateAndEndDate(){
+  let data = await getTotalYearResponse();
+  let start = data[0].range.date;
+  let end = data[data.length - 1].range.date;
+  return { start, end };
+}
+
+async function getCodingSecondsYear() {
+  let data = await getTotalYearResponse();
+  let totalSeconds = data.reduce((prev, cur) => {
     return prev + cur.grand_total.total_seconds;
   }, 0);
+
   const missingSeconds = 3600 * 8 * 5 * 3; //Missing due error in wakatime
   return totalSeconds + missingSeconds;
+}
+
+async function getCodingSecondsWeek() {
+  let data = await getTotalYearResponse();
+  let totalSeconds = data.slice(1, 8).reduce((prev, cur) => {
+    return prev + cur.grand_total.total_seconds;
+  }, 0);
+
+  return totalSeconds;
 }
 
 function convertSeconds(seconds) {

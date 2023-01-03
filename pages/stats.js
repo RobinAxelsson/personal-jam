@@ -10,7 +10,7 @@ export async function getStaticProps() {
 export default function TechnologiesPage({ personalData }) {
   return (
     <div className="card-collection">
-      <div className="card-general">
+      {/* <div className="card-general">
         <h2 className="card-title">Technologies</h2>
         <h4>Professional use or examined</h4>
         <grid className="card-grid grid-column-2">
@@ -20,7 +20,7 @@ export default function TechnologiesPage({ personalData }) {
             </div>
           ))}
         </grid>
-      </div>
+      </div> */}
       <CodingStats />
     </div>
   );

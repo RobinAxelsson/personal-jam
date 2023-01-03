@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
-import { getPreviousYearStats } from "../data-access/wakatime-repository";
+import { getPreviousYearStats as getYearRangeStats } from "../data-access/wakatime-repository";
 import { generateUID } from "../framework-utils/generate-uid";
+import { parseDate } from "../framework-utils/parse-date";
+
+const WakaTimeIngress = ({ start, end }) => (
+  <h4>
+    from {parseDate(start)} to {parseDate(end)}, powered by <a href="https://wakatime.com/">Wakatime</a>
+  </h4>
+);
 
 export function CodingStats() {
   const [wakatime, setData] = useState(null);
@@ -9,7 +16,7 @@ export function CodingStats() {
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
-      let data = await getPreviousYearStats();
+      let data = await getYearRangeStats();
       setData(data);
       setLoading(false);
     };
@@ -21,11 +28,8 @@ export function CodingStats() {
   return (
     <>
       <div className="card-general">
-        <h2 className="card-title">Top 10 Languages</h2>
-        <h4>
-          Last 12 months, powered by{" "}
-          <a href="https://wakatime.com/">Wakatime</a>
-        </h4>
+        <h2 className="card-title">My top 10 Languages</h2>
+        <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
         <div className="card-grid grid-column-2">
           {wakatime.top10.map(({ rank, name, time }) => (
             <>
@@ -40,19 +44,28 @@ export function CodingStats() {
         </div>
       </div>
       <div className="card-general">
-        <h2 className="card-title">Total time coding</h2>
-        <h4>
-          Last 12 months, powered by{" "}
-          <a href="https://wakatime.com/">Wakatime</a>
-        </h4>
-        <ul className="technology-list">
-          <li className="tech-item" key={generateUID()}>
-            Total hours: {wakatime.totalHours}
-          </li>
-          <li className="tech-item" key={generateUID()}>
-            Daily Average: {wakatime.dailyAverage}
-          </li>
-        </ul>
+        <h2 className="card-title">My Coding Totals</h2>
+        <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
+        <div className="card-grid grid-column-2">
+          <div className="card-grid-item" key={generateUID()}>
+            Total hours:
+          </div>
+          <div className="card-grid-item" key={generateUID()}>
+            {wakatime.totalHours}
+          </div>
+          <div className="card-grid-item" key={generateUID()}>
+            Daily Average:
+          </div>
+          <div className="card-grid-item" key={generateUID()}>
+            {wakatime.dailyAverage}
+          </div>
+          <div className="card-grid-item" key={generateUID()}>
+            Total last 7 days:
+          </div>
+          <div className="card-grid-item" key={generateUID()}>
+            {wakatime.totalHoursWeek}
+          </div>
+        </div>
       </div>
     </>
   );

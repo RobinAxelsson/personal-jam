@@ -17,8 +17,8 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/technologies" passHref>
-                  Technologies
+                <Link href="/stats" passHref>
+                  Coding Stats
                 </Link>
               </li>
               <li>

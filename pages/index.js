@@ -28,7 +28,7 @@ export default function Home({ summaryData }) {
           <h3>Full Stack Cloud Developer</h3>
           <p>
             Specialized in Object Oriented Design, .NET, C#, Test Driven
-            Development, CAD. Consultant at{" "}
+            Development, code refactoring and CAD. Consultant at{" "}
             <a className="" href="https://quokka.se">
               Software by Quokka
             </a>
@@ -36,8 +36,10 @@ export default function Home({ summaryData }) {
         </div>
       </div>
       <div className="card-general">
-        <h2 className="card-title">About</h2>
-        <p>{format(summaryData.content)}</p>
+        <div className="hero-section">
+          <h2 className="card-title">About</h2>
+          <p>{format(summaryData.content)}</p>
+        </div>
       </div>
     </div>
   );
