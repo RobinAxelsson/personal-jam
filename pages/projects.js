@@ -12,9 +12,10 @@ export default function ProjectsPage({ allHighlightedProjectsData }) {
   return (
     <div className="card-collection">
         {allHighlightedProjectsData.map(
-          ({ id, title, content, start, end, company }) => (
+          ({ id, title, content, start, end, company, ingress }) => (
             <div className="card-general" key={id}>
             <h3 className="card-title">{title}</h3>
+            <h4 className="card-ingress">{ingress}</h4>
             <h4>{company} {parseDate(start)}-{parseDate(end)}</h4>
               <p>{content}</p>
               </div>

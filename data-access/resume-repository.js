@@ -55,7 +55,8 @@ export function getSortedHighlightedProjectsData() {
       start: data.start,
       end: data.end,
       company: data.company,
-      title: data.title
+      title: data.title,
+      ingress: data.ingress
     };
   });
 

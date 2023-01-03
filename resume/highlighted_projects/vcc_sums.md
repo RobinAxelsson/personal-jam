@@ -1,8 +1,9 @@
 ---
-title: 'Software Update Management System (SUMS) Data Extraction'
+title: SUMS Document .NET
+ingress: Generating Software Update Management System traceability document for fulfilling eu-requirements.
 company: Volvo Cars
 start: '2022-02'
-end: '2022-12'
+end: '2022-12' 
 ---
 Working on System & Signal Design-team’s SUMS-document project, which
 purpose is to extract Sums relevant data from the Software-PLM platform

@@ -1,6 +1,6 @@
 ---
-title: '.NET SignalR Ludo Game Platform and Game Engine (voccational school
-project)'
+title: Ludo V2 Online
+ingress: .NET multiplayer SignalR Game Engine and Platform
 company: Teknikhögskolan
 start: '2021-5-10'
 end: '2021-5-31'
