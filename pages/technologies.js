@@ -1,5 +1,5 @@
 import { getPersonalData } from "../data-access/resume-repository";
-import { CodingStats } from "../components/coding-stats"
+import { CodingStats } from "../components/coding-stats";
 export async function getStaticProps() {
   return {
     props: {
@@ -9,25 +9,19 @@ export async function getStaticProps() {
 }
 export default function TechnologiesPage({ personalData }) {
   return (
-
     <div className="card-collection">
       <CodingStats />
       <div className="card-general">
         <h2 className="card-title">Technologies</h2>
-        {createList(personalData.technologies)}
+        <h4>Professional use or examined</h4>
+        <grid className="card-grid grid-column-2">
+          {personalData.technologies.map((lang) => (
+            <div id={lang} className="tech-item" key={lang}>
+              {lang}
+            </div>
+          ))}
+        </grid>
       </div>
     </div>
-  );
-}
-
-function createList(list) {
-  return (
-    <ul className="technology-list">
-      {list.map((lang) => (
-        <li id={lang} className="tech-item" key={lang}>
-          {lang}
-        </li>
-      ))}
-    </ul>
   );
 }
