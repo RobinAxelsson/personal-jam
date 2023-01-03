@@ -23,7 +23,10 @@ export default function ExperiencePage({ worklife, education }) {
                 {parseDate(start)} - {parseDate(end)}
               </div>
               <div className="card-grid-item" key={generateUID()}>
-                {company}
+              {(() => {
+                  if (company !== "Software By Quokka") return company;
+                  return (<a href="https://quokka.se">Software By Quokka</a>)
+                })()}
               </div>
               <div className="card-grid-item" key={generateUID()}>
                 {title}
@@ -41,7 +44,10 @@ export default function ExperiencePage({ worklife, education }) {
                 {parseDate(start)} - {parseDate(end)}
               </div>
               <div className="card-grid-item" key={generateUID()}>
-                {title}
+                {(() => {
+                  if (title !== ".NET Developer") return title;
+                  return (<a href="https://teknikhogskolan.se/utbildningar/net-utvecklare/">.NET Developer</a>)
+                })()}
               </div>
               <div className="card-grid-item" key={generateUID()}>
                 {school}
@@ -53,5 +59,3 @@ export default function ExperiencePage({ worklife, education }) {
     </div>
   );
 }
-
-

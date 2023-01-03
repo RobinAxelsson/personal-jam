@@ -10,7 +10,6 @@ export async function getStaticProps() {
 export default function TechnologiesPage({ personalData }) {
   return (
     <div className="card-collection">
-      <CodingStats />
       <div className="card-general">
         <h2 className="card-title">Technologies</h2>
         <h4>Professional use or examined</h4>
@@ -22,6 +21,7 @@ export default function TechnologiesPage({ personalData }) {
           ))}
         </grid>
       </div>
+      <CodingStats />
     </div>
   );
 }
