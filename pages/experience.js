@@ -1,4 +1,6 @@
 import { getWorkLife, getEducation } from "../data-access/resume-repository";
+import { generateUID } from "../framework-utils/generate-uid";
+import { parseDate } from "../framework-utils/parse-date";
 
 export async function getStaticProps() {
   return {
@@ -14,7 +16,7 @@ export default function ExperiencePage({ worklife, education }) {
     <div className="card-collection">
       <div className="card-general">
         <h2 className="card-title">Work Experience</h2>
-        <div className="card-grid">
+        <div className="card-grid grid-column-3">
           {worklife.map(({ company, title, start, end }) => (
             <>
               <div className="card-grid-item" key={generateUID()}>
@@ -32,7 +34,7 @@ export default function ExperiencePage({ worklife, education }) {
       </div>
       <div className="card-general">
         <h2 className="card-title">Education</h2>
-        <div className="card-grid">
+        <div className="card-grid grid-column-3">
           {education.map(({ title, school, start, end }) => (
             <>
               <div className="card-grid-item" key={generateUID()}>
@@ -52,18 +54,4 @@ export default function ExperiencePage({ worklife, education }) {
   );
 }
 
-function parseDate(date) {
-  if (date === "" || date === null) return "ongoing";
 
-  let year = date.split("-")[0];
-  let month = date.split("-")[1];
-  return month + "/" + year;
-}
-
-function generateUID() {
-  var firstPart = (Math.random() * 46656) | 0;
-  var secondPart = (Math.random() * 46656) | 0;
-  firstPart = ("000" + firstPart.toString(36)).slice(-3);
-  secondPart = ("000" + secondPart.toString(36)).slice(-3);
-  return firstPart + secondPart;
-}

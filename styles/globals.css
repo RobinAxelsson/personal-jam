@@ -176,10 +176,17 @@ main {
 
 .card-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
   align-items: center;
   margin: var(--default-margin);
   grid-gap: 1rem;
+}
+
+.grid-column-3 {
+  grid-template-columns: auto auto auto;
+}
+
+.grid-column-2 {
+  grid-template-columns: auto auto;
 }
 
 .collapsable-resume-container {
