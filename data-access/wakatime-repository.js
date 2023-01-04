@@ -17,7 +17,7 @@ async function getTotalYearResponse() {
   return _totalYearResponse;
 }
 
-export async function getPreviousYearStats() {
+export async function getWakatimeStats() {
   const secondsYear = await getCodingSecondsYear();
   const secondsWeek = await getCodingSecondsWeek();
   const {start, end } = await getStartDateAndEndDate();

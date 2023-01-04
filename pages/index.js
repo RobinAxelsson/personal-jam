@@ -1,6 +1,8 @@
 import { getSummary } from "../data-access/resume-repository";
-import parse from "html-react-parser";
 import Image from "next/image";
+import Card from "../components/micro-components/card";
+import CardContainer from "../components/micro-components/card-container";
+import { formatMd } from "../framework-utils/format-md";
 
 export async function getStaticProps() {
   return {
@@ -12,39 +14,39 @@ export async function getStaticProps() {
 
 export default function Home({ summaryData }) {
   return (
-    <div className="card-collection">
-      <div className="card-general hero-section">
-        <Image
-          className="hero-section-image"
-          src="/images/profile-sea-1290x1290.jpg"
-          alt="picture of author"
-          height={250}
-          width={250}
-        />
-        <div className="hero-section-content">
-          <h2>
-            <span className="accent-word">Robin</span> Salih Axelsson
-          </h2>
-          <h3>Full Stack Cloud Developer</h3>
-          <p>
-            Specialized in Object Oriented Design, .NET, C#, Test Driven
-            Development, code refactoring and CAD. Consultant at{" "}
-            <a className="" href="https://quokka.se">
-              Software by Quokka
-            </a>
-          </p>
-        </div>
-      </div>
-      <div className="card-general">
-        <div className="hero-section">
+    <CardContainer>
+      <Card
+        left={
+          <Image
+            className="hero-section-image"
+            src="/images/profile-sea-1290x1290.jpg"
+            alt="picture of author"
+            height={250}
+            width={250}
+          />
+        }
+        right={
+          <>
+            <h2>
+              <span className="accent-word">Robin</span> Salih Axelsson
+            </h2>
+            <h3>Full Stack Cloud Developer</h3>
+            <p>
+              Specialized in Object Oriented Design, .NET, C#, Test Driven
+              Development, code refactoring and CAD. Consultant at{" "}
+              <a className="" href="https://quokka.se">
+                Software by Quokka
+              </a>
+            </p>
+          </>
+        }
+      />
+      <Card right={ <>
           <h2 className="card-title">About</h2>
-          <p>{format(summaryData.content)}</p>
-        </div>
-      </div>
-    </div>
+          <p>{formatMd(summaryData.content)}</p>
+        </>} />
+    </CardContainer>
   );
 }
 
-function format(content) {
-  return parse(content.replaceAll("\n", "<br />"));
-}
+

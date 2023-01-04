@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { getPreviousYearStats as getYearRangeStats } from "../data-access/wakatime-repository";
-import { generateUID } from "../framework-utils/generate-uid";
-import { parseDate } from "../framework-utils/parse-date";
+import { getWakatimeStats } from "../data-access/wakatime-repository";
+import siteDateLayout from "../framework-utils/site-date-layout";
+import Card from "./micro-components/card";
 
 const WakaTimeIngress = ({ start, end }) => (
   <h4>
-    from {parseDate(start)} to {parseDate(end)}, powered by <a href="https://wakatime.com/">Wakatime</a>
+    from {siteDateLayout(start)} to {siteDateLayout(end)}, powered by{" "}
+    <a href="https://wakatime.com/">Wakatime</a>
   </h4>
 );
 
@@ -16,8 +17,8 @@ export function CodingStats() {
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
-      let data = await getYearRangeStats();
-      setData(data);
+      let wakatimeStats = await getWakatimeStats();
+      setData(wakatimeStats);
       setLoading(false);
     };
     fetchData();
@@ -27,46 +28,54 @@ export function CodingStats() {
   if (!wakatime) return <p>No profile data</p>;
   return (
     <>
-      <div className="card-general">
-        <h2 className="card-title">My top 10 Languages</h2>
-        <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
-        <div className="card-grid grid-column-2">
-          {wakatime.top10.map(({ rank, name, time }) => (
-            <>
-              <div className="card-grid-item" key={generateUID()}>
-                {rank}. {name}
-              </div>
-              <div className="card-grid-item" key={generateUID()}>
-                {time}
-              </div>
-            </>
-          ))}
-        </div>
-      </div>
-      <div className="card-general">
-        <h2 className="card-title">My Coding Totals</h2>
-        <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
-        <div className="card-grid grid-column-2">
-          <div className="card-grid-item" key={generateUID()}>
-            Total hours:
+      <Card
+        right={
+          <>
+            <h2 className="card-title">My top 10 Languages</h2>
+            <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
+            <div className="card-grid grid-column-2">
+              {wakatime.top10.map(({ rank, name, time }) => (
+                <>
+                  <div className="card-grid-item" key={rank+name}>
+                    {rank}. {name}
+                  </div>
+                  <div className="card-grid-item" key={rank+name}>
+                    {time}
+                  </div>
+                </>
+              ))}
+            </div>
+          </>
+        }
+      />
+      <Card
+        right={
+          <>
+          <h2 className="card-title">My Coding Totals</h2>
+          <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
+          <div className="card-grid grid-column-2">
+            <div className="card-grid-item">
+              Total hours:
+            </div>
+            <div className="card-grid-item">
+              {wakatime.totalHours}
+            </div>
+            <div className="card-grid-item">
+              Daily Average:
+            </div>
+            <div className="card-grid-item">
+              {wakatime.dailyAverage}
+            </div>
+            <div className="card-grid-item">
+              Total last 7 days:
+            </div>
+            <div className="card-grid-item">
+              {wakatime.totalHoursWeek}
+            </div>
           </div>
-          <div className="card-grid-item" key={generateUID()}>
-            {wakatime.totalHours}
-          </div>
-          <div className="card-grid-item" key={generateUID()}>
-            Daily Average:
-          </div>
-          <div className="card-grid-item" key={generateUID()}>
-            {wakatime.dailyAverage}
-          </div>
-          <div className="card-grid-item" key={generateUID()}>
-            Total last 7 days:
-          </div>
-          <div className="card-grid-item" key={generateUID()}>
-            {wakatime.totalHoursWeek}
-          </div>
-        </div>
-      </div>
+        </>
+        }
+      />
     </>
   );
 }
