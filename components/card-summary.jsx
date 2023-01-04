@@ -1,4 +1,4 @@
-import Card from "./internal-components/card";
+import Card from "./internals/card";
 import { formatMd } from "../framework-utils/format-md";
 
 export default function CardSummary({summaryData}) {

@@ -1,6 +1,6 @@
-import Card from "./internal-components/card";
+import Card from "./internals/card";
 import Image from "next/image";
-export default function CardEducation({ education }) {
+export default function CardEducation() {
   return (
     <Card
         left={

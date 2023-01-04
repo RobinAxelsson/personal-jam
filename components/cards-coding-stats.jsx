@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getWakatimeStats } from "../data-access/wakatime-repository";
 import siteDateLayout from "../framework-utils/site-date-layout";
-import Card from "./micro-components/card";
+import Card from "./internals/card";
 
 const WakaTimeIngress = ({ start, end }) => (
   <h4>
@@ -10,7 +10,7 @@ const WakaTimeIngress = ({ start, end }) => (
   </h4>
 );
 
-export function CodingStats() {
+export function CardsCodingStats() {
   const [wakatime, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 

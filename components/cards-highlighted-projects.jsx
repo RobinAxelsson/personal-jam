@@ -1,7 +1,7 @@
-import Card from "./micro-components/card";
+import Card from "./internals/card";
 import siteDateLayout from "../framework-utils/site-date-layout";
 
-export default function HighlightedProjects({ allHighlightedProjectsData }) {
+export default function CardsHighlightedProjects({ allHighlightedProjectsData }) {
   return (
     <>
       {allHighlightedProjectsData.map(

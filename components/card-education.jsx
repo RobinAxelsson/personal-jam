@@ -1,5 +1,5 @@
 import siteDateLayout from "../framework-utils/site-date-layout";
-import Card from "./internal-components/card";
+import Card from "./internals/card";
 export default function CardEducation({ education }) {
   return (
     <Card
