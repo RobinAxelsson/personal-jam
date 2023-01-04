@@ -1,8 +1,6 @@
-import { generateUID } from "../../framework-utils/generate-uid";
-
-export default function Card({ left, right, id: key=null }) {
+export default function Card({ left, right, key }) {
   return (
-    <div className="card-general hero-section" key={key==='null'? generateUID() : key}>
+    <div className="card-general hero-section" key={key}>
       <div className="hero-section-content">
         {left}
       </div>
