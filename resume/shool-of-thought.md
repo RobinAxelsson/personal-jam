@@ -6,7 +6,7 @@
 - Refactoring, Martin Fowler
 - Framework Design Guidelines, Krzysztof Cwalina
 
-### 5 Youtube channels
+### 5 Youtube Channels
 
 - Nick Chapsas (.NET, latest C#) [@nickchapsas](https://www.youtube.com/@nickchapsas)
 - Shiv Kumar (Code design, advanced c#) [@Matlus](https://www.youtube.com/@Matlus)
@@ -14,7 +14,7 @@
 - GOTO Conferances (So much to learn) [@GOTO-](https://www.youtube.com/@GOTO-)
 - FreeCodeCamp (Tutorials on everything you need) [@freecodecamp](https://www.youtube.com/@freecodecamp)
 
-### 5 Practices
+### 5 Diceplins
 
 - Refactoring
 - Test driven development
@@ -22,7 +22,7 @@
 - Code reviews
 - Self documenting code
 
-### 5 wish to learn
+### 5 Wish to Learn
 
 - F#
 - GO
@@ -30,7 +30,7 @@
 - Rust
 - Java
 
-### 5 workplace preferences
+### 5 Workplace Preferences
 
 - Office first/hybrid
 - After works
@@ -38,7 +38,7 @@
 - Chairs with armrests
 - Lunch excercise
 
-### 5 team members
+### 5 Team Members
 - one programmed in the 80s
 - one is from the other side of the globe
 - one is from voccational school
