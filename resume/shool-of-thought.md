@@ -1,6 +1,6 @@
 ### 5 Roles:
 
-- Backend Developer (C#/Java/Python/Node.js)
+- Backend Developer (C#/Java/Python)
 - Full Stack Developer
 - React developer
 - CAD/PLM Developer
