@@ -8,7 +8,7 @@ export const Header = () => {
             <ul>
               <li>
                 <Link href="/" passHref>
-                  Recruiters click here!
+                  Start
                 </Link>
               </li>
               <li>
