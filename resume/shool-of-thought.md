@@ -14,7 +14,7 @@
 - GOTO Conferances (So much to learn) [@GOTO-](https://www.youtube.com/@GOTO-)
 - FreeCodeCamp (Tutorials on everything you need) [@freecodecamp](https://www.youtube.com/@freecodecamp)
 
-### 5 Diceplins
+### 5 Disciplines
 
 - Refactoring
 - Test driven development
