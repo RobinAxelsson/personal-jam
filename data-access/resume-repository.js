@@ -52,6 +52,8 @@ export function getSortedHighlightedProjectsData() {
     // Use gray-matter to parse the post metadata section
     const {data, content} = matter(fileContent);
 
+    const tech = data.technologies.join(", ");
+
     return {
       id,
       content,
@@ -59,7 +61,8 @@ export function getSortedHighlightedProjectsData() {
       end: data.end,
       company: data.company,
       title: data.title,
-      ingress: data.ingress
+      ingress: data.ingress,
+      technologies: tech
     };
   });
 

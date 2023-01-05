@@ -5,7 +5,7 @@ export default function HighlightedProjects({ allHighlightedProjectsData }) {
   return (
     <>
       {allHighlightedProjectsData.map(
-        ({ id, title, content, start, end, company, ingress }) => (
+        ({ id, title, content, start, end, company, ingress, technologies }) => (
           <Card
             key={id}
             right={
@@ -16,6 +16,7 @@ export default function HighlightedProjects({ allHighlightedProjectsData }) {
                   {company} {parseDateToString(start)}-{parseDateToString(end)}
                 </h4>
                 <ReactMarkdown>{content}</ReactMarkdown>
+                <p>{technologies}</p>
               </>
             }
           />
