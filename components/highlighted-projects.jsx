@@ -1,4 +1,5 @@
 import parseDateToString from "../data-parsers/parser-date";
+import ReactMarkdown from 'react-markdown'
 
 export default function HighlightedProjects({ allHighlightedProjectsData }) {
   return (
@@ -14,7 +15,7 @@ export default function HighlightedProjects({ allHighlightedProjectsData }) {
                 <h4>
                   {company} {parseDateToString(start)}-{parseDateToString(end)}
                 </h4>
-                <p>{content}</p>
+                <ReactMarkdown>{content}</ReactMarkdown>
               </>
             }
           />

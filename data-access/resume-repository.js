@@ -3,8 +3,6 @@ import path from 'path';
 import matter from 'gray-matter';
 import YAML from 'yaml'
 
-const resumeDirectory = path.join(process.cwd(), 'resume/highlighted_projects');
-
 export function getSummary() {
     const fileContent = fs.readFileSync('resume/summary.md', 'utf8');
     const {data, content} = matter(fileContent);
@@ -43,6 +41,7 @@ export function getEducation() {
 
 
 export function getSortedHighlightedProjectsData() {
+  const resumeDirectory = path.join(process.cwd(), 'resume/highlighted_projects');
   const fileNames = fs.readdirSync(resumeDirectory);
   const allPostsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, '');
