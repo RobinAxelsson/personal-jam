@@ -9,7 +9,7 @@ const WakaTimeIngress = ({ start, end }) => (
   </h4>
 );
 
-export function CardsCodingStats() {
+export function CodingStats() {
   const [wakatime, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 

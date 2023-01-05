@@ -1,6 +1,6 @@
 import parseDateToString from "../data-parsers/parser-date";
 
-export default function CardWorkExperience({ worklife }) {
+export default function WorkExperience({ worklife }) {
   return (
     <Card
       right={

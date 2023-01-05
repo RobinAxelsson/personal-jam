@@ -1,5 +1,5 @@
 import parseDateToString from "../data-parsers/parser-date";
-export default function CardEducation({ education }) {
+export default function Education({ education }) {
   return (
     <Card
         right={

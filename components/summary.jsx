@@ -1,13 +1,10 @@
-import parseMd from "../data-parsers/parser-md";
+import ReactMarkdown from 'react-markdown'
 
-export default function CardSummary({summaryData}) {
+export default function Summary({summaryData}) {
   return (
     <Card
       right={
-        <>
-          <h2 className="card-title">About</h2>
-          <p>{parseMd(summaryData.content)}</p>
-        </>
+        <ReactMarkdown>{summaryData.content}</ReactMarkdown>
       }
     />
   );

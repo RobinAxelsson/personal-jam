@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function CardEducation() {
+export default function Hero() {
   return (
     <Card
         left={

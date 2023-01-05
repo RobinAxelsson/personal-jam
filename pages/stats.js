@@ -1,4 +1,4 @@
-import { CardsCodingStats } from "../components/cards-coding-stats";
+import { CardsCodingStats } from "../components/coding-stats";
 export default function CodeStatsPage() {
   return (
     <div className="card-collection">

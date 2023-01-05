@@ -1,6 +1,6 @@
 import parseDateToString from "../data-parsers/parser-date";
 
-export default function CardsHighlightedProjects({ allHighlightedProjectsData }) {
+export default function HighlightedProjects({ allHighlightedProjectsData }) {
   return (
     <>
       {allHighlightedProjectsData.map(
