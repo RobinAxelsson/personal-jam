@@ -29,6 +29,30 @@ export function getPersonalData() {
   };
 }
 
+export function getTechnologies() {
+  const fileContent = fs.readFileSync('resume/technologies.csv', 'utf8');
+  const rows = fileContent.split('\n').filter(x => x !== "")
+
+
+  const technologies = rows.map(x => {
+    const techColumns = x.split(';');
+
+    if(techColumns.length !== 5){
+      throw new Error("Columns must be exactly 5, got:" + JSON.stringify(techColumns))
+    }
+
+    return {
+      technology: techColumns[0],
+      professional: techColumns[1],
+      examined: techColumns[2],
+      private: techColumns[3],
+      grade: techColumns[4]
+    }
+  });
+
+  return technologies;
+}
+
 export function getWorkLife() {
   const fileContent = fs.readFileSync('resume/worklife.yml', 'utf8');
   return YAML.parse(fileContent).worklife;

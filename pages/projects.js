@@ -1,4 +1,4 @@
-import CardsHighlightedProjects from "../components/highlighted-projects";
+import HighlightedProjects from "../components/highlighted-projects";
 import { getSortedHighlightedProjectsData } from "../data-access/resume-repository";
 
 export async function getStaticProps() {
@@ -12,7 +12,7 @@ export async function getStaticProps() {
 export default function ProjectsPage({ allHighlightedProjectsData }) {
   return (
     <div className="card-collection">
-      <CardsHighlightedProjects
+      <HighlightedProjects
         allHighlightedProjectsData={allHighlightedProjectsData}
       />
     </div>
