@@ -1,6 +1,6 @@
 import { getSummary } from "../data-access/resume-repository";
-import CardHero from "../components/card-hero"
-import CardSummary from "../components/card-summary"
+import CardHero from "../components/hero"
+import CardSummary from "../components/summary"
 export async function getStaticProps() {
   return {
     props: {

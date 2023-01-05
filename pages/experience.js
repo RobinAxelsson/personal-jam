@@ -1,6 +1,6 @@
 import { getWorkLife, getEducation } from "../data-access/resume-repository";
-import CardWorkExperience from "../components/card-work-experience";
-import CardEducation from "../components/card-education";
+import CardWorkExperience from "../components/work-experience";
+import CardEducation from "../components/education";
 
 export async function getStaticProps() {
   return {
