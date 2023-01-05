@@ -1,3 +1,11 @@
+### 5 Roles:
+
+- Backend Developer (C#/Java/Python/Node.js)
+- Full Stack Developer
+- React developer
+- CAD/PLM Developer
+- ...I am open to suggestions
+
 ### 5 Books:
 
 - The Pragmatic Programmer, Andrew Hunt & David Thomas
@@ -35,7 +43,7 @@
 - Office first/hybrid
 - After works
 - Efficient meetings
-- Chairs with armrests
+- Start early
 - Lunch excercise
 
 ### 5 Team Members
@@ -43,4 +51,4 @@
 - one is from the other side of the globe
 - one is from voccational school
 - one thinks different
-- one has humour
+- at least one has humour
