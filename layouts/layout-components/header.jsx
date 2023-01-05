@@ -31,6 +31,11 @@ export const Header = () => {
                   Technologies
                 </Link>
               </li>
+              <li>
+                <Link href="/school-of-thought" passHref>
+                  School of Thought
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>

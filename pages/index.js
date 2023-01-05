@@ -1,6 +1,6 @@
 import { getSummary, getHeroContent } from "../data-access/resume-repository";
 import CardHero from "../components/hero"
-import Summary from "../components/summary"
+import MarkdownCard from "../components/markdown-card"
 export async function getStaticProps() {
   return {
     props: {
@@ -14,7 +14,7 @@ export default function Home({ summaryData, heroContent }) {
   return (
     <div className="card-collection">
       <CardHero heroContent={heroContent} />
-      <Summary summaryData={summaryData}/>
+      <MarkdownCard markdownContent={summaryData.content}/>
         </div>
   );
 }

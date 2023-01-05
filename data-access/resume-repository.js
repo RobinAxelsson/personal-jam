@@ -17,6 +17,9 @@ export function getSummary() {
 export function getHeroContent() {
   return fs.readFileSync('resume/hero.md', 'utf8');
 }
+export function getSchoolOfThoughtContent() {
+  return fs.readFileSync('resume/shool-of-thought.md', 'utf8');
+}
 
 export function getPersonalData() {
   const fileContent = fs.readFileSync('resume/personal_data.yml', 'utf8');

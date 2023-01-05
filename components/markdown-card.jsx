@@ -1,10 +1,10 @@
 import ReactMarkdown from 'react-markdown'
 
-export default function Summary({summaryData}) {
+export default function MarkdownCard({markdownContent}) {
   return (
     <Card
       right={
-        <ReactMarkdown>{summaryData.content}</ReactMarkdown>
+        <ReactMarkdown>{markdownContent}</ReactMarkdown>
       }
     />
   );
