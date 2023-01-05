@@ -1,5 +1,5 @@
 import { getWorkLife, getEducation } from "../data-access/resume-repository";
-import CardWorkExperience from "../components/work-experience";
+import WorkExperience from "../components/work-experience";
 import Education from "../components/education";
 
 export async function getStaticProps() {
@@ -14,7 +14,7 @@ export async function getStaticProps() {
 export default function ExperiencePage({ worklife, education }) {
   return (
     <div className="card-collection">
-      <CardWorkExperience worklife={worklife} />
+      <WorkExperience worklife={worklife} />
       <Education education={education} />
     </div>
   );
