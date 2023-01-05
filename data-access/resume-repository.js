@@ -66,11 +66,5 @@ export function getSortedHighlightedProjectsData() {
     };
   });
 
-  return allPostsData.sort((a, b) => {
-    if (a.end < b.end) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return allPostsData.sort((a, b) => new Date(b.end) - new Date(a.end));
 }
