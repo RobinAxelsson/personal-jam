@@ -1,4 +1,4 @@
-## 5 Books:
+### 5 Books:
 
 - The Pragmatic Programmer, Andrew Hunt & David Thomas
 - Clean Architecture, Robert Martin
@@ -6,7 +6,7 @@
 - Refactoring, Martin Fowler
 - Framework Design Guidelines,  Krzysztof Cwalina
 
-## 5 Youtube channels
+### 5 Youtube channels
 
 - Nick Chapsas (.NET, C#) [@nickchapsas](https://www.youtube.com/@nickchapsas)
 - Shiv Kumar (Code design, C#) [@Matlus](https://www.youtube.com/@Matlus)
@@ -14,7 +14,7 @@
 - GOTO Conferances [@GOTO-](https://www.youtube.com/@GOTO-)
 - FreeCodeCamp [@freecodecamp](https://www.youtube.com/@freecodecamp)
 
-## 5 Practices
+### 5 Practices
 
 - Refactoring
 - Test driven development
@@ -22,10 +22,10 @@
 - Code reviews
 - Office first/hybrid
 
-## 5 wish to learn
+### 5 wish to learn
 
+- Efficient Pair/Mob programming
 - Frontend
 - Backend
 - Embedded
-- DevOps
-- And even more 😊
+- And next level

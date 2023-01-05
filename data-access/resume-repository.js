@@ -21,6 +21,11 @@ export function getSchoolOfThoughtContent() {
   return fs.readFileSync('resume/shool-of-thought.md', 'utf8');
 }
 
+export function getToRecruitersContent() {
+  return fs.readFileSync('resume/to-recruiters.md', 'utf8');
+}
+
+
 export function getPersonalData() {
   const fileContent = fs.readFileSync('resume/personal_data.yml', 'utf8');
   const {data} = matter(fileContent);
