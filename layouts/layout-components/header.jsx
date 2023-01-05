@@ -8,7 +8,7 @@ export const Header = () => {
             <ul>
               <li>
                 <Link href="/" passHref>
-                  Start
+                  Recruiters click here!
                 </Link>
               </li>
               <li>
@@ -37,8 +37,8 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/to-recruiters" passHref>
-                  Recruiters click here
+                <Link href="/about" passHref>
+                  About
                 </Link>
               </li>
             </ul>

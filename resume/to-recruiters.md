@@ -4,7 +4,7 @@ I am grateful you made time for visiting my site. It is developed for making it 
 
 ### What can you do at my site? 🤔
 
-- You can check out my [presentation.](/)
+- You can check out my [presentation.](/about)
 - Check [how many hours](/stats) I have coded last 12 months and in what languages
 - Find out my [education and work experience](/experience)
 - Read a summery about my bigger [work/school projects](/projects)
@@ -14,7 +14,7 @@ I am grateful you made time for visiting my site. It is developed for making it 
 ### What you can't learn about ⛵
 
 - My big interest of sailing and sail racing.
-- Maybe you know something? Please tell me if you would like to see more or less of something and I will try to add it soon.
+- Maybe you know something that I missed? Please tell me and I will try to add it soon.
 
 ### Still here? 🤩
 

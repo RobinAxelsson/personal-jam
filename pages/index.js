@@ -1,22 +1,17 @@
-import { getSummary, getHeroContent } from "../data-access/resume-repository";
-import CardHero from "../components/hero"
+import { getToRecruitersContent } from "../data-access/resume-repository";
 import MarkdownCard from "../components/markdown-card"
 export async function getStaticProps() {
   return {
     props: {
-      summaryData: getSummary(),
-      heroContent: getHeroContent()
+      toRecruitersContent: getToRecruitersContent()
     },
   };
 }
 
-export default function Home({ summaryData, heroContent }) {
+export default function SchoolOfThoughtPage({ toRecruitersContent }) {
   return (
     <div className="card-collection">
-      <CardHero heroContent={heroContent} />
-      <MarkdownCard markdownContent={summaryData.content}/>
+      <MarkdownCard markdownContent={toRecruitersContent}/>
         </div>
   );
 }
-
-
