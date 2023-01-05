@@ -16,6 +16,10 @@ export function getSummary() {
     };
 }
 
+export function getHeroContent() {
+  return fs.readFileSync('resume/hero.md', 'utf8');
+}
+
 export function getPersonalData() {
   const fileContent = fs.readFileSync('resume/personal_data.yml', 'utf8');
   const {data} = matter(fileContent);

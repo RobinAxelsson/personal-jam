@@ -1,8 +1,8 @@
-import { CardsCodingStats } from "../components/coding-stats";
+import { CodingStats } from "../components/coding-stats";
 export default function CodeStatsPage() {
   return (
     <div className="card-collection">
-      <CardsCodingStats />
+      <CodingStats />
     </div>
   );
 }
