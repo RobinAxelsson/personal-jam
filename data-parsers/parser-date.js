@@ -1,4 +1,4 @@
-export default function siteDateLayout(date) {
+export default function parseDateToString(date) {
   if (date === "" || date === null)
     return "ongoing";
 

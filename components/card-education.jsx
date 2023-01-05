@@ -1,5 +1,4 @@
-import siteDateLayout from "../framework-utils/site-date-layout";
-import Card from "./internals/card";
+import parseDateToString from "../data-parsers/parser-date";
 export default function CardEducation({ education }) {
   return (
     <Card
@@ -10,7 +9,7 @@ export default function CardEducation({ education }) {
               {education.map(({ title, school, start, end }) => (
                 <>
                   <div className="card-grid-item" key={start+end}>
-                    {siteDateLayout(start)} - {siteDateLayout(end)}
+                    {parseDateToString(start)} - {parseDateToString(end)}
                   </div>
                   <div className="card-grid-item" key={title}>
                     {(() => {
@@ -31,5 +30,18 @@ export default function CardEducation({ education }) {
           </>
         }
       />
+  );
+}
+
+function Card({ left, right, key }) {
+  return (
+    <div className="card-general hero-section" key={key}>
+      <div className="hero-section-content">
+        {left}
+      </div>
+      <div className="hero-section-content">
+        {right}
+      </div>
+    </div>
   );
 }

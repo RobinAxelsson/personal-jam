@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { getWakatimeStats } from "../data-access/wakatime-repository";
-import siteDateLayout from "../framework-utils/site-date-layout";
-import Card from "./internals/card";
+import parseDateToString from "../data-parsers/parser-date";
 
 const WakaTimeIngress = ({ start, end }) => (
   <h4>
-    from {siteDateLayout(start)} to {siteDateLayout(end)}, powered by{" "}
+    from {parseDateToString(start)} to {parseDateToString(end)}, powered by{" "}
     <a href="https://wakatime.com/">Wakatime</a>
   </h4>
 );
@@ -77,5 +76,18 @@ export function CardsCodingStats() {
         }
       />
     </>
+  );
+}
+
+function Card({ left, right, key }) {
+  return (
+    <div className="card-general hero-section" key={key}>
+      <div className="hero-section-content">
+        {left}
+      </div>
+      <div className="hero-section-content">
+        {right}
+      </div>
+    </div>
   );
 }

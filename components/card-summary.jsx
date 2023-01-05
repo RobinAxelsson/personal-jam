@@ -1,5 +1,4 @@
-import Card from "./internals/card";
-import { formatMd } from "../framework-utils/format-md";
+import parseMd from "../data-parsers/parser-md";
 
 export default function CardSummary({summaryData}) {
   return (
@@ -7,9 +6,22 @@ export default function CardSummary({summaryData}) {
       right={
         <>
           <h2 className="card-title">About</h2>
-          <p>{formatMd(summaryData.content)}</p>
+          <p>{parseMd(summaryData.content)}</p>
         </>
       }
     />
+  );
+}
+
+function Card({ left, right, key }) {
+  return (
+    <div className="card-general hero-section" key={key}>
+      <div className="hero-section-content">
+        {left}
+      </div>
+      <div className="hero-section-content">
+        {right}
+      </div>
+    </div>
   );
 }
