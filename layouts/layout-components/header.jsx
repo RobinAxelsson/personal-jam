@@ -26,6 +26,11 @@ export const Header = () => {
                   Work Experience & Education
                 </Link>
               </li>
+              <li>
+                <Link href="/tech" passHref>
+                  Technologies
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
