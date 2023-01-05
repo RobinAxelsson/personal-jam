@@ -27,4 +27,4 @@ If that is the case and you are interested in a consultant, contact my manager T
 
 - I am happy to demo/discuss any of my private project that is of relevance. I have some nice documented projects ready - and if you like check out my [landing page](https://github.com/RobinAxelsson) on GitHub if you can't wait.
 - I am positive to do code challenges.
-- I am really keen to give as accurate description of me as a programmer as possible. If you miss information or if something is vague or bloated PM me about it.
+- PS. I am really keen to give as accurate description of me as a programmer as possible, feedback is appreciated. DS.

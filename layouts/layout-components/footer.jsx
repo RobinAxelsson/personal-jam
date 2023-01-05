@@ -6,6 +6,7 @@ export const Footer = () => {
         <a href="https://www.linkedin.com/in/axelsson-robin/">LinkedIn</a>
         <a href="https://www.github.com/robinaxelsson">GitHub</a>
         <a href="https://www.quokka.se/">Software by Quokka</a>
+        <span className="accent-word">axelsson.robin@outlook.com</span>
       </ul>
     </footer>
   );
