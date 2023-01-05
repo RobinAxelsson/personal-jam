@@ -15,5 +15,3 @@ export default function SchoolOfThoughtPage({ schoolOfThought }) {
         </div>
   );
 }
-
-
