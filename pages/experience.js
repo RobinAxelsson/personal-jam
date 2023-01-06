@@ -1,12 +1,12 @@
-import { getWorkLife, getEducation} from "../data-access/resume-repository";
+import { getWorkLifeArray, getEducationArray } from "../data-access/resume-repository";
 import WorkExperience from "../components/work-experience";
 import Education from "../components/education";
 
 export async function getStaticProps() {
   return {
     props: {
-      worklife: getWorkLife(),
-      education: getEducation(),
+      worklife: getWorkLifeArray(),
+      education: getEducationArray(),
     },
   };
 }

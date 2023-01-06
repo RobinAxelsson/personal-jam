@@ -3,19 +3,35 @@ import path from 'path';
 import matter from 'gray-matter';
 import YAML from 'yaml'
 
-export function getSummary() {
-    return fs.readFileSync('resume/summary.md', 'utf8');
+export function getHeroMarkdown() {
+  return getMarkdownContent('resume/hero.md');
+}
+export function getSummaryMarkdown() {
+    return getMarkdownContent('resume/summary.md');
 }
 
-export function getHeroContent() {
-  return fs.readFileSync('resume/hero.md', 'utf8');
+export function getRolesMarkdown() {
+  return getMarkdownContent('resume/roles.md');
 }
+
 export function getSchoolOfThoughtContent() {
-  return fs.readFileSync('resume/shool-of-thought.md', 'utf8');
+  return getMarkdownContent('resume/shool-of-thought.md');
 }
 
 export function getToRecruitersContent() {
-  return fs.readFileSync('resume/to-recruiters.md', 'utf8');
+  return getMarkdownContent('resume/to-recruiters.md');
+}
+
+function getMarkdownContent(url){
+  const content = fs.readFileSync(url, 'utf8');
+  if(isEmptyOrWhiteSpace(content)){
+    throw Error("Content must be valid string, got: " + content)
+  }
+  return content;
+}
+
+function isEmptyOrWhiteSpace(str){
+  return str === null || str.match(/^ *$/) !== null;
 }
 
 
@@ -30,14 +46,23 @@ export function getPersonalData() {
   };
 }
 
-export function getWorkLife() {
+export function getWorkLifeArray() {
   const fileContent = fs.readFileSync('resume/worklife.yml', 'utf8');
-  return YAML.parse(fileContent).worklife;
+  const worklife = YAML.parse(fileContent).worklife;
+  EnsureValidArray(worklife)
+  return worklife;
 }
 
-export function getEducation() {
+export function getEducationArray() {
   const fileContent = fs.readFileSync('resume/education.yml', 'utf8');
-  return YAML.parse(fileContent).education;
+  const education = YAML.parse(fileContent).education;
+  EnsureValidArray(education)
+  return education;
+}
+
+function EnsureValidArray(array){
+  if(!(array instanceof Array) || array.length === 0)
+    throw new Error("Invalid array, got: " + array);
 }
 
 
