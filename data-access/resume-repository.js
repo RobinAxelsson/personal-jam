@@ -4,14 +4,7 @@ import matter from 'gray-matter';
 import YAML from 'yaml'
 
 export function getSummary() {
-    const fileContent = fs.readFileSync('resume/summary.md', 'utf8');
-    const {data, content} = matter(fileContent);
-
-    return {
-      id: 'summary',
-      content,
-      title: data.title
-    };
+    return fs.readFileSync('resume/summary.md', 'utf8');
 }
 
 export function getHeroContent() {

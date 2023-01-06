@@ -14,7 +14,7 @@ export default function Home({ summaryData, heroContent }) {
   return (
     <div className="card-collection">
       <CardHero heroContent={heroContent} />
-      <MarkdownCard markdownContent={summaryData.content}/>
+      <MarkdownCard markdownContent={summaryData}/>
         </div>
   );
 }
