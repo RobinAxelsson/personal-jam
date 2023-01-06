@@ -41,6 +41,11 @@ export const Header = () => {
                   About
                 </Link>
               </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1T6D66JRzcRjqYrN8KlE58GevxIs82P4g/view?usp=share_link">
+                  CV
+                </a>
+              </li>
             </ul>
           </nav>
         </div>

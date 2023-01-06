@@ -2,6 +2,10 @@
 
 I am grateful you made time for visiting my site. It is developed for making it as easy as possible for you to quickly decide if I am relevant for the role you have in mind.
 
+### Prefer to just read a CV?
+
+Fair enough [press this Link.](https://drive.google.com/file/d/1T6D66JRzcRjqYrN8KlE58GevxIs82P4g/view?usp=share_link)
+
 ### What can you do at my site? 🤔
 
 - You can check out my presentation on my [**About**](/about) page (start here).
@@ -19,7 +23,7 @@ I am grateful you made time for visiting my site. It is developed for making it 
 
 ### Still here? 🤩
 
-If that is the case and you are interested in a consultant, contact my manager Teresia von Sicard (my preferred option). If you do not have the possibility to hire a consultant for some reason and think I am a perfect match you can contact me directly.
+If that is the case and you are interested in a consultant, contact my manager Teresia von Sicard. If you do not have the possibility to hire a consultant for some reason and think I am a perfect match you can contact me directly.
 
 - teresia.sicard@quokka.se
 - axelsson.robin@outlook.com
