@@ -4,17 +4,17 @@ I am grateful you made time for visiting my site. It is developed for making it 
 
 ### What can you do at my site? 🤔
 
-- You can check out my [presentation.](/about)
-- Check [how many hours](/stats) I have coded last 12 months and in what languages
-- Find out my [education and work experience](/experience)
-- Read a summery about my bigger [work/school projects](/projects)
-- See what [tech-stack/technologies](/tech) I have experience from and what I know the best.
-- Find out what books and channels I like - aka what [school of thought](/school-of-thought) I have.
+- You can check out my presentation on my [**About**](/about) page (start here).
+- Check my [**Coding Log**](/stats) - how many hours I have coded last 12 months and in what languages
+- Find out my [**Work Experience & Education**](/experience)
+- Read a summery about my bigger [**Resume Projects**](/projects)
+- See what tech-stack and [**Technologies**](/tech) I have experience from and what I know the best.
+- Find out what books, channels I like and what I value - aka what [**School of Thought**](/school-of-thought) I have.
 
 ### What you can't learn about here ⛵
 
 - My big interest of sailing and sail racing.
-- How to make my favourite sallad pico de gallo.
+- How to make my favourite sallad [**Pico de Gallo**](https://www.bbcgoodfood.com/recipes/pico-de-gallo).
 - Maybe you know something that I missed? Please tell me and I will try to compliment.
 
 ### Still here? 🤩
