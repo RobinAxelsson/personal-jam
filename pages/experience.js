@@ -11,7 +11,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function ExperiencePage({ worklife, education, technologies }) {
+export default function ExperiencePage({ worklife, education }) {
   return (
     <div className="card-collection">
       <WorkExperience worklife={worklife} />

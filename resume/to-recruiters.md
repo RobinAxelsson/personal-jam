@@ -1,20 +1,18 @@
 ### Are you a recruiter? This site is for you! 😉
 
-I am happy you made time for visiting my site. It is developed for making it as easy as possible for you to quickly decide if I am relevant for the role you have in mind.
+I am happy you made time for visiting my site. It is developed for making it as easy as possible for you to quickly decide if I am relevant for the role you have in mind. A brief summary is found on the [About](/about) page.
 
-### Prefer to just read a CV?
-
-Fair enough [press this Link.](https://drive.google.com/file/d/1T6D66JRzcRjqYrN8KlE58GevxIs82P4g/view?usp=share_link)
+### Prefer to just read a [CV?](https://drive.google.com/file/d/1T6D66JRzcRjqYrN8KlE58GevxIs82P4g/view?usp=share_link)
 
 ---
 ### What can you do at my site? 🤔
 
-- You can check out my presentation on my [**About**](/about) page (start here).
+As mentioned you can read my presentation but also:
 - Check my [**Coding Log**](/stats) - how many hours I have coded last 12 months and in what languages
 - Find out my [**Work Experience & Education**](/experience)
 - Read a summery about my bigger [**Resume Projects**](/projects)
 - See what tech-stack and [**Technologies**](/tech) I have experience from and what I know the best.
-- Find out what books, channels I like and what I value - aka what [**School of Thought**](/school-of-thought) I have.
+- Find out what books, channels I like and what I value - see [**School of Thought**](/school-of-thought) page.
 
 ---
 
