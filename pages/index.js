@@ -1,9 +1,9 @@
 import { getToRecruitersContent } from "../data-access/resume-repository";
-import MarkdownCard from "../components/markdown-card"
+import MarkdownCard from "../components/markdown-card";
 export async function getStaticProps() {
   return {
     props: {
-      toRecruitersContent: getToRecruitersContent()
+      toRecruitersContent: getToRecruitersContent(),
     },
   };
 }
@@ -11,7 +11,7 @@ export async function getStaticProps() {
 export default function SchoolOfThoughtPage({ toRecruitersContent }) {
   return (
     <div className="card-collection">
-      <MarkdownCard markdownContent={toRecruitersContent}/>
-        </div>
+        <MarkdownCard markdownContent={toRecruitersContent} />
+    </div>
   );
 }

@@ -1,13 +1,14 @@
 import ReactMarkdown from 'react-markdown'
 
 export default function MarkdownCard({markdownContent}) {
-  return (
-    <Card
+  const sections = markdownContent.split('---').filter(x => !isEmptyOrWhiteSpace(x));
+  return sections.map(x => (
+    <Card key={x.slice(0, 20)}
       right={
-        <ReactMarkdown>{markdownContent}</ReactMarkdown>
+        <ReactMarkdown>{x}</ReactMarkdown>
       }
     />
-  );
+  ));
 }
 
 function Card({ left, right, key }) {
@@ -21,4 +22,8 @@ function Card({ left, right, key }) {
       </div>
     </div>
   );
+}
+
+function isEmptyOrWhiteSpace(str){
+  return str === null || str.match(/^ *$/) !== null;
 }

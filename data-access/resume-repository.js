@@ -27,7 +27,7 @@ function getMarkdownContent(url){
   if(isEmptyOrWhiteSpace(content)){
     throw Error("Content must be valid string, got: " + content)
   }
-  return content;
+  return content;  
 }
 
 function isEmptyOrWhiteSpace(str){
