@@ -4,7 +4,7 @@ const { headers, rows } = technologies;
     <div className="card-general hero-section" key={Technologies}>
     <div className="hero-section-content">
             <h2>Technologies</h2>
-            <table>
+            <table className="tech-table">
             {(
                 <tr key={headers.technology}>
                       <th key={"technology"}>{headers.technology}</th>

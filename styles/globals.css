@@ -64,7 +64,6 @@ figure {
   color: var(--clr-font-contrast);
 }
 
-
 body {
   color: var(--clr-primary);
   background-color: var(--clr-bg);
@@ -82,7 +81,7 @@ body {
   position: absolute;
   z-index: -1;
   left: 0;
-  right: 0;
+  top:0;
   opacity: 0.9;
   background-image: url("/images/bg-water_1920-1280.jpg");
   width: 100%;
@@ -112,7 +111,7 @@ footer {
   position:absolute;
   left:0;
   padding: 100px;
-  right: 0;
+  width: 100%;
   overflow: hidden;
   display: block;
 }
@@ -125,6 +124,7 @@ footer ul {
 
 header {
   width: 100%;
+  /* right: 0; */
   font-weight: bold;
   top: 0;
   display: flex;
@@ -147,7 +147,7 @@ nav ul li {
 }
 
 main {
-  margin-top: 120px;
+  margin-top: 250px;
   margin-bottom: 100px;
   margin-inline: 20px;
   background-color: --clr-bg;
@@ -169,7 +169,7 @@ main {
   color: var(--clr-font-primary);
   margin: 1rem;
   min-height: 350px;
-  width: 100%;
+  width: 85%;
 }
 
 .card-grid {
@@ -212,6 +212,22 @@ main {
   line-height: 1.3em;
 }
 
+.tech-table {
+  border-spacing: 5px 0px;
+}
+
+.tech-table tr td {
+  padding: 0.2em;
+}
+
+tr:nth-child(even) {
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border-color: hsla(0, 0%, 100%, 0.7);
+  border-style: solid;
+}
+
+
+
 header:hover,
 header:active {
   opacity: 1;
@@ -221,6 +237,10 @@ header:active {
   .card-general {
     padding: 3rem;
     flex-direction: row;
+  }
+
+  main {
+    margin-top: 150px;
   }
 
   .hero-section-content {
