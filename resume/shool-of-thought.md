@@ -13,12 +13,12 @@
 - Nick Chapsas (.NET, latest C#) [@nickchapsas](https://www.youtube.com/@nickchapsas)
 - Shiv Kumar (Code design, advanced C#) [@Matlus](https://www.youtube.com/@Matlus)
 - Lex Fridman (interviews with the best) [@lexfridman](https://youtube.com/@lexfridman)
-- GOTO Conferences (So much to learn) [@GOTO-](https://www.youtube.com/@GOTO-)
+- Derek Banas (Polyglot genius) [@derekbanas](https://www.youtube.com/@derekbanas)
 - FreeCodeCamp (Tutorials on everything you need) [@freecodecamp](https://www.youtube.com/@freecodecamp)
 
 ---
 
-### Five Hard Disciplines
+### Five good but hard Disciplines
 
 - Refactoring
 - Test driven development
@@ -28,14 +28,14 @@
 
 ---
 
-### Five Languages I Want to Learn
+### Five Languages I Want to learn
 
 - C++
 - F#
 - GO
 - Rust
 - C
-- Clojure
+- A little bit of Assembly
 
 ---
 
