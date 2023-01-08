@@ -1,4 +1,4 @@
-### Five favourite Books
+### Five great Books 📚
 
 - The Pragmatic Programmer, Andrew Hunt & David Thomas
 - Clean Architecture, Robert Martin
@@ -8,7 +8,7 @@
 
 ---
 
-### Five Inspiring Youtube Channels
+### Five favourite Youtube Channels 📽️
 
 - Nick Chapsas (.NET, latest C#) [@nickchapsas](https://www.youtube.com/@nickchapsas)
 - Shiv Kumar (Code design, advanced C#) [@Matlus](https://www.youtube.com/@Matlus)
@@ -18,7 +18,7 @@
 
 ---
 
-### Five Hard Disciplines
+### Five Disciplines to strive for
 
 - Refactoring
 - Test driven development
