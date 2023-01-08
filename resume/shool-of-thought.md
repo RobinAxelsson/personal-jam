@@ -1,4 +1,4 @@
-### Five favourite Books
+### Five great Books 📚
 
 - The Pragmatic Programmer, Andrew Hunt & David Thomas
 - Clean Architecture, Robert Martin
@@ -8,7 +8,7 @@
 
 ---
 
-### Five Inspiring Youtube Channels
+### Five favourite Youtube Channels 📽️
 
 - Nick Chapsas (.NET, latest C#) [@nickchapsas](https://www.youtube.com/@nickchapsas)
 - Shiv Kumar (Code design, advanced C#) [@Matlus](https://www.youtube.com/@Matlus)
@@ -18,7 +18,7 @@
 
 ---
 
-### Five good but hard Disciplines
+### Five good but hard Disciplines 🤓
 
 - Refactoring
 - Test driven development
@@ -28,7 +28,7 @@
 
 ---
 
-### Five Languages I Want to learn
+### Five Languages I Want to Learn 🤩
 
 - C++
 - F#
@@ -39,7 +39,7 @@
 
 ---
 
-### Five Workplace preferences
+### Five Workplace preferences 😊
 
 - Office first/hybrid
 - After works
@@ -49,7 +49,7 @@
 
 ---
 
-### Five Epic Team Members
+### Five Epic Team Members 👏
 
 - one programmed in the 80s
 - one is from the other side of the globe
