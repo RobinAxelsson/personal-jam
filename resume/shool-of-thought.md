@@ -18,7 +18,7 @@
 
 ---
 
-### Five Disciplines to strive for
+### Five Disciplines to strive for 🤓
 
 - Refactoring
 - Test driven development
@@ -28,7 +28,7 @@
 
 ---
 
-### Five Languages I Want to Learn
+### Five Languages I Want to Learn 🤩
 
 - C++
 - F#
@@ -39,7 +39,7 @@
 
 ---
 
-### Five Workplace preferences
+### Five Workplace preferences 😊
 
 - Office first/hybrid
 - After works
@@ -49,7 +49,7 @@
 
 ---
 
-### Five Epic Team Members
+### Five Epic Team Members 👏
 
 - one programmed in the 80s
 - one is from the other side of the globe
