@@ -19,7 +19,7 @@ As mentioned you can read my presentation but also:
 ### What you can't learn about here ⛵
 
 - My big interest of sailing and sail racing.
-- How to make my favourite sallad [**Pico de Gallo**](https://www.bbcgoodfood.com/recipes/pico-de-gallo).
+- How to make my favourite sallad [**Pico de Gallo**](https://natashaskitchen.com/pico-de-gallo/).
 - Maybe you know something that I missed? Please tell me and I will try to compliment.
 
 ---
