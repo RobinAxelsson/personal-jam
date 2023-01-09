@@ -15,22 +15,20 @@
   --fs-400: 1rem;
 }
 
-html {
+/* html {
   background-color: rgba(53, 53, 203, 0.5);
-}
+} */
 
 body {
   background-color: rgba(55, 203, 53, 0.5);
 }
 
 #__next {
-    background-color: rgba(203,53,75, 0.5);
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
-    left: 0;
+    left:0;
     top: 0;
-    /* right: 0; */
-    height: 100%;
+    right: 0;
 }
 
 /*
