@@ -15,23 +15,22 @@
   --fs-400: 1rem;
 }
 
-/* html {
-  background-color: rgba(53, 53, 203, 0.5);
-} */
-
 body {
   background-color: rgba(55, 203, 53, 0.5);
 }
 
 #__next {
-    /* background-color: rgba(0, 0, 0, 0.8); */
     position: absolute;
     left:0;
     top: 0;
     right: 0;
 }
 
-/*
+main {
+  padding-top: 40px;
+  padding-bottom: 500px;
+}
+
 @media (min-width: 650px) {
   :root {
     --default-margin: 1rem;
@@ -70,6 +69,7 @@ p {
   max-width: 70ch;
   line-height: 1.5em;
 }
+/*
 
 figure {
   width: 80vw;
@@ -131,15 +131,15 @@ footer {
   left:0;
   bottom: 0;
   /* width: 100%; */
-  /* padding-block: 100px;
-  margin: 0 auto;
+  padding-block: 100px;
+  /* margin: 0 auto;
   overflow: hidden; */
 }
 
 footer ul {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  margin: var(--default-margin); */
+  margin: var(--default-margin);
 }
 
 
