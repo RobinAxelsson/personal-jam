@@ -179,22 +179,23 @@ nav ul {
   margin-inline: 1rem;
   min-height: 350px;
 }
-/*
+
 .card-grid {
   display: grid;
   align-items: center;
   margin: var(--default-margin);
   grid-gap: 1rem;
 }
-
+/*
 .grid-column-3 {
   grid-template-columns: auto auto auto;
 }
 
+*/
 .grid-column-2 {
   grid-template-columns: auto auto;
 }
-
+/*
 .collapsable-resume-container {
   margin-top: 170px;
 }
