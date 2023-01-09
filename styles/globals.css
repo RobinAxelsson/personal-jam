@@ -8,15 +8,11 @@
   --clr-font-contrast: #fff;
   --clr-bg: rgb(251, 248, 245);
   --default-margin: 1rem;
-  --fs-xl: 4rem;
+  /* --fs-xl: 4rem;
   --fs-800: 2.5rem;
   --fs-600: 2rem;
   --fs-500: 1.2rem;
-  --fs-400: 1rem;
-}
-
-body {
-  background-color: rgba(55, 203, 53, 0.5);
+  --fs-400: 1rem; */
 }
 
 #__next {
@@ -163,34 +159,27 @@ nav ul {
   margin: 0.5rem;
 } */
 
-/*
 
-main {
-  margin-top: 250px;
-  margin-bottom: 100px;
-  margin-inline: 20px;
-  background-color: --clr-bg;
-}
 
-.card-collection {
+
+/* .card-collection {
   max-width: var(--main-max-width);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-}
+} */
 
 .card-general {
   padding: 2rem;
   background: var(--clr-primary);
-  opacity: 1;
   border-radius: 1px;
   color: var(--clr-font-primary);
-  margin: 1rem;
+  margin-top: 70px;
+  margin-inline: 1rem;
   min-height: 350px;
-  width: 85%;
 }
-
+/*
 .card-grid {
   display: grid;
   align-items: center;
