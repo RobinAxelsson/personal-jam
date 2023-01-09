@@ -6,46 +6,7 @@ export const Header = () => {
       <div>
         <nav>
           <ul>
-            <li>
-              <Link href="/" passHref>
-                Start
-              </Link>
-            </li>
-            <li>
-              <Link href="/projects" passHref>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link href="/stats" passHref>
-                Coding Stats
-              </Link>
-            </li>
-            <li>
-              <Link href="/experience" passHref>
-                Work Experience & Education
-              </Link>
-            </li>
-            <li>
-              <Link href="/tech" passHref>
-                Technologies
-              </Link>
-            </li>
-            <li>
-              <Link href="/school-of-thought" passHref>
-                School of Thought
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" passHref>
-                About
-              </Link>
-            </li>
-            <li>
-              <a href="https://drive.google.com/file/d/1T6D66JRzcRjqYrN8KlE58GevxIs82P4g/view?usp=share_link">
-                CV
-              </a>
-            </li>
+            <NavLinks />
           </ul>
         </nav>
       </div>
@@ -54,35 +15,55 @@ export const Header = () => {
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
-
         <ul class="menu__box">
-          <li>
-            <a class="menu__item" href="#">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#">
-              About
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#">
-              Team
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#">
-              Contact
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#">
-              Twitter
-            </a>
-          </li>
+          <NavLinks />
         </ul>
       </div>
     </header>
   );
 };
+
+const NavLinks = () => (
+  <>
+    <li>
+      <Link href="/" passHref>
+        Start
+      </Link>
+    </li>
+    <li>
+      <Link href="/projects" passHref>
+        Projects
+      </Link>
+    </li>
+    <li>
+      <Link href="/stats" passHref>
+        Coding Stats
+      </Link>
+    </li>
+    <li>
+      <Link href="/experience" passHref>
+        Work Experience & Education
+      </Link>
+    </li>
+    <li>
+      <Link href="/tech" passHref>
+        Technologies
+      </Link>
+    </li>
+    <li>
+      <Link href="/school-of-thought" passHref>
+        School of Thought
+      </Link>
+    </li>
+    <li>
+      <Link href="/about" passHref>
+        About
+      </Link>
+    </li>
+    <li>
+      <a href="https://drive.google.com/file/d/1T6D66JRzcRjqYrN8KlE58GevxIs82P4g/view?usp=share_link">
+        CV
+      </a>
+    </li>
+  </>
+);
