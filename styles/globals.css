@@ -23,7 +23,7 @@
 }
 
 main {
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 500px;
 }
 
@@ -146,7 +146,7 @@ header {
   font-weight: bold;
   top: 0;
   position: fixed;
-  min-height: 45px;
+  min-height: 60px;
 }
 
 nav ul {
@@ -186,12 +186,12 @@ nav ul {
   margin: var(--default-margin);
   grid-gap: 1rem;
 }
-/*
+
 .grid-column-3 {
   grid-template-columns: auto auto auto;
 }
 
-*/
+
 .grid-column-2 {
   grid-template-columns: auto auto;
 }
@@ -229,13 +229,13 @@ nav ul {
 .tech-table tr td {
   padding: 0.2em;
 }
-
+*/
 tr:nth-child(even) {
   background-color: hsla(0, 0%, 100%, 0.7);
   border-color: hsla(0, 0%, 100%, 0.7);
   border-style: solid;
 }
-
+/*
 
 
 header:hover,
