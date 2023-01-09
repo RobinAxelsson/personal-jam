@@ -8,11 +8,23 @@
   --clr-font-contrast: #fff;
   --clr-bg: rgb(251, 248, 245);
   --default-margin: 1rem;
-  --fs-xl: 4rem;
+  /* --fs-xl: 4rem;
   --fs-800: 2.5rem;
   --fs-600: 2rem;
   --fs-500: 1.2rem;
-  --fs-400: 1rem;
+  --fs-400: 1rem; */
+}
+
+#__next {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+main {
+  padding-top: 50px;
+  padding-bottom: 500px;
 }
 
 @media (min-width: 650px) {
@@ -31,7 +43,12 @@
   padding: 0px;
 }
 
-h1, h2, h3, h4, p, li {
+h1,
+h2,
+h3,
+h4,
+p,
+li {
   margin: var(--default-margin);
   line-height: 1.1em;
 }
@@ -53,6 +70,7 @@ p {
   max-width: 70ch;
   line-height: 1.5em;
 }
+/*
 
 figure {
   width: 80vw;
@@ -63,25 +81,24 @@ figure {
 .accent-word {
   color: var(--clr-font-contrast);
 }
-
+*/
 body {
-  color: var(--clr-primary);
   background-color: var(--clr-bg);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  font-weight: 600;
-  line-height: 1.5em;
-  align-items: center;
+  /* min-height: 100vh; */
+  /* line-height: 1.5em; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .background-image {
   position: absolute;
   z-index: -1;
   left: 0;
-  top:0;
+  top: 0;
   opacity: 0.9;
   background-image: url("/images/bg-water_1920-1280.jpg");
   width: 100%;
@@ -108,12 +125,14 @@ footer {
 }
 
 footer {
-  position:absolute;
-  left:0;
-  padding: 100px;
-  width: 100%;
-  overflow: hidden;
-  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* width: 100%; */
+  padding-block: 100px;
+  /* margin: 0 auto;
+  overflow: hidden; */
 }
 
 footer ul {
@@ -124,52 +143,28 @@ footer ul {
 
 header {
   width: 100%;
-  /* right: 0; */
   font-weight: bold;
   top: 0;
-  display: flex;
-  border-width: 0px;
-  padding: 20px;
-  opacity: 1;
-  left: 0;
-  overflow: hidden;
   position: fixed;
+  min-height: 60px;
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-main {
-  margin-top: 250px;
-  margin-bottom: 100px;
-  margin-inline: 20px;
-  background-color: --clr-bg;
-}
-
-.card-collection {
+/* .card-collection {
   max-width: var(--main-max-width);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-}
+} */
 
 .card-general {
   padding: 2rem;
   background: var(--clr-primary);
-  opacity: 1;
   border-radius: 1px;
   color: var(--clr-font-primary);
-  margin: 1rem;
+  margin-top: 70px;
+  margin-inline: 1rem;
   min-height: 350px;
-  width: 85%;
 }
 
 .card-grid {
@@ -186,11 +181,12 @@ main {
 .grid-column-2 {
   grid-template-columns: auto auto;
 }
-
+/*
 .collapsable-resume-container {
   margin-top: 170px;
 }
 
+*/
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -206,7 +202,7 @@ main {
   border-style: solid;
 }
 
-
+/*
 .hero-section-content > *{
   gap: 5px;
   line-height: 1.3em;
@@ -219,22 +215,64 @@ main {
 .tech-table tr td {
   padding: 0.2em;
 }
-
+*/
 tr:nth-child(even) {
   background-color: hsla(0, 0%, 100%, 0.7);
   border-color: hsla(0, 0%, 100%, 0.7);
   border-style: solid;
 }
 
-
-
-header:hover,
-header:active {
-  opacity: 1;
+nav {
+  display: none;
 }
 
 @media (min-width: 650px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+    padding-inline: 10px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 0.5rem;
+  }
+
+  footer {
+    padding-left: 175px;
+  }
+
   .card-general {
+    padding: 3rem;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .card-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    max-width: 700px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* .card-general {
     padding: 3rem;
     flex-direction: row;
   }
@@ -245,5 +283,4 @@ header:active {
 
   .hero-section-content {
     display: block;
-  }
-}
+  } */
