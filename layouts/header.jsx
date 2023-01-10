@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { MobileNav } from "./mobile-nav";
+import { MobileNav } from "../components/header/mobile-nav";
+import { SiteNav } from "../components/header/site-nav";
 export const Header = () => {
   return (
     <header>
@@ -12,16 +13,6 @@ export const Header = () => {
     </header>
   );
 };
-
-const SiteNav = ({ children }) => (
-  <div>
-    <nav className="site-nav">
-      <ul className="site-nav__link-list">
-        {children}
-      </ul>
-    </nav>
-  </div>
-);
 
 // const NavLinks = ({labelHrefs}) => (
 //   <>

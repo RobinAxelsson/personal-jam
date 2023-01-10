@@ -1,6 +1,6 @@
 import MainLayout from "../layouts/main-layout";
 import "../styles/globals.css";
-import "../components/header/hamburger-menu.css";
+import "../components/header/mobile-nav.css";
 import "../styles/general.sass";
 
 function MyApp({ Component, pageProps }) {
