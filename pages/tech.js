@@ -1,10 +1,10 @@
 import getTechnologies from "../data-access/technologies-repository";
-import Technologies from "../components/technologies";
+import TechTable from "../components/tech-table";
 
 export async function getStaticProps() {
   return {
     props: {
-      technologies: getTechnologies()
+      technologies: getTechnologies(),
     },
   };
 }
@@ -12,7 +12,9 @@ export async function getStaticProps() {
 export default function ExperiencePage({ technologies }) {
   return (
     <div className="card-collection">
-      <Technologies technologies={technologies} />
+      <div className="card-general hero-section">
+        <TechTable technologies={technologies} />
+      </div>
     </div>
   );
 }
