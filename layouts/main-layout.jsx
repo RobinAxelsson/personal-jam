@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer } from '../components/footer';
+import { Footer } from './footer';
 import { Header } from './header';
 import Head from 'next/head';
 
@@ -10,8 +10,8 @@ const MainLayout = ({ children }) => {
         <title>Full stack developer</title>
       </Head>
       <Header />
-      <div className="background-image"></div>
-      <main>{children}</main>
+      <div className="top-image-canvas"></div>
+      <main className="site-main">{children}</main>
       <Footer />
     </>
   );

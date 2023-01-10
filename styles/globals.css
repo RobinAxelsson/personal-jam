@@ -94,7 +94,7 @@ body {
   /* justify-content: center; */
 }
 
-.background-image {
+.top-image-canvas {
   position: absolute;
   z-index: -1;
   left: 0;
