@@ -118,7 +118,6 @@ a:hover {
   text-decoration: underline;
 }
 
-header,
 footer {
   color: #fff;
   background-color: var(--clr-font-primary);
@@ -141,13 +140,7 @@ footer ul {
   margin: var(--default-margin);
 }
 
-header {
-  width: 100%;
-  font-weight: bold;
-  top: 0;
-  position: fixed;
-  min-height: 60px;
-}
+
 
 /* .card-collection {
   max-width: var(--main-max-width);
@@ -222,6 +215,16 @@ tr:nth-child(even) {
   border-style: solid;
 }
 
+header {
+  width: 100%;
+  font-weight: bold;
+  top: 0;
+  position: fixed;
+  min-height: 60px;
+  color: #fff;
+  background-color: var(--clr-font-primary);
+}
+
 .site-nav {
   display: none;
 }
@@ -239,7 +242,7 @@ tr:nth-child(even) {
     display: block;
   }
 
-  nav ul {
+  .site-nav__link-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,26 +1,14 @@
-import Link from "next/link";
-import { MobileNav } from "../components/mobile-nav";
-import { SiteNav } from "../components/site-nav";
-export const Header = () => {
-  return (
-    <header>
-      <SiteNav />
-      <MobileNav />
-    </header>
-  );
-};
+import Link from "next/link"
 
-// const NavLinks = ({labelHrefs}) => (
-//   <>
-//   {
-//     labelHrefs.map(kh => (<li key={kh.href}>
-//       <Link href={kh.href}>
-//         {kh.key}
-//       </Link>
-//     </li>))
-//   }
-//   </>
-// );
+export function SiteNav() {
+  return (<div>
+    <nav className="site-nav">
+      <ul className="site-nav__link-list">
+        <NavLinks />
+      </ul>
+    </nav>
+  </div>);
+}
 
 const NavLinks = ({ keyHref }) => (
   <>
