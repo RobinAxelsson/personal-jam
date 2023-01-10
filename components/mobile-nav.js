@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const MobileNav = () => (
-  <div class="mobile-nav">
+  <nav class="mobile-nav">
     <input id="mobile-nav__toggle" type="checkbox" />
     <label class="mobile-nav__btn" for="mobile-nav__toggle">
       <span></span>
@@ -48,5 +48,5 @@ export const MobileNav = () => (
         </a>
       </li>
     </ul>
-  </div>
+  </nav>
 );
