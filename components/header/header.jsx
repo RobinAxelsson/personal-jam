@@ -1,29 +1,41 @@
 import Link from "next/link";
-
+import { MobileNav } from "./mobile-nav";
 export const Header = () => {
   return (
     <header>
-      <div>
-        <nav>
-          <ul>
-            <NavLinks />
-          </ul>
-        </nav>
-      </div>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__box">
-          <NavLinks />
-        </ul>
-      </div>
+      <SiteNav>
+      <NavLinks />
+      </SiteNav>
+      <MobileNav>
+        <NavLinks />
+      </MobileNav>
     </header>
   );
 };
 
-const NavLinks = () => (
+const SiteNav = ({ children }) => (
+  <div>
+    <nav className="site-nav">
+      <ul className="site-nav__link-list">
+        {children}
+      </ul>
+    </nav>
+  </div>
+);
+
+// const NavLinks = ({labelHrefs}) => (
+//   <>
+//   {
+//     labelHrefs.map(kh => (<li key={kh.href}>
+//       <Link href={kh.href}>
+//         {kh.key}
+//       </Link>
+//     </li>))
+//   }
+//   </>
+// );
+
+const NavLinks = ({ keyHref }) => (
   <>
     <li>
       <Link href="/" passHref>

@@ -1,27 +1,27 @@
 @media (min-width: 650px) {
-.hamburger-menu {
+.mobile-nav {
     display: none;
   }
 }
 
-#menu__toggle {
+#mobile-nav__toggle {
     opacity: 0;
   }
-  #menu__toggle:checked + .menu__btn > span {
+  #mobile-nav__toggle:checked + .mobile-nav__btn > span {
     transform: rotate(45deg);
   }
-  #menu__toggle:checked + .menu__btn > span::before {
+  #mobile-nav__toggle:checked + .mobile-nav__btn > span::before {
     top: 0;
     transform: rotate(0deg);
   }
-  #menu__toggle:checked + .menu__btn > span::after {
+  #mobile-nav__toggle:checked + .mobile-nav__btn > span::after {
     top: 0;
     transform: rotate(90deg);
   }
-  #menu__toggle:checked ~ .menu__box {
+  #mobile-nav__toggle:checked ~ .mobile-nav__box {
     left: 0 !important;
   }
-  .menu__btn {
+  .mobile-nav__btn {
     position: fixed;
     top: 30px;
     left: 30px;
@@ -30,9 +30,9 @@
     cursor: pointer;
     z-index: 1;
   }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+  .mobile-nav__btn > span,
+  .mobile-nav__btn > span::before,
+  .mobile-nav__btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -40,15 +40,15 @@
     background-color: #fff;
     transition-duration: .25s;
   }
-  .menu__btn > span::before {
+  .mobile-nav__btn > span::before {
     content: '';
     top: -8px;
   }
-  .menu__btn > span::after {
+  .mobile-nav__btn > span::after {
     content: '';
     top: 8px;
   }
-  .menu__box {
+  .mobile-nav__box {
     display: block;
     position: fixed;
     top: 0;
@@ -62,7 +62,7 @@
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
   }
-  .menu__box > * {
+  .mobile-nav__box > * {
     display: block;
     padding: 12px 24px;
     color: #333;
@@ -72,6 +72,6 @@
     text-decoration: none;
     transition-duration: .25s;
   }
-  .menu__item:hover {
+  .mobile-nav__item:hover {
     background-color: #CFD8DC;
   }

@@ -222,7 +222,7 @@ tr:nth-child(even) {
   border-style: solid;
 }
 
-nav {
+.site-nav {
   display: none;
 }
 
@@ -235,7 +235,7 @@ nav {
     padding-inline: 10px;
   }
 
-  nav {
+  .site-nav {
     display: block;
   }
 
