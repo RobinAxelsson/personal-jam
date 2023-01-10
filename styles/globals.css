@@ -225,9 +225,6 @@ header {
   background-color: var(--clr-font-primary);
 }
 
-.site-nav {
-  display: none;
-}
 
 @media (min-width: 650px) {
   header {
@@ -236,20 +233,6 @@ header {
     justify-content: center;
     padding-block: 20px;
     padding-inline: 10px;
-  }
-
-  .site-nav {
-    display: block;
-  }
-
-  .site-nav__link-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  nav ul li {
-    margin: 0.5rem;
   }
 
   footer {

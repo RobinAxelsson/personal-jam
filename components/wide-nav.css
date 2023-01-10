@@ -1,0 +1,19 @@
+.wide-nav {
+    display: none;
+}
+
+@media (min-width: 650px) {
+    .wide-nav {
+        display: block;
+    }
+
+    .wide-nav__link-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wide-nav__link-item {
+        margin: 0.5rem;
+    }
+}
