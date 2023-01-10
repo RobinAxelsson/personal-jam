@@ -1,4 +1,4 @@
-import { CodingStats } from "../components/coding-stats";
+import { CodingStats } from "../__site_components/coding-stats";
 export default function CodeStatsPage() {
   const { topLanguages, codingTotal, wakatimeLabel } = CodingStats();
 

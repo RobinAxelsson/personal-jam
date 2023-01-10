@@ -1,0 +1,15 @@
+main {
+  padding-top: 50px;
+  padding-bottom: 500px;
+}
+
+.top-image-canvas {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  opacity: 0.9;
+  background-image: url("/images/bg-water_1920-1280.jpg");
+  width: 100%;
+  height: 300px;
+}

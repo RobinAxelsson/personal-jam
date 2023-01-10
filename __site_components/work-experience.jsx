@@ -1,4 +1,4 @@
-import parseDateToString from "../data-parsers/parser-date";
+import parseDateToString from "../__data_parsers/parser-date";
 
 export default function WorkExperience({ worklife }) {
   return (

@@ -12,7 +12,7 @@ export default function getTechnologies() {
   }
 
 function readValidRows() {
-    const fileContent = fs.readFileSync('resume/technologies.csv', 'utf8');
+    const fileContent = fs.readFileSync('__data_records/technologies.csv', 'utf8');
     const rows = fileContent.trim().split('\n').filter(x => x !== "");
     if (rows.length < 2 || rows.some(row => row === ''))
         throw new Error("Rows should not be white space and be at least one header and one value row. Got: " + JSON.stringify(rows));

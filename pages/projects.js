@@ -1,5 +1,5 @@
-import HighlightedProjects from "../components/highlighted-projects";
-import { getSortedHighlightedProjectsData } from "../data-access/resume-repository";
+import HighlightedProjects from "../__site_components/highlighted-projects";
+import { getSortedHighlightedProjectsData } from "../__data_access/resume-repository";
 
 export async function getStaticProps() {
   return {

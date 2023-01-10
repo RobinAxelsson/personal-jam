@@ -1,5 +1,5 @@
-import { getSchoolOfThoughtContent } from "../data-access/resume-repository";
-import MarkdownCard from "../components/markdown-card"
+import { getSchoolOfThoughtContent } from "../__data_access/resume-repository";
+import MarkdownCard from "../__site_components/markdown-card"
 export async function getStaticProps() {
   return {
     props: {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { getWakatimeStats } from "../data-access/wakatime-repository";
-import parseDateToString from "../data-parsers/parser-date";
+import { getWakatimeStats } from "../__data_access/wakatime-repository";
+import parseDateToString from "../__data_parsers/parser-date";
 
 export function CodingStats() {
   const [wakatime, setData] = useState(null);

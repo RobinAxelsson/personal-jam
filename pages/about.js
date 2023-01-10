@@ -1,6 +1,6 @@
-import { getSummaryMarkdown, getHeroMarkdown, getRolesMarkdown } from "../data-access/resume-repository";
-import CardHero from "../components/hero"
-import MarkdownCard from "../components/markdown-card"
+import { getSummaryMarkdown, getHeroMarkdown, getRolesMarkdown } from "../__data_access/resume-repository";
+import CardHero from "../__site_components/hero"
+import MarkdownCard from "../__site_components/markdown-card"
 export async function getStaticProps() {
   return {
     props: {

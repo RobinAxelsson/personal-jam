@@ -1,5 +1,5 @@
-import getTechnologies from "../data-access/technologies-repository";
-import TechTable from "../components/tech-table";
+import getTechnologies from "../__data_access/technologies-repository";
+import TechTable from "../__site_components/tech-table";
 
 export async function getStaticProps() {
   return {

@@ -1,12 +1,13 @@
-import MainLayout from "../layouts/main-layout";
-import "../styles/globals.css";
-import "../components/mobile-nav.css";
-import "../components/wide-nav.css";
-import "../components/tech-table.css";
-import "../components/coding-stats.css";
-import "../components/site-footer.css";
-import "../components/site-header.css";
-import "../styles/general.sass";
+import MainLayout from "../__site_layouts/main-layout";
+import "../__site_styles/globals.css";
+import "../__site_styles/general.sass";
+import "../__site_components/mobile-nav.css";
+import "../__site_components/wide-nav.css";
+import "../__site_components/tech-table.css";
+import "../__site_components/coding-stats.css";
+import "../__site_layouts/site-footer.css";
+import "../__site_layouts/site-header.css";
+import "../__site_layouts/main-layout.css";
 
 function MyApp({ Component, pageProps }) {
   return (

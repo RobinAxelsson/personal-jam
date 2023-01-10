@@ -1,6 +1,6 @@
-import { getWorkLifeArray, getEducationArray } from "../data-access/resume-repository";
-import WorkExperience from "../components/work-experience";
-import Education from "../components/education";
+import { getWorkLifeArray, getEducationArray } from "../__data_access/resume-repository";
+import WorkExperience from "../__site_components/work-experience";
+import Education from "../__site_components/education";
 
 export async function getStaticProps() {
   return {

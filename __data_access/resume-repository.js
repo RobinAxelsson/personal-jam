@@ -4,22 +4,22 @@ import matter from 'gray-matter';
 import YAML from 'yaml'
 
 export function getHeroMarkdown() {
-  return getMarkdownContent('resume/hero.md');
+  return getMarkdownContent('__data_records/hero.md');
 }
 export function getSummaryMarkdown() {
-    return getMarkdownContent('resume/summary.md');
+    return getMarkdownContent('__data_records/summary.md');
 }
 
 export function getRolesMarkdown() {
-  return getMarkdownContent('resume/roles.md');
+  return getMarkdownContent('__data_records/roles.md');
 }
 
 export function getSchoolOfThoughtContent() {
-  return getMarkdownContent('resume/shool-of-thought.md');
+  return getMarkdownContent('__data_records/shool-of-thought.md');
 }
 
 export function getToRecruitersContent() {
-  return getMarkdownContent('resume/to-recruiters.md');
+  return getMarkdownContent('__data_records/to-recruiters.md');
 }
 
 function getMarkdownContent(url){
@@ -36,7 +36,7 @@ function isEmptyOrWhiteSpace(str){
 
 
 export function getPersonalData() {
-  const fileContent = fs.readFileSync('resume/personal_data.yml', 'utf8');
+  const fileContent = fs.readFileSync('__data_records/personal_data.yml', 'utf8');
   const {data} = matter(fileContent);
 
   return {
@@ -47,14 +47,14 @@ export function getPersonalData() {
 }
 
 export function getWorkLifeArray() {
-  const fileContent = fs.readFileSync('resume/worklife.yml', 'utf8');
+  const fileContent = fs.readFileSync('__data_records/worklife.yml', 'utf8');
   const worklife = YAML.parse(fileContent).worklife;
   EnsureValidArray(worklife)
   return worklife;
 }
 
 export function getEducationArray() {
-  const fileContent = fs.readFileSync('resume/education.yml', 'utf8');
+  const fileContent = fs.readFileSync('__data_records/education.yml', 'utf8');
   const education = YAML.parse(fileContent).education;
   EnsureValidArray(education)
   return education;
@@ -67,7 +67,7 @@ function EnsureValidArray(array){
 
 
 export function getSortedHighlightedProjectsData() {
-  const resumeDirectory = path.join(process.cwd(), 'resume/highlighted_projects');
+  const resumeDirectory = path.join(process.cwd(), '__data_records/highlighted_projects');
   const fileNames = fs.readdirSync(resumeDirectory);
   const allPostsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, '');
