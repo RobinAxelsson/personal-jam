@@ -1,0 +1,14 @@
+.top-languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.top-languages__header {
+  width: 100%;
+  border-width: 3px;
+  border-style: solid;
+}

@@ -21,12 +21,12 @@ export async function getWakatimeStats() {
   const secondsYear = await getCodingSecondsYear();
   const secondsWeek = await getCodingSecondsWeek();
   const {start, end } = await getStartDateAndEndDate();
-  const totalHours = convertSeconds(secondsYear);
-  const totalHoursWeek = convertSeconds(secondsWeek);
-  const dailyAverage = convertSeconds(secondsYear / 365);
+  const totalTime = convertToTime(secondsYear);
+  const totalTimeWeek = convertToTime(secondsWeek);
+  const dailyAverage = convertToTime(secondsYear / 365);
   const top10 = await getTop10Languages(secondsYear);
 
-  return { start, end, totalHours, dailyAverage, top10, totalHoursWeek };
+  return { start, end, totalTime, dailyAverage, top10, totalTimeWeek };
 }
 
 async function getTop10Languages(totalSeconds) {
@@ -47,7 +47,7 @@ async function getTop10Languages(totalSeconds) {
 
     let rank = 1;
   return orderedLangs.map((x) => {
-    return { rank: rank++, name: x.name, time: convertSeconds(x.seconds) };
+    return { rank: rank++, name: x.name, time: convertToTime(x.seconds) };
   });
 }
 
@@ -77,9 +77,13 @@ async function getCodingSecondsWeek() {
   return totalSeconds;
 }
 
-function convertSeconds(seconds) {
-  let h = Math.floor(seconds / 3600);
-  let m = Math.floor((seconds % 3600) / 60);
-  let s = Math.floor((seconds % 3600) % 60);
-  return `${h}h ${m}m ${s}s`;
+function convertToTime(seconds){
+  if(Number.isNaN(seconds)){
+    throw new Error("expected number, got: " + seconds)
+  }
+  return {
+      hours: Math.floor(seconds / 3600),
+      minutes: Math.floor((seconds % 3600) / 60),
+      seconds: Math.floor((seconds % 3600) % 60),
+  }
 }

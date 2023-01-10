@@ -2,13 +2,6 @@ import { useState, useEffect } from "react";
 import { getWakatimeStats } from "../data-access/wakatime-repository";
 import parseDateToString from "../data-parsers/parser-date";
 
-const WakaTimeIngress = ({ start, end }) => (
-  <h4>
-    from {parseDateToString(start)} to {parseDateToString(end)}, powered by{" "}
-    <a href="https://wakatime.com/">Wakatime</a>
-  </h4>
-);
-
 export function CodingStats() {
   const [wakatime, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
@@ -25,69 +18,103 @@ export function CodingStats() {
 
   if (isLoading) return <p>Loading...</p>;
   if (!wakatime) return <p>No profile data</p>;
-  return (
-    <>
-      <Card
-        right={
-          <>
-            <h2 className="card-title">My top 10 Languages</h2>
-            <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
-            <div className="card-grid grid-column-2">
-              {wakatime.top10.map(({ rank, name, time }) => (
-                <>
-                  <div className="card-grid-item" key={rank+name}>
-                    {rank}. {name}
-                  </div>
-                  <div className="card-grid-item" key={rank+name}>
-                    {time}
-                  </div>
-                </>
-              ))}
-            </div>
-          </>
-        }
-      />
-      <Card
-        right={
-          <>
-          <h2 className="card-title">My Coding Totals</h2>
-          <WakaTimeIngress start={wakatime.start} end={wakatime.end} />
-          <div className="card-grid grid-column-2">
-            <div className="card-grid-item">
-              Total hours:
-            </div>
-            <div className="card-grid-item">
-              {wakatime.totalHours}
-            </div>
-            <div className="card-grid-item">
-              Daily Average:
-            </div>
-            <div className="card-grid-item">
-              {wakatime.dailyAverage}
-            </div>
-            <div className="card-grid-item">
-              Total last 7 days:
-            </div>
-            <div className="card-grid-item">
-              {wakatime.totalHoursWeek}
-            </div>
-          </div>
-        </>
-        }
-      />
-    </>
-  );
+  return {
+    topLanguages: (
+      <div className="top-languages">
+        <h2 className="top-languages__header">My top 10 Languages</h2>
+        <table className="top-languages__table">
+          {wakatime.top10.map(({ rank, name, time }) => (
+            <tr
+              className="top_languages__row"
+              key={time.hour + time.minutes + time.seconds}
+            >
+              <td
+                className="top_languages__cell top_languages__cell--rank"
+                key={rank}
+              >
+                {rank}.
+              </td>
+              <td
+                className="top_languages__cell top_languages__cell--name"
+                key={name}
+              >
+                {name}
+              </td>
+              <td
+                className="top_languages__cell top_languages__cell--time"
+                key={time.hours}
+              >
+                {time.hours}h
+              </td>
+              <td
+                className="top_languages__cell top_languages__cell--time"
+                key={time.minutes}
+              >
+                {time.minutes}m
+              </td>
+              <td
+                className="top_languages__cell top_languages__cell--time"
+                key={time.seconds}
+              >
+                {time.seconds}s
+              </td>
+            </tr>
+          ))}
+        </table>
+      </div>
+    ),
+
+    wakatimeLabel: (
+      <h4 className="wakatime-ingress">
+        from {parseDateToString(wakatime.start)} to{" "}
+        {parseDateToString(wakatime.end)}, powered by{" "}
+        <a href="https://wakatime.com/">Wakatime</a>
+      </h4>
+    ),
+    codingTotal: (
+      <div className="coding-totals">
+        <h2 className="coding-totals__title">My Coding Totals</h2>
+        <table className="coding-total__table">
+          <tr className="coding-total__row">
+            <td className="coding-total__cell">Total time:</td>
+            <TimeCells time={wakatime.totalTime} />
+          </tr>
+          <tr className="coding-total__row">
+            <td className="coding-total__cell">Daily Average:</td>
+            <TimeCells time={wakatime.dailyAverage} />
+            {/* <td className="coding-total__cell">
+              {wakatime.dailyAverage.hours}h
+            </td>
+            <td className="coding-total__cell">
+              {wakatime.dailyAverage.minutes}m
+            </td>
+            <td className="coding-total__cell">
+              {wakatime.dailyAverage.seconds}s
+            </td> */}
+          </tr>
+          <tr className="coding-total__row">
+            <td className="coding-total__cell">Total last 7 days:</td>
+            <TimeCells time={wakatime.totalTimeWeek} />
+            {/* <td className="coding-total__cell">
+              {wakatime.totalTimeWeek.hours}h
+            </td>
+            <td className="coding-total__cell">
+              {wakatime.totalTimeWeek.minutes}m
+            </td>
+            <td className="coding-total__cell">
+              {wakatime.totalTimeWeek.seconds}s
+            </td> */}
+          </tr>
+        </table>
+      </div>
+    ),
+  };
 }
 
-function Card({ left, right, key }) {
-  return (
-    <div className="card-general hero-section" key={key}>
-      <div className="hero-section-content">
-        {left}
-      </div>
-      <div className="hero-section-content">
-        {right}
-      </div>
-    </div>
-  );
-}
+const TimeCells = ({time}) => (
+  <>
+    <td className="coding-total__cell">{time.hours}h</td>
+    <td className="coding-total__cell">{time.minutes}m</td>
+    <td className="coding-total__cell">{time.seconds}s</td>
+  </>
+);
