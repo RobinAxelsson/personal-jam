@@ -1,14 +1,30 @@
-.top-languages {
+.top-languages, 
+.coding-total {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-width: 3px;
+}
+
+.coding-total__title,
+.top-languages__title {
+  font-size: x-large;
+}
+
+.coding-total__table,
+.top-languages__table {
+  border-collapse: collapse;
+}
+
+.top-languages__row:nth-child(odd),
+.coding-total__row:nth-child(odd)
+{
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border-color: hsla(0, 0%, 100%, 0.7);
   border-style: solid;
 }
 
-.top-languages__header {
-  width: 100%;
-  border-width: 3px;
-  border-style: solid;
+.coding-total__cell,
+.top-languages__cell {
+  padding: 12px 15px;
 }

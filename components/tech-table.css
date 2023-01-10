@@ -3,3 +3,19 @@
   border-color: hsla(0, 0%, 100%, 0.7);
   border-style: solid;
 }
+
+.tech-table__title {
+  font-size: x-large;
+}
+
+.tech-table {
+  border-collapse: collapse;
+}
+
+.tech-table__cell {
+  padding-inline: 2px;
+}
+
+.tech-table__cell--checkable {
+  text-align: center;
+}
