@@ -8,23 +8,11 @@
   --clr-font-contrast: #fff;
   --clr-bg: rgb(251, 248, 245);
   --default-margin: 1rem;
-  /* --fs-xl: 4rem;
+  --fs-xl: 4rem;
   --fs-800: 2.5rem;
   --fs-600: 2rem;
   --fs-500: 1.2rem;
-  --fs-400: 1rem; */
-}
-
-#__next {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-}
-
-.site-main {
-  padding-top: 50px;
-  padding-bottom: 500px;
+  --fs-400: 1rem;
 }
 
 @media (min-width: 650px) {
@@ -38,10 +26,28 @@
   }
 }
 
+/*---- Resets ----*/
+
 * {
   margin: 0px;
   padding: 0px;
 }
+
+#__next {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+/* --- Base --- */
+
+.site-main {
+  padding-top: 50px;
+  padding-bottom: 500px;
+}
+
+
 
 h1,
 h2,
@@ -79,19 +85,6 @@ body {
   background-color: var(--clr-bg);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.top-image-canvas {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  opacity: 0.9;
-  background-image: url("/images/bg-water_1920-1280.jpg");
-  width: 100%;
-  height: 300px;
 }
 
 ul {
@@ -107,33 +100,17 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer class */
+/* --- Top Image --- */
 
-.site-footer {
-  color: #fff;
-  background-color: var(--clr-font-primary);
-}
-
-.site-footer {
+.top-image-canvas {
   position: absolute;
-  right: 0;
+  z-index: -1;
   left: 0;
-  bottom: 0;
-  padding-block: 100px;
-}
-
-.site-footer__list {
-  display: flex;
-  flex-direction: column;
-  margin: var(--default-margin);
-}
-
-.site-footer__item {
-  margin: 0.2rem;
-}
-
-.site-footer__item--title h3 {
-  margin: 1px;
+  top: 0;
+  opacity: 0.9;
+  background-image: url("/images/bg-water_1920-1280.jpg");
+  width: 100%;
+  height: 300px;
 }
 
 .card-general {
@@ -163,12 +140,7 @@ a:hover {
 .grid-column-2 {
   grid-template-columns: auto auto;
 }
-/*
-.collapsable-resume-container {
-  margin-top: 170px;
-}
 
-*/
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -186,7 +158,6 @@ a:hover {
 
 .site-header {
   width: 100%;
-  font-weight: bold;
   top: 0;
   position: fixed;
   min-height: 60px;
@@ -200,12 +171,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 20px;
-    padding-inline: 10px;
-  }
-
-  .site-footer {
-    padding-left: 175px;
   }
 
   .card-general {

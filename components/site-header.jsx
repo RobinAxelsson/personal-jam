@@ -1,5 +1,5 @@
-import { MobileNav } from "../components/mobile-nav";
-import { WideNav } from "../components/wide-nav";
+import { MobileNav } from "./mobile-nav";
+import { WideNav } from "./wide-nav";
 
 export const Header = () => {
   return (

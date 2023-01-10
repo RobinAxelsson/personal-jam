@@ -1,4 +1,4 @@
-export const Footer = () => {
+export const SiteFooter = () => {
   return (
     <footer className="site-footer">
       <ul className="site-footer__list">

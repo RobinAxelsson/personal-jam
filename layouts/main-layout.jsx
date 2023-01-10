@@ -1,6 +1,6 @@
 import React from 'react';
-import { Footer } from './footer';
-import { Header } from './header';
+import { SiteFooter } from '../components/site-footer';
+import { Header } from '../components/site-header';
 import Head from 'next/head';
 
 const MainLayout = ({ children }) => {
@@ -12,7 +12,7 @@ const MainLayout = ({ children }) => {
       <Header />
       <div className="top-image-canvas"></div>
       <main className="site-main">{children}</main>
-      <Footer />
+      <SiteFooter />
     </>
   );
 };

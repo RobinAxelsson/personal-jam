@@ -5,6 +5,8 @@
 @media (min-width: 650px) {
     .wide-nav {
         display: block;
+        padding-block: 20px;
+        padding-inline: 10px;
     }
 
     .wide-nav__link-list {
