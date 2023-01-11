@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./mobile-nav.module.css"
+import styles from "./mobile-nav.module.scss"
 
 export const MobileNav = () => (
   <nav className={styles.mobile_nav}>

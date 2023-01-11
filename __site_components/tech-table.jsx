@@ -1,4 +1,4 @@
-import styles from './tech-table.module.css'
+import styles from './tech-table.module.scss'
 
 export default function TechTable({ technologies }) {
   const { headers, rows } = technologies;

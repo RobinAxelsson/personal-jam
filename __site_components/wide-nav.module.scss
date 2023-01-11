@@ -1,21 +1,21 @@
-.wide-nav {
+.wide_nav {
     display: none;
 }
 
 @media (min-width: 650px) {
-    .wide-nav {
+    .wide_nav {
         display: block;
         padding-block: 20px;
         padding-inline: 10px;
     }
 
-    .wide-nav__link-list {
+    .wide_nav__link_list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .wide-nav__link-item {
+    .wide_nav__link_item {
         margin: 0.5rem;
     }
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getWakatimeStats } from "../__data_access/wakatime-repository";
 import parseDateToString from "../__data_parsers/parser-date";
-import styles from "./coding-stats.module.css"
+import styles from "./coding-stats.module.scss"
 export function CodingStats() {
   const [wakatime, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);

@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-
+import styles from "./markdown-section.module.scss"
 export default function MarkdownSection({ markdownContent }) {
   const sections = markdownContent
     .split("---")
@@ -7,7 +7,7 @@ export default function MarkdownSection({ markdownContent }) {
   return (
     <>
       {sections.map((section) => (
-        <div className="markdown-section" key={section.slice(0, 20)}>
+        <div className={styles.markdown_section} key={section.slice(0, 20)}>
           <ReactMarkdown>section</ReactMarkdown>
         </div>
       ))}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./hero.module.css"
+import styles from "./hero.module.scss"
 export default function Hero() {
   return (
     <div className={styles.hero}>
