@@ -23,7 +23,7 @@
   border-style: solid;
 }
 
-.hero__job-properties {
+.hero__job_properties {
   text-align: left;
   width: 100%;
   font-size: medium;
@@ -31,17 +31,17 @@
   display: table;
 }
 
-.hero__job-properties tr {
+.hero__job_properties tr {
   border-color: hsla(0, 0%, 100%, 0.7);
   border-style: solid;
   border-width: 0 0 2px 0;
 }
 
-.hero__job-properties tr:last-child {
+.hero__job_properties tr:last-child {
   border-width: 0;
 }
 
-.hero__job-properties tr th,
-.hero__job-properties tr td {
+.hero__job_properties tr th,
+.hero__job_properties tr td {
   padding: 16px 16px;
 }
