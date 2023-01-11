@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getWakatimeStats } from "../__data_access/wakatime-repository";
 import parseDateToString from "../__data_parsers/parser-date";
-
+import styles from "./coding-stats.module.css"
 export function CodingStats() {
   const [wakatime, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
@@ -20,27 +20,27 @@ export function CodingStats() {
   if (!wakatime) return <p>No profile data</p>;
   return (
     <>
-      <div className="top-languages">
-        <h2 className="top-languages__title">My top 10 Languages</h2>
-        <table className="top-languages__table">
+      <div className={styles.top_languages}>
+        <h2 className={styles.top_languages__title}>My top 10 Languages</h2>
+        <table className={styles.top_languages__table}>
           {wakatime.top10.map(({ rank, name, time }) => (
             <tr
-              className="top-languages__row"
+              className={styles.top_languages__row}
               key={time.hour + time.minutes + time.seconds}
             >
-              <td className="top-languages__cell" key={rank}>
+              <td className={styles.top_languages__cell} key={rank}>
                 {rank}.
               </td>
-              <td className="top-languages__cell" key={name}>
+              <td className={styles.top_languages__cell} key={name}>
                 {name}
               </td>
-              <td className="top-languages__cell" key={time.hours}>
+              <td className={styles.top_languages__cell} key={time.hours}>
                 {time.hours}h
               </td>
-              <td className="top-languages__cell" key={time.minutes}>
+              <td className={styles.top_languages__cell} key={time.minutes}>
                 {time.minutes}m
               </td>
-              <td className="top-languages__cell" key={time.seconds}>
+              <td className={styles.top_languages__cell} key={time.seconds}>
                 {time.seconds}s
               </td>
             </tr>
@@ -53,19 +53,19 @@ export function CodingStats() {
         </h4>
       </div>
 
-      <div className="coding-total">
-        <h2 className="coding-total__title">My Coding Totals</h2>
-        <table className="coding-total__table">
-          <tr className="coding-total__row">
-            <td className="coding-total__cell">Total time:</td>
+      <div className={styles.coding_total}>
+        <h2 className={styles.coding_total__title}>My Coding Totals</h2>
+        <table className={styles.coding_total__table}>
+          <tr className={styles.coding_total__row}>
+            <td className={styles.coding_total__cell}>Total time:</td>
             <TimeCells time={wakatime.totalTime} />
           </tr>
-          <tr className="coding-total__row">
-            <td className="coding-total__cell">Daily Average:</td>
+          <tr className={styles.coding_total__row}>
+            <td className={styles.coding_total__cell}>Daily Average:</td>
             <TimeCells time={wakatime.dailyAverage} />
           </tr>
-          <tr className="coding-total__row">
-            <td className="coding-total__cell">Total last 7 days:</td>
+          <tr className={styles.coding_total__row}>
+            <td className={styles.coding_total__cell}>Total last 7 days:</td>
             <TimeCells time={wakatime.totalTimeWeek} />
           </tr>
         </table>
@@ -81,8 +81,8 @@ export function CodingStats() {
 
 const TimeCells = ({ time }) => (
   <>
-    <td className="coding-total__cell">{time.hours}h</td>
-    <td className="coding-total__cell">{time.minutes}m</td>
-    <td className="coding-total__cell">{time.seconds}s</td>
+    <td className={styles.coding_total__cell}>{time.hours}h</td>
+    <td className={styles.coding_total__cell}>{time.minutes}m</td>
+    <td className={styles.coding_total__cell}>{time.seconds}s</td>
   </>
 );
