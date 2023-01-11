@@ -138,9 +138,6 @@ a:hover {
   border-style: solid;
 }
 
-
-
-
 @media (min-width: 650px) {
   .site-header {
     display: flex;
