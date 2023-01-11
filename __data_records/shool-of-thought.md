@@ -51,8 +51,8 @@
 
 ### Five Epic Team Members 👏
 
-- one programmed in the 80s
+- one programmed before internet
 - one is from the other side of the globe
 - one is from vocational school
 - one thinks different
-- at least one has humor
+- one has humor
