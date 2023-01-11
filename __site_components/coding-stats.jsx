@@ -18,8 +18,8 @@ export function CodingStats() {
 
   if (isLoading) return <p>Loading...</p>;
   if (!wakatime) return <p>No profile data</p>;
-  return {
-    topLanguages: (
+  return (
+    <>
       <div className="top-languages">
         <h2 className="top-languages__title">My top 10 Languages</h2>
         <table className="top-languages__table">
@@ -46,17 +46,13 @@ export function CodingStats() {
             </tr>
           ))}
         </table>
+        <h4 className="wakatime-ingress">
+          from {parseDateToString(wakatime.start)} to{" "}
+          {parseDateToString(wakatime.end)}, powered by{" "}
+          <a href="https://wakatime.com/">Wakatime</a>
+        </h4>
       </div>
-    ),
 
-    wakatimeLabel: (
-      <h4 className="wakatime-ingress">
-        from {parseDateToString(wakatime.start)} to{" "}
-        {parseDateToString(wakatime.end)}, powered by{" "}
-        <a href="https://wakatime.com/">Wakatime</a>
-      </h4>
-    ),
-    codingTotal: (
       <div className="coding-total">
         <h2 className="coding-total__title">My Coding Totals</h2>
         <table className="coding-total__table">
@@ -73,9 +69,14 @@ export function CodingStats() {
             <TimeCells time={wakatime.totalTimeWeek} />
           </tr>
         </table>
+        <h4 className="wakatime-ingress">
+          from {parseDateToString(wakatime.start)} to{" "}
+          {parseDateToString(wakatime.end)}, powered by{" "}
+          <a href="https://wakatime.com/">Wakatime</a>
+        </h4>
       </div>
-    ),
-  };
+    </>
+  );
 }
 
 const TimeCells = ({ time }) => (
