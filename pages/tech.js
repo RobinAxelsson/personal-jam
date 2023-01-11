@@ -12,9 +12,7 @@ export async function getStaticProps() {
 export default function ExperiencePage({ technologies }) {
   return (
     <div className="card-collection">
-      <div className="card-general">
         <TechTable technologies={technologies} />
-      </div>
     </div>
   );
 }

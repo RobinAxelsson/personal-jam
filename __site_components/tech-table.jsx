@@ -1,7 +1,7 @@
 export default function TechTable({ technologies }) {
   const { headers, rows } = technologies;
   return (
-    <>
+    <div className="tech-table-container">
     <h2 className="tech-table__title">Technologies</h2>
     <table className="tech-table">
       {
@@ -43,7 +43,7 @@ export default function TechTable({ technologies }) {
         </tr>
       ))}
     </table>
-    </>
+    </div>
   );
 }
 

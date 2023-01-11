@@ -1,3 +1,9 @@
+.tech-table-container {
+  padding: 2rem;
+  background: var(--clr-primary);
+  color: var(--clr-font-primary);
+}
+
 .tech-table__row:nth-child(even) {
   background-color: hsla(0, 0%, 100%, 0.7);
   border-color: hsla(0, 0%, 100%, 0.7);
