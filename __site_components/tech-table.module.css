@@ -2,6 +2,9 @@
   padding: 2rem;
   background: var(--clr-primary);
   color: var(--clr-font-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tech_table_container {
@@ -25,7 +28,6 @@
 }
 
 .tech_table__cell {
-  padding-inline: 10px;
 }
 
 .tech-table__cell--checkable {
