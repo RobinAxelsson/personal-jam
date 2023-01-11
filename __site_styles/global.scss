@@ -15,6 +15,7 @@
   --fs-400: 1rem;
 }
 
+
 @media (min-width: 650px) {
   :root {
     --default-margin: 1rem;
@@ -39,6 +40,8 @@
   top: 0;
   right: 0;
 }
+
+
 
 /* --- Base --- */
 h1,
@@ -91,6 +94,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
 
 
 /* --- Card --- */
