@@ -3,7 +3,7 @@ import "../__site_styles/globals.css";
 import "../__site_styles/general.sass";
 import "../__site_components/mobile-nav.css";
 import "../__site_components/wide-nav.css";
-import "../__site_components/tech-table.css";
+// import "../__site_components/tech-table.css";
 import "../__site_components/coding-stats.css";
 import "../__site_components/hero.css";
 import "../__site_layouts/site-footer.css";
