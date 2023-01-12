@@ -2,6 +2,12 @@
 
 ---
 
+## Quick Introduction
+
+I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for writing code I changed my career and never looked back.
+
+---
+
 ## What programming roles do you think is for you?
 
 ### Backend Developer
@@ -22,21 +28,21 @@ I have a wide understanding of CAD and PLM systems from my time as a Design Engi
 
 ---
 
-## What is your background?
+## Are you a programming geek?
 
-I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for writing code I changed my career and never looked back.
+Yes, I love writing clean, specific and well abstracted code that is easy to maintain and to understand. I always have some projects, I read books about OOD and practice coding for the fun of it. I get ideas and epiphanies about problems around the clock (which is not always a good thing) and I do spend the extra time to understand something thoroughly.
 
 ---
 
-## What do you like about programming?
+## Why do you like Programming?
 
-I enjoy writing clean, specific and well abstracted code that is easy to maintain and to understand. I always have some projects, I read books about OOD and practice coding for the fun of it. I get ideas and epiphanies about problems around the clock (which is not always a good thing) and I do spend the extra time to understand something thoroughly.
+It is something very rewarding with the instant feedback and incremental progress. I always liked solving math puzzles and love the feeling when you understand a system a bit better. Refactoring and cleaning code, writing tests and keep on optimizing a system continuously, is in spirit very close to what I have done in competitive sailing for many years (which I also love).
 
 ---
 
 ## What I want to do in the future?
 
-I want to develop industry level libraries and frameworks
+I want to develop libraries and frameworks for the Software Industry.
 
 ---
 
@@ -49,3 +55,7 @@ I have a strong mental game from my years in competitive sailing and have a neve
 ## What are your weaknesses?
 
 I can give you one example I have hard time keeping every day stuff in my head, like dates and times, so I always bring an analog notebook or block of some kind around.
+
+## What about your Personality?
+
+I'm a caring and honest person, I like to socialize and generally people like my humor. Hard to give you more in this setting. 😉
