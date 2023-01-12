@@ -1,5 +1,6 @@
 import MainLayout from "../__site_layouts/main-layout";
-import "../__site_styles/global.scss";
+// import "../__site_scss/global.scss";
+import "../__site_scss/style.scss";
 import "../__site_layouts/site-footer.css";
 import "../__site_layouts/site-header.css";
 import "../__site_layouts/main-layout.css";
