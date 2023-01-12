@@ -7,7 +7,7 @@ export default function Hero() {
           <span className={styles.accent_word}>Robin</span> Salih Axelsson
       </h2>
        <h4 className={styles.hero__sub_title}>
-        Full Stack Cloud Developer former Design Engineer
+        Full Stack .NET Developer former Design Engineer
       </h4>
          <Image
           className={styles.hero__image}
@@ -36,6 +36,10 @@ export default function Hero() {
           <tr>
             <th>Specialization:</th>
             <td>Object Oriented Design, .NET, C#, Test Driven Development, refactoring and CAD.</td>
+          </tr>
+          <tr>
+            <th>Dream job:</th>
+            <td>Building top class frameworks and libraries for the industry.</td>
           </tr>
           <tr>
             <th>Hobbies:</th>
