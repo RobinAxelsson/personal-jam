@@ -15,7 +15,7 @@ export const SiteFooter = () => {
           <a href="https://www.quokka.se/">Software by Quokka</a>
         </li>
         <li className="site-footer__item site-footer__item--email">
-          <span className="accent-word">robin.axelsson@quokka.se</span>
+          <span className="accent-word">axelsson.robin@outlook.com</span>
         </li>
       </ul>
     </footer>

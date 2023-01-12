@@ -54,7 +54,9 @@ I have a strong mental game from my years in competitive sailing and have a neve
 
 ## What are your weaknesses?
 
-I can give you one example I have hard time keeping every day stuff in my head, like dates and times, so I always bring an analog notebook or block of some kind around.
+I can give you one example I have hard time keeping every day stuff in my head, like dates and times, so I always bring an notebook or block (analog) of some kind around.
+
+---
 
 ## What about your Personality?
 
