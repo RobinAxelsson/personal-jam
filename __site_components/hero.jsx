@@ -38,8 +38,8 @@ export default function Hero() {
             <td>Object Oriented Design, .NET, C#, Test Driven Development, refactoring and CAD.</td>
           </tr>
           <tr>
-            <th>Dream job:</th>
-            <td>Building top class frameworks and libraries for the industry.</td>
+            <th>A cool job:</th>
+            <td>Developing top class frameworks and libraries for the industry.</td>
           </tr>
           <tr>
             <th>Hobbies:</th>
