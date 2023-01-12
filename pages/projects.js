@@ -1,20 +1,18 @@
-import HighlightedProjects from "../__site_components/highlighted-projects";
-import { getSortedHighlightedProjectsData } from "../__data_access/resume-repository";
+import MarkdownCard from "../__site_components/markdown-card";
+import { getMarkdownContent } from "../__data_access/resume-repository";
 
 export async function getStaticProps() {
   return {
     props: {
-      allHighlightedProjectsData: getSortedHighlightedProjectsData(),
+      allHighlightedProjectsMarkdown: getMarkdownContent("__data_records/cards.highlighted-projects.md")
     },
   };
 }
 
-export default function ProjectsPage({ allHighlightedProjectsData }) {
+export default function ProjectsPage({ allHighlightedProjectsData, allHighlightedProjectsMarkdown }) {
   return (
     <div className="card-collection">
-      <HighlightedProjects
-        allHighlightedProjectsData={allHighlightedProjectsData}
-      />
+      <MarkdownCard markdownContent={allHighlightedProjectsMarkdown} />
     </div>
   );
 }
