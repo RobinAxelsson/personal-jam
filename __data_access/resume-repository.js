@@ -3,23 +3,16 @@ import path from 'path';
 import matter from 'gray-matter';
 import YAML from 'yaml'
 
-export function getHeroMarkdown() {
-  return getMarkdownContent('__data_records/hero.md');
-}
-export function getSummaryMarkdown() {
-    return getMarkdownContent('__data_records/summary.md');
-}
-
-export function getRolesMarkdown() {
-  return getMarkdownContent('__data_records/roles.md');
+export function getQAMarkdown() {
+    return getMarkdownContent('__data_records/cards.qa.md');
 }
 
 export function getSchoolOfThoughtContent() {
-  return getMarkdownContent('__data_records/shool-of-thought.md');
+  return getMarkdownContent('__data_records/cards.school-of-thought.md');
 }
 
 export function getToRecruitersContent() {
-  return getMarkdownContent('__data_records/to-recruiters.md');
+  return getMarkdownContent('__data_records/cards.to-recruiters.md');
 }
 
 function getMarkdownContent(url){

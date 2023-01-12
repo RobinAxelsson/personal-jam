@@ -1,6 +1,6 @@
 ### Are you a recruiter? This site is for you! 😉
 
-I am happy you made time for visiting my site. It is developed for making it as easy as possible for you to quickly decide if I am relevant for the role you have in mind. A brief summary is found on the [About](/about) page.
+I am happy you made time for visiting my site. It is developed for making it as easy as possible for you to quickly decide if I am relevant for the role you have in mind. A brief summary is found on the [Q & A page.](/qa)
 
 ### Prefer to just read a [CV?](https://drive.google.com/file/d/1T6D66JRzcRjqYrN8KlE58GevxIs82P4g/view?usp=share_link)
 
