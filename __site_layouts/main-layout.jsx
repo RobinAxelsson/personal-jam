@@ -7,7 +7,11 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Full stack developer</title>
+        <title>.NET Full stack developer</title>
+        <meta property="og:image" content="/images/profile.jpg" />
+        <meta property="og:description" content="Personal page" />
+        <meta property="og:url" content="https://salihaxelsson.com/" />
+        <meta name="twitter:card" content="/images/profile.jpg" />
       </Head>
       <Header />
       <div className="top-image-canvas"></div>
