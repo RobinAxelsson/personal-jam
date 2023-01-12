@@ -1,9 +1,9 @@
-import { getQAMarkdown } from "../__data_access/resume-repository";
+import { getMarkdownContent } from "../__data_access/resume-repository";
 import MarkdownCard from "../__site_components/markdown-card"
 export async function getStaticProps() {
   return {
     props: {
-      qaMarkdown: getQAMarkdown()
+      qaMarkdown: getMarkdownContent('__data_records/cards.qa.md')
     },
   };
 }

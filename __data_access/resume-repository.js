@@ -3,19 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import YAML from 'yaml'
 
-export function getQAMarkdown() {
-    return getMarkdownContent('__data_records/cards.qa.md');
-}
-
-export function getSchoolOfThoughtContent() {
-  return getMarkdownContent('__data_records/cards.school-of-thought.md');
-}
-
-export function getToRecruitersContent() {
-  return getMarkdownContent('__data_records/cards.to-recruiters.md');
-}
-
-function getMarkdownContent(url){
+export function getMarkdownContent(url){
   const content = fs.readFileSync(url, 'utf8');
   if(isEmptyOrWhiteSpace(content)){
     throw Error("Content must be valid string, got: " + content)
@@ -25,18 +13,6 @@ function getMarkdownContent(url){
 
 function isEmptyOrWhiteSpace(str){
   return str === null || str.match(/^ *$/) !== null;
-}
-
-
-export function getPersonalData() {
-  const fileContent = fs.readFileSync('__data_records/personal_data.yml', 'utf8');
-  const {data} = matter(fileContent);
-
-  return {
-    id: 'personal_data',
-    languages: data.languages,
-    technologies: data.technologies
-  };
 }
 
 export function getWorkLifeArray() {
