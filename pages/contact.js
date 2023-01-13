@@ -11,7 +11,8 @@ export async function getStaticProps() {
 export default function ContactPage({ contactMarkdown }) {
   return (
     <div className="card-collection">
-      <MarkdownCard markdownContent={contactMarkdown} />
+      <MarkdownCard markdownContent={contactMarkdown}
+      additionalClassName={"card-general--contact"} />
     </div>
   );
 }

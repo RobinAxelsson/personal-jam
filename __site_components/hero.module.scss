@@ -3,6 +3,7 @@
 .hero {
   @extend %card-general-base;
   padding: 2rem 4rem;
+  align-items: center;
 }
 
 .hero__title {

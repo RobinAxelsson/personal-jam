@@ -2,7 +2,7 @@
 
 ---
 
-## Quick Introduction
+## First, do a quick introduction
 
 I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for writing code I changed my career and never looked back.
 
@@ -34,30 +34,18 @@ Yes, I love writing clean, specific and well abstracted code that is easy to mai
 
 ---
 
-## Why do you like Programming?
+## What is it about Programming?
 
 It is something very rewarding with the instant feedback and incremental progress. I always liked solving math puzzles and love the feeling when you understand a system a bit better. Refactoring and cleaning code, writing tests and keep on optimizing a system continuously, is in spirit very close to what I have done in competitive sailing for many years (which I also love).
 
 ---
 
-## What I want to do in the future?
-
-I want to develop libraries and frameworks for the Software Industry.
-
----
-
-## What are your strengths?
+## What are your pros?
 
 I have a strong mental game from my years in competitive sailing and have a never ending energy and stamina when it comes to problem solving. In a team I work autonomously, take initiatives and I am not afraid to ask questions and learn from the people around me.
 
 ---
 
-## What are your weaknesses?
+## Some downsides?
 
 I can give you one example I have hard time keeping every day stuff in my head, like dates and times, so I always bring an notebook or block (analog) of some kind around.
-
----
-
-## What about your Personality?
-
-I'm a caring and honest person, I like to socialize and generally people like my humor. Hard to give you more in this setting. 😉
