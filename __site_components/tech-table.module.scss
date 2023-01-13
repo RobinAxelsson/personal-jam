@@ -2,6 +2,7 @@
 
 .tech_table_container {
   @extend %card-general-base;
+  max-width: 35rem;
   padding: 2rem;
 }
 

@@ -9,6 +9,7 @@
   bottom: 0;
   padding-block: 100px;
   font-size: large;
+  z-index: -1;
 
   @include mq(small) {
     padding-left: 120px;

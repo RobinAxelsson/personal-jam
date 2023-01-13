@@ -1,9 +1,15 @@
 @use '../__site_scss/card';
-
+@use "../__site_scss/mixins" as *;
 
 .top_languages, 
 .coding_total {
   @extend %card-general-base;
+  max-width: 100%;
+  padding: 2rem;
+
+  @include mq(medium){
+    max-width: 30rem;
+  }
 }
 
 .coding_total__title,
@@ -26,12 +32,8 @@
 
 .coding_total__cell,
 .top_languages__cell {
-  padding: 12px 15px;
-}
-
-@media (min-width: 650px) {
-  .top_languages, 
-  .coding_total {
-    padding: 3rem;
+  padding: 1rem 0.1rem;
+  @include mq(medium){
+    padding: 12px 15px;
   }
 }

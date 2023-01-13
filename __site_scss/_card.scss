@@ -41,12 +41,13 @@
   min-height: fit-content;
   max-width: 400px;
   background-image: url("/android-chrome-192x192.png");
-  background-size: 70px;
+  background-size: 40px;
   background-repeat: no-repeat;
-  background-position-x: 5%;
-  background-position-y: 5%;
+  background-position-x: 11%;
+  background-position-y: 10%;
   overflow: hidden;
   padding-inline: 3.5rem;
+  z-index: -1;
 
   * {
     margin-block: 0.6rem;
@@ -63,7 +64,7 @@
   @include mq(medium) {
     background-position-x: +60px;
     background-position-y: +40px;
-    background-size: 110px;
+    background-size: 70px;
     max-width: 600px;
     padding-block: 4.5rem;
 
@@ -80,9 +81,10 @@
     position: relative;
     overflow: hidden;
     left: 10%;
+    z-index: -1;
 
     @include mq(medium) {
-      left: 28%;
+      left: 22%;
       position: relative;
     }
   }
