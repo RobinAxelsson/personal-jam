@@ -6,9 +6,7 @@ import { ensureValidString, EnsureValidArray } from '../__utils/validate';
 
 export function getMarkdownContent(url){
   const content = fs.readFileSync(url, 'utf8');
-  if(ensureValidString(content)){
-    throw Error("Content must be valid string, got: " + content)
-  }
+  ensureValidString(content)
   return content;  
 }
 

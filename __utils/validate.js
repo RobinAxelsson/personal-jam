@@ -4,8 +4,6 @@ export function EnsureValidArray(array) {
 }
 
 export function ensureValidString(stringValue){
-    if(stringValue === undefined || 
-      stringValue === null || 
-      stringValue.trim().length() === 0)
-    throw new Error("Invalid string value, got: ", stringValue);
+      if(stringValue === undefined || stringValue === null || stringValue.trim().length === 0)
+      throw new Error("Invalid string value, got: " + stringValue);
 }

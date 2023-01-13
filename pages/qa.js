@@ -8,7 +8,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ qaMarkdown }) {
+export default function QaPage({ qaMarkdown }) {
   return (
     <div className="card-collection">
       <MarkdownCard markdownContent={qaMarkdown}/>

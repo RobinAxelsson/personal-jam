@@ -1,14 +1,15 @@
 import MainLayout from "../__site_layouts/main-layout";
 import "../__site_scss/main.scss";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
-      <MainLayout>
+      <MainLayout
+      >
         <Component {...pageProps} />
       </MainLayout>
     </>
   );
 }
 
-export default MyApp;
+export default App;
