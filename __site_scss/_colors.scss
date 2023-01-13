@@ -4,6 +4,6 @@
     --clr-dark-primary: #0c0d0e;
     --clr-light-accent: #0070f3;
     --clr-font-primary: #0c0d0e;
-    --clr-font-contrast: rgb(250, 217, 217);
     --clr-bg: rgb(252, 253, 255);
+    --clr-font-contrast: var(--clr-bg);
 }

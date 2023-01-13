@@ -1,15 +1,31 @@
-.card-general {
-  padding: 2rem;
-  background: var(--clr-primary);
-  border-radius: 1px;
-  color: var(--clr-font-primary);
-  margin-top: 70px;
-  min-height: 350px;
+%card-general-base {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: var(--clr-primary);
+  color: var(--clr-font-primary);
+  border-radius: 2px;
+  margin-top: 70px;
+}
+
+.card-general {
+  padding: 2rem;
+  min-height: 350px;
+  @extend %card-general-base;
+}
+
+.card-small {
+
+  h3 {
+    font-size: xx-large;
+  }
+
+  @extend %card-general-base;
+  min-width: 600px;
+  padding-block: 20px;
+  text-align: left;
 }
 
 .card-grid {
