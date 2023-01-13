@@ -2,6 +2,7 @@ import React from 'react';
 import { SiteFooter } from './site-footer';
 import { Header } from './site-header';
 import Head from 'next/head';
+import styles from './main-layout.module.scss'
 
 const MainLayout = ({ children }) => {
   return (
@@ -14,8 +15,8 @@ const MainLayout = ({ children }) => {
         <meta name="twitter:card" content="/images/profile.jpg" />
       </Head>
       <Header />
-      <div className="top-image-canvas"></div>
-      <main>{children}</main>
+      <div className={styles.topImageCanvas}></div>
+      <main className={styles.siteMain}>{children}</main>
       <SiteFooter />
     </>
   );

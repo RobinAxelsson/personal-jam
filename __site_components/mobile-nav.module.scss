@@ -1,3 +1,7 @@
+@use '../__site_scss/mixins' as *;
+@use '../__site_scss/breakpoints' as *;
+
+
 .mobile_nav {
   --mobile_nav-clr-dark: var(--clr-dark-primary);
   --mobile_nav-clr-light: #fff;
@@ -6,8 +10,8 @@
   --mobile_nav-font-weight: 600;
   --mobile_nav-padding: 12px 24px;
 
-  @media (min-width: 650px) {
-      display: none;
+  @include mq(small){
+    display: none;
   }
 }
 

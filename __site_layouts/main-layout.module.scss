@@ -1,9 +1,13 @@
-main {
+@use '../__site_scss/mixins';
+
+.siteMain {
   padding-top: 50px;
   padding-bottom: 500px;
+  display: flex;
+  justify-content: center;
 }
 
-.top-image-canvas {
+.topImageCanvas {
   position: absolute;
   z-index: -1;
   left: 0;

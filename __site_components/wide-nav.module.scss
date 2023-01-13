@@ -1,8 +1,10 @@
+@use '../__site_scss/mixins' as *;
+
 .wide_nav {
     display: none;
 }
 
-@media (min-width: 650px) {
+@include mq(small){
     .wide_nav {
         display: block;
         padding-block: 20px;

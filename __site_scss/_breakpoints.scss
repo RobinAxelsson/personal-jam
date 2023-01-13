@@ -1,10 +1,5 @@
-:root {
-  --screen-small-px: 520px;
-  --main-max-width: 800px;
-}
-
 $breakpoints: (
-  small: 30em,
-  medium: 45em,
-  large: 65em,
+  small: 65em,
+  medium: 710px,
+  large: 1040px,
 );

@@ -1,5 +1,5 @@
 import fs from 'fs';
-
+import { ensureValidString } from '../__utils/validate';
 export default function getTechnologies() {
     const rows = readValidRows();
     const headers = createValidHeaders(rows);
@@ -27,10 +27,7 @@ function createValidRowObjects(rows) {
             throw new Error("Columns must be exactly 5, got:" + JSON.stringify(techColumns));
         }
 
-        techColumns.forEach(x => {
-            if (x === undefined || x === null || x === "")
-                throw new Error("Invalid value, got: ", x);
-        });
+        techColumns.forEach(x => ensureValidString(x));
 
         let technologies = techColumns[0];
         let professional = techColumns[1] * 1;
@@ -59,11 +56,6 @@ function createValidRowObjects(rows) {
     });
 
     return rowObjects.sort((a,b) => (a.technology < b.technology) ? -1 : 0);
-}
-
-function ensureValidString(stringValue){
-    if(stringValue === undefined || stringValue === null || stringValue === "")
-    throw new Error("Invalid string value, got: ", stringValue);
 }
 
 function createValidHeaders(rows) {

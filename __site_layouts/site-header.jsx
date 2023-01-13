@@ -1,9 +1,12 @@
 import { MobileNav } from "../__site_components/mobile-nav";
 import { WideNav } from "../__site_components/wide-nav";
+import { getModuleStyleFunctionFactory } from "../__utils/css-style";
+import styles from './site-header.module.scss'
 
+const gms = getModuleStyleFunctionFactory(styles);
 export const Header = () => {
   return (
-    <header className="site-header">
+    <header className={gms("site-header")}>
       <WideNav navLinks={navLinks} />
       <MobileNav navLinks={navLinks}/>
     </header>

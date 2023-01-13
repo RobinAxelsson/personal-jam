@@ -9,7 +9,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function ProjectsPage({ allHighlightedProjectsData, allHighlightedProjectsMarkdown }) {
+export default function ProjectsPage({ allHighlightedProjectsMarkdown }) {
   return (
     <div className="card-collection">
       <MarkdownCard markdownContent={allHighlightedProjectsMarkdown} />

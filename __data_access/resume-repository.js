@@ -2,17 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import YAML from 'yaml'
+import { ensureValidString, EnsureValidArray } from '../__utils/validate';
 
 export function getMarkdownContent(url){
   const content = fs.readFileSync(url, 'utf8');
-  if(isEmptyOrWhiteSpace(content)){
+  if(ensureValidString(content)){
     throw Error("Content must be valid string, got: " + content)
   }
   return content;  
-}
-
-function isEmptyOrWhiteSpace(str){
-  return str === null || str.match(/^ *$/) !== null;
 }
 
 export function getWorkLifeArray() {
@@ -27,11 +24,6 @@ export function getEducationArray() {
   const education = YAML.parse(fileContent).education;
   EnsureValidArray(education)
   return education;
-}
-
-function EnsureValidArray(array){
-  if(!(array instanceof Array) || array.length === 0)
-    throw new Error("Invalid array, got: " + array);
 }
 
 
