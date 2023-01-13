@@ -1,5 +1,6 @@
 import styles from './site-footer.module.scss'
 import { getModuleStyleFunctionFactory } from '../__utils/css-style';
+import Link from 'next/link'
 
 const style = getModuleStyleFunctionFactory(styles);
 export const SiteFooter = () => {
@@ -16,7 +17,7 @@ export const SiteFooter = () => {
           <a href="https://www.github.com/robinaxelsson">GitHub</a>
         </li>
         <li className={style("site-footer__item site-footer__item--link")}>
-          <a href="https://www.quokka.se/">Software by Quokka</a>
+          <Link href="https://www.quokka.se/">Software by Quokka</Link>
         </li>
         <li className={style("site-footer__item site-footer__item--email")}>
           <span className="accent-word">axelsson.robin@outlook.com</span>
