@@ -1,4 +1,4 @@
-import parseDateToString from "../__data_parsers/parser-date";
+import parseDateToString from "../__utils/date";
 export default function Education({ education }) {
   return (
     <Card

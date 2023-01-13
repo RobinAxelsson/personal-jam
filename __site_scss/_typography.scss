@@ -23,7 +23,9 @@ h2,
 h3,
 h4,
 p,
-li {
+li,
+th,
+td {
   color: var(--clr-font-primary);
   margin: var(--default-margin);
   line-height: 1.1em;

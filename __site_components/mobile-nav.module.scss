@@ -10,7 +10,7 @@
   --mobile_nav-font-weight: 600;
   --mobile_nav-padding: 12px 24px;
 
-  @include mq(small){
+  @include mq(medium){
     display: none;
   }
 }

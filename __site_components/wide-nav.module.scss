@@ -1,23 +1,21 @@
-@use '../__site_scss/mixins' as *;
+@use "../__site_scss/mixins" as *;
 
 .wide_nav {
-    display: none;
+  display: none;
+  padding-block: 20px;
+  padding-inline: 10px;
+
+  @include mq(medium) {
+    display: block;
+  }
 }
 
-@include mq(small){
-    .wide_nav {
-        display: block;
-        padding-block: 20px;
-        padding-inline: 10px;
-    }
+.wide_nav__link_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-    .wide_nav__link_list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .wide_nav__link_item {
-        margin: 0.5rem;
-    }
+.wide_nav__link_item {
+  margin: 0.5rem;
 }
