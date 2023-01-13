@@ -1,3 +1,5 @@
+@use "../__site_scss/mixins" as *;
+
 .site-header {
   width: 100%;
   top: 0;
@@ -5,10 +7,9 @@
   min-height: 60px;
   color: #fff;
   background-color: var(--clr-dark-primary);
-}
+  box-shadow: inset 0px -10px 10px #464343;
 
-@media (min-width: 650px) {
-  .site-header {
+  @include mq(medium){
     display: flex;
     align-items: center;
     justify-content: center;

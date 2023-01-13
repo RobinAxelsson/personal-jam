@@ -10,7 +10,7 @@
   padding-block: 100px;
   font-size: large;
   z-index: -1;
-
+  box-shadow: inset 0px 15px 30px #464343;
   @include mq(small) {
     padding-left: 120px;
   }
