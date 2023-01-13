@@ -1,7 +1,6 @@
 %card-general-base {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: var(--clr-primary);
@@ -14,6 +13,21 @@
   padding: 2rem;
   min-height: 350px;
   @extend %card-general-base;
+}
+
+.card-general--center {
+  align-items: center;
+}
+
+.card-general--small {
+  li {
+    font-size: large;
+    font-weight: 450;
+  }
+
+  .card-general__content {
+    margin-left: 10%;
+  }
 }
 
 .card-small {

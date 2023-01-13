@@ -11,7 +11,9 @@ export async function getStaticProps() {
 export default function SchoolOfThoughtPage({ schoolOfThought }) {
   return (
     <div className="card-collection">
-      <MarkdownCard markdownContent={schoolOfThought}/>
-        </div>
+      <MarkdownCard markdownContent={schoolOfThought}
+      additionalClassName={"card-general--small"}
+      />
+    </div>
   );
 }

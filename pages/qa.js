@@ -11,7 +11,9 @@ export async function getStaticProps() {
 export default function QaPage({ qaMarkdown }) {
   return (
     <div className="card-collection">
-      <MarkdownCard markdownContent={qaMarkdown}/>
+      <MarkdownCard markdownContent={qaMarkdown}
+      additionalClassName={"card-general--center"}
+      />
         </div>
   );
 }

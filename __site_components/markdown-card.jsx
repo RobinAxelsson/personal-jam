@@ -1,27 +1,19 @@
 import ReactMarkdown from 'react-markdown'
 
-export default function MarkdownCard({markdownContent}) {
+export default function MarkdownCard({markdownContent, additionalClassName}) {
+  
+  let className = "card-general";
+  if(typeof additionalClassName === 'string'){
+    className += " " + additionalClassName;
+  }
   const sections = markdownContent.split('---').filter(x => !isEmptyOrWhiteSpace(x));
   return sections.map(x => (
-    <Card key={x.slice(0, 20)}
-      right={
-        <ReactMarkdown>{x}</ReactMarkdown>
-      }
-    />
-  ));
-}
-
-function Card({ left, right, key }) {
-  return (
-    <div className="card-general hero-section" key={key}>
-      <div className="hero-section-content">
-        {left}
-      </div>
-      <div className="hero-section-content">
-        {right}
-      </div>
+    <div className={className} key={x.slice(0, 20)}>
+    <div className="card-general__content">
+    <ReactMarkdown>{x}</ReactMarkdown>
     </div>
-  );
+  </div>
+  ));
 }
 
 function isEmptyOrWhiteSpace(str){

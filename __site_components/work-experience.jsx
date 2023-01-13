@@ -2,10 +2,9 @@ import parseDateToString from "../__utils/date";
 
 export default function WorkExperience({ worklife }) {
   return (
-    <Card
-      right={
-        <>
-          <h2 className="card-title">Work Experience</h2>
+    <div className="card-general">
+      <div className="card-general__content">
+      <h2 className="card-title">Work Experience</h2>
           <div className="card-grid grid-column-3">
             {worklife.map(({ company, title, start, end }) => (
               <>
@@ -24,20 +23,6 @@ export default function WorkExperience({ worklife }) {
               </>
             ))}
           </div>
-        </>
-      }
-    />
-  );
-}
-
-function Card({ left, right, key }) {
-  return (
-    <div className="card-general hero-section" key={key}>
-      <div className="hero-section-content">
-        {left}
-      </div>
-      <div className="hero-section-content">
-        {right}
       </div>
     </div>
   );
