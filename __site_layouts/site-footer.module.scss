@@ -9,7 +9,7 @@
   bottom: 0;
   padding-block: 100px;
   font-size: large;
-  z-index: 1;
+  z-index: 0;
   box-shadow: inset 0px 3px 10px #464343;
 
   @include mq(small) {

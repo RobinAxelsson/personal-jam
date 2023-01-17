@@ -40,64 +40,8 @@
 }
 
 .card-general--contact {
-  min-height: fit-content;
-  max-width: 400px;
-  background-image: url("/android-chrome-192x192.png");
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position-x: 11%;
-  background-position-y: 10%;
-  overflow: hidden;
-  padding-inline: 3.5rem;
-
-  * {
-    margin-block: 0.6rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  h3 {
-    font-size: 0.9rem;
-  }
-
+  padding-left: 10%;
   @include mq(medium) {
-    background-position-x: +60px;
-    background-position-y: +40px;
-    background-size: 70px;
-    max-width: 600px;
-    padding-block: 4.5rem;
-
-    h2 {
-      font-size: var(--fs-600);
-    }
-
-    h3 {
-      font-size: var(--fs-400);
-    }
-  }
-
-  .card-general__content {
-    position: relative;
-    overflow: hidden;
-    left: 10%;
-
-    @include mq(medium) {
-      left: 22%;
-      position: relative;
-    }
-  }
-}
-
-.card-general--small {
-  li {
-    font-size: large;
-    font-weight: 450;
-  }
-
-  .card-general__content {
-    margin-left: 10%;
   }
 }
 
