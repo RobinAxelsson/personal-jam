@@ -64,10 +64,6 @@ export function CodingStats() {
             <td className={styles.coding_total__cell}>Daily Average:</td>
             <TimeCells time={wakatime.dailyAverage} />
           </tr>
-          <tr className={styles.coding_total__row}>
-            <td className={styles.coding_total__cell}>Total last 7 days:</td>
-            <TimeCells time={wakatime.totalTimeWeek} />
-          </tr>
         </table>
         <h4 className="wakatime-ingress">
           from {parseDateToString(wakatime.start)} to{" "}
