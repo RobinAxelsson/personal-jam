@@ -23,7 +23,7 @@ export default function Hero() {
           </tr>
           <tr>
             <th>Current position:</th>
-            <td><a href="https://quokka.se">Consultant at Software by Quokka.</a></td>
+            <td><a href="https://iver.se">System Developer at Iver</a></td>
           </tr>
           <tr>
             <th>Primary Languages:</th>
