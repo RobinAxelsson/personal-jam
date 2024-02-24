@@ -1,10 +1,20 @@
 
 worklife:
   -
+    company: Iver Sverige
+    title: System Developer
+    start: 2022-2
+    end:
+    technologies:
+    - C#,
+    - NHibernate,
+    - T-SQL,
+    - WPF
+  -
     company: Software By Quokka
     title: Full Stack Cloud Developer
     start: 2022-2
-    end:
+    end: 2023-2
     technologies:
   -
     company: Volvo Cars
