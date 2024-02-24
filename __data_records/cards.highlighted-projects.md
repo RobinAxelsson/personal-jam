@@ -1,15 +1,9 @@
-### Iver Sverige - Time Reporting System in Cendot by Iver 1998-2024
+### Time Reporting System in Cendot by Iver 1998-2024
+#### Iver Sverige 02/2023 - ongoing
 
 Developing and maintaining the companies central inhouse built .NET business system with focus on the Time Report management system both backend and frontend.
 
 C#, WPF monolith desktop app, T-SQL, NHibernate, Citrix, Rest-API, Azure DevOps, Azure Application Insights
-
-#### Volvo Cars 02/2022-12/2022
-
-Working on System & Signal Design-team’s SUMS-document project, which purpose is to extract Sums relevant data from the Software-PLM platform SystemWeaver outputting a document used for UNECE certification. Mainly responsible for development of the applications testing projects (integration and unit test), dependency management, code refactoring and code design.
-
-C#, X-Unit, Microsoft Dependency Injection, ASP.NET Web API, PowerShell, AzureDevOps, SAFE, SystemWeaver, Jira
-
 ---
 
 ### Volvo Cars SUMS Document
