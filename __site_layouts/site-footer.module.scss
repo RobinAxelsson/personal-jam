@@ -1,7 +1,6 @@
 @use "../__site_scss/mixins" as *;
 
 .site-footer {
-  color: #fff;
   background-color: var(--clr-dark-primary);
   position: absolute;
   right: 0;
@@ -28,5 +27,6 @@
 }
 
 .site-footer__item--title h3 {
+  color: #fff;
   margin: 1px;
 }

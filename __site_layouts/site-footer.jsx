@@ -8,19 +8,16 @@ export const SiteFooter = () => {
     <footer className={style("site-footer")}>
       <ul className={style("site-footer__list")}>
         <li className={style("site-footer__item site-footer__item--title")}>
-          <h3>© 2023 Robin Salih Axelsson</h3>
+          <h3>© 2024 Robin Salih Axelsson</h3>
         </li>
         <li className={style("site-footer__item site-footer__item--link")}>
-          <a href="https://www.linkedin.com/in/axelsson-robin/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/axelsson-robin/">LinkedIn page</a>
         </li>
         <li className={style("site-footer__item site-footer__item--link")}>
-          <a href="https://www.github.com/robinaxelsson">GitHub</a>
-        </li>
-        <li className={style("site-footer__item site-footer__item--link")}>
-          <Link href="https://www.iver.se/">Iver Sweden</Link>
+          <a href="https://www.github.com/robinaxelsson">GitHub page</a>
         </li>
         <li className={style("site-footer__item site-footer__item--email")}>
-          <span className="accent-word">axelsson.robin@outlook.com</span>
+          <span className="accent-word"><a href="mailto:axelsson.robin@outlook.com">axelsson.robin@outlook.com</a></span>
         </li>
       </ul>
     </footer>
