@@ -43,7 +43,7 @@ export default function Hero() {
           </tr>
           <tr>
             <th>Hobbies:</th>
-            <td>Sail Racing, Fitness, Coding</td>
+            <td>Sail Racing, Fitness, Coding, Brazilian Jiu Jitsu</td>
           </tr>
         </table>
     </div>
