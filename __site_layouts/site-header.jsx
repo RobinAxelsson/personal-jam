@@ -15,7 +15,7 @@ export const Header = () => {
 
 const navLinks = [
   "Start;/",
-  "Projects;/projects",
+  //"Projects;/projects",
   //"Coding Stats;/stats",
   "Work Experience & Education;/experience",
   "Technologies;/tech",
