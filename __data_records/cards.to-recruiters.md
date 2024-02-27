@@ -8,9 +8,7 @@ I am happy you made time for visiting my site. It is developed for making it as 
 ### What can you do at my site? 🤔
 
 As mentioned you can read my presentation but also:
-- Check my [**Coding Log**](/stats) - how many hours I have coded last 12 months and in what languages
 - Find out my [**Work Experience & Education**](/experience)
-- Read a summery about my bigger [**Resume Projects**](/projects)
 - See what tech-stack and [**Technologies**](/tech) I have experience from and what I know the best.
 - Find out what books, channels I like and what I value - see [**School of Thought**](/school-of-thought) page.
 
