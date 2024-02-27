@@ -21,7 +21,7 @@ const navLinks = [
   "Technologies;/tech",
   "School of Thought;/school-of-thought",
   "Q&A;/qa",
-  "CV;/Robin-SA-CV-2023Q1.pdf",
+  "CV;/CV.html",
   "Contact;/contact"
 ].map(x => {
   const split = x.split(';');
