@@ -12,7 +12,7 @@ I am a .NET developer from Gothenburg who never stops learning. Prior to Corona 
 
 ### Backend Developer
 
-With over [2000 editor hours](/stats) in C# last two years and lots of theoretical knowledge in Object Oriented Design, Code Architecture and System Development I am a great candidate for any team as a backend developer where my primary languages are: C# then Python and Node.js.
+With over 2000 editor hours in C# last two years and lots of theoretical knowledge in Object Oriented Design, Code Architecture and System Development I am a great candidate for any team as a backend developer where my primary languages are: C# then Python and Node.js.
 
 ### Full Stack Cloud Developer
 
