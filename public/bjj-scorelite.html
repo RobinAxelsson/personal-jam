@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Match Scoreboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            font-size: 6vw;
+            color: black;
+        }
+
+        body,
+        html {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .scoreboard {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(6, auto);
+            width: 100vw;
+            height: 80vh;
+        }
+
+        .fighter-btn {
+            display: flex;
+            column-span: 2;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .digit {
+            font-size: 9vw;
+            grid-column: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-panel {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(4, auto);
+            grid-row: 1;
+            grid-column: 1 / span 2;
+            width: 100vw;
+        }
+
+        .panel-btn {
+            height: 11vh;
+        }
+
+        .time-buttons {
+            display: inline-flex;
+            width: 100%;
+            height: 8vh;
+            justify-content: space-between;
+        }
+
+        .time-btn {
+            width: 100%;
+        }
+
+        .top-board {
+            width: 100vw;
+            display: grid;
+        }
+
+        .fighter-section {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+        }
+
+        #menuOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #editNames {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-board">
+        <div class="digit" id="timer_digits" style="grid-row: 1; grid-column: 1;">05:00</div>
+        <div class="time-buttons" style="grid-row: 1; grid-column: 2;">
+            <button class="time-btn" onclick="startTimer()">Start</button>
+            <button class="time-btn" onclick="stopTimer()">Stop</button>
+            <button class="time-btn" onclick="resetMatch()">Reset</button>
+        </div>
+        <div class="score-digits" style="grid-row: 2; grid-column: 1;">
+            <div class="digit" id="score1">0</div>
+            <div class="digit" id="adv1" style="color: green" id="fighter1_advantage">0</div>
+            <div class="digit" id="pen1" style="color: red" id="fighter1_penelty">0</div>
+        </div>
+
+        <div class="score-digits" style="grid-row: 3; grid-column: 1;">
+            <div class="digit" id="score2">0</div>
+            <div class="digit" id="adv2" style="color: green" id="fighter2_advantage">0</div>
+            <div class="digit" id="pen2" style="color: red" id="fighter1_penelty">0</div>
+        </div>
+
+        <button class="fighter-btn" id="fighter1" style="grid-row: 2; grid-column:2;" onclick="setPoints(1)">Fighter 1</button>
+        <button class="fighter-btn" id="fighter2" style="grid-row: 3; grid-column:2;" onclick="setPoints(2)">Fighter 2</b>
+    </div>
+    <div class="button-panel">
+        <button class="panel-btn" style="grid-row: 1; grid-column: 1;" onclick="savePoints(this, 1,0,0)">+1</button>
+        <button class="panel-btn" style="grid-row: 1; grid-column: 2;" onclick="savePoints(this, 2,0,0)">+2</button>
+        <button class="panel-btn" style="grid-row: 1; grid-column: 3;" onclick="savePoints(this, -1,0,0)">-1</button>
+        <button class="panel-btn" style="grid-row: 1; grid-column: 4;" onclick="savePoints(this, -2,0,0)">-2</button>
+
+        <button class="panel-btn" style="grid-row: 2; grid-column: 1;" onclick="savePoints(this, 3,0,0)">+3</button>
+        <button class="panel-btn" style="grid-row: 2; grid-column: 2;" onclick="savePoints(this, 4,0,0)">+4</button>
+        <button class="panel-btn" style="grid-row: 2; grid-column: 3;" onclick="savePoints(this, -3,0,0)">-3</button>
+        <button class="panel-btn" style="grid-row: 2; grid-column: 4;" onclick="savePoints(this, -4,0,0)">-4</button>
+
+        <button class="panel-btn" style="grid-row: 3; grid-column: 1;" onclick="savePoints(this, 0,1,0)">+A</button>
+        <button class="panel-btn" style="grid-row: 3; grid-column: 2;" onclick="savePoints(this, 0,0,1)">+P</button>
+        <button class="panel-btn" style="grid-row: 3; grid-column: 3;" onclick="savePoints(this, 0,-1,0)">-A</button>
+        <button class="panel-btn" style="grid-row: 3; grid-column: 4;" onclick="savePoints(this, 0,0,-1)">-P</button>
+
+        <button class="panel-btn" style="grid-row: 4; grid-column: 1;" onclick="savePoints(null, 0,0,0)"></button>
+        <button class="panel-btn" style="grid-row: 4; grid-column: 2;"
+            onclick="savePoints(this, 0,0,0, true)">Sub</button>
+        <button class="panel-btn" style="grid-row: 4; grid-column: 3;" onclick="copyMatchScore()">Cp</button>
+        <button class="panel-btn" style="grid-row: 4; grid-column: 4;" onclick="menu()">...</button>
+    </div>
+
+    <div id="menuOverlay">
+        <div id="editNames">
+            <input type="text" id="name1" placeholder="Fighter 1">
+            <input type="text" id="name2" placeholder="Fighter 2">
+            <button id="submitName" onclick="submitMenu()">Submit</button>
+            <button id="closeModal" onclick="closeMenu()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        let startTime = 300;
+        let timer = startTime;
+
+        let score1 = 0;
+        let adv1 = 0;
+        let pen1 = 0;
+        let sub1 = false;
+
+        let score2 = 0;
+        let adv2 = 0;
+        let pen2 = 0;
+        let sub2 = false;
+
+        let loadScore = 0;
+        let loadAdv = 0;
+        let loadPen = 0;
+        let loadSub = false;
+
+        let intervalId = null;
+
+        function resetMatch(){
+            resetTimer();
+            resetPoints();
+        }
+
+        function startTimer() {
+            if (intervalId === null) {
+                intervalId = setInterval(function () {
+                    timer--;
+                    updateDisplay();
+                }, 1000);
+            }
+        }
+
+        function stopTimer() {
+            if (intervalId !== null) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        }
+
+        function resetTimer() {
+            stopTimer();
+            timer = startTime;
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            let minutes = Math.floor(timer / 60);
+            let seconds = timer % 60;
+            document.getElementById('timer_digits').textContent =
+                (minutes < 10 ? '0' : '') + minutes + ':' +
+                (seconds < 10 ? '0' : '') + seconds;
+        }
+
+        function savePoints(button, score, adv, pen, sub) {
+
+            document.querySelectorAll('.panel-btn').forEach(b => {
+                b.style.backgroundColor = '';
+            });
+
+            loadScore = score;
+            loadAdv = adv;
+            loadPen = pen;
+            if (sub === true)
+                loadSub = true;
+
+            if (button != null)
+                button.style.backgroundColor = 'yellow';
+        }
+
+        function resetPoints() {
+            score1 = 0;
+            adv1 = 0;
+            pen1 = 0;
+            sub1 = false;
+            score2 = 0;
+            adv2 = 0;
+            pen2 = 0;
+            sub2 = false;
+
+            document.getElementById('score1').textContent = score1;
+            document.getElementById('adv1').textContent = adv1;
+            document.getElementById('pen1').textContent = pen1;
+            document.getElementById('score2').textContent = score2;
+            document.getElementById('adv2').textContent = adv2;
+            document.getElementById('pen2').textContent = pen2;
+        }
+
+        function setPoints(fighter) {
+            if (loadSub === true) {
+                stopTimer();
+            }
+
+            if (fighter === 1) {
+                score1 += loadScore;
+                adv1 += loadAdv;
+                pen1 += loadPen;
+
+                if (loadSub === true)
+                    sub1 = true;
+
+                if (score1 < 0) score1 = 0;
+                if (adv1 < 0) adv1 = 0;
+                if (pen1 < 0) pen1 = 0;
+
+                document.getElementById('score1').textContent = score1;
+                document.getElementById('adv1').textContent = adv1;
+                document.getElementById('pen1').textContent = pen1;
+            } else if (fighter === 2) {
+                score2 += loadScore;
+                adv2 += loadAdv;
+                pen2 += loadPen;
+
+                if (loadSub === true)
+                    sub2 = true;
+
+                if (score2 < 0) score2 = 0;
+                if (adv2 < 0) adv2 = 0;
+                if (pen2 < 0) pen2 = 0;
+
+                document.getElementById('score2').textContent = score2;
+                document.getElementById('adv2').textContent = adv2;
+                document.getElementById('pen2').textContent = pen2;
+            }
+        }
+
+        function copyMatchScore() {
+            let fighter1 = document.getElementById('fighter1').innerText;
+            let fighter2 = document.getElementById('fighter2').innerText;
+            let wonBySub = `Won by Submission ${document.getElementById('timer_digits').textContent}`;
+
+            let matchSummary = `${fighter1} ${score1} A${adv1} P${pen1} ${sub1 ? wonBySub : ''}\n${fighter2} ${score2} A${adv2} P${pen2} ${sub2 ? wonBySub : ''}`;
+
+            navigator.clipboard.writeText(matchSummary);
+        }
+
+        function menu() {
+            document.getElementById('menuOverlay').style.display = 'flex';
+        }
+
+        function submitMenu() {
+            document.getElementById('fighter1').innerText = document.getElementById('name1').value;
+            document.getElementById('fighter2').innerText = document.getElementById('name2').value;
+            document.getElementById('menuOverlay').style.display = 'none';
+        }
+
+        function closeMenu() {
+            document.getElementById('menuOverlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
