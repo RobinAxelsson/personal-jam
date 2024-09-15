@@ -5,27 +5,6 @@ I am happy you made time for visiting my site. It is developed for making it as 
 ### Click [here](/CV.html) to just read a CV
 
 ---
-### What can you do at my site?
-
-As mentioned you can read my presentation but also:
-- Find out my [**Work Experience & Education**](/experience)
-- See what tech-stack and [**Technologies**](/tech) I have experience from and what I know the best.
-- Find out what books, channels I like and what I value - see [**School of Thought**](/school-of-thought) page.
-
----
-
-### What you can't learn about here ⛵
-
-- My big interest of sailing and sail racing.
-- How to make my favourite sallad [**Pico de Gallo**](https://www.holajalapeno.com/pico-de-gallo/)
-- Maybe you know something that I missed? Please tell me and I will try to compliment.
-
----
-### Still here? 🤩
-
-If that is the case and I match what you are looking for do not hesitate to contact me.
-
----
 
 ### Note 📣
 
