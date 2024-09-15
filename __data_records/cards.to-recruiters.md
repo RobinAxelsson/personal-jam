@@ -1,11 +1,11 @@
-### Are you looking for a developer? This site is for you! 😉
+### Are you looking for a developer? This site is for you!
 
 I am happy you made time for visiting my site. It is developed for making it as easy as possible for you to quickly decide if I am relevant for the role you have in mind. A brief summary is found on the [Q & A page.](/qa)
 
 ### Click [here](/CV.html) to just read a CV
 
 ---
-### What can you do at my site? 🤔
+### What can you do at my site?
 
 As mentioned you can read my presentation but also:
 - Find out my [**Work Experience & Education**](/experience)
