@@ -1,3 +1,23 @@
+### Five Workplace preferences 😊
+
+- Office first/hybrid
+- After works
+- Efficient meetings
+- Ergonomic Chairs
+- Lunch exercise
+
+---
+
+### Five Team does...
+
+- Create value
+- Get things done
+- Laugh together and have fun
+- Give each other feedback
+- Keep it clean
+
+---
+
 ### Five great Books 📚
 
 - The Pragmatic Programmer, Andrew Hunt & David Thomas
@@ -28,20 +48,10 @@
 
 ---
 
-### Five Languages I Want to Learn 🤩
+### Five Languages I Want to Learn...
 
 - Rust
 - C++
 - GO
 - C
 - A little bit of Assembly
-
----
-
-### Five Workplace preferences 😊
-
-- Office first/hybrid
-- After works
-- Efficient meetings
-- Ergonomic Chairs
-- Lunch exercise
