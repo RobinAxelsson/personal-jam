@@ -30,10 +30,9 @@
 
 ### Five Languages I Want to Learn 🤩
 
-- C++
-- F#
-- GO
 - Rust
+- C++
+- GO
 - C
 - A little bit of Assembly
 
@@ -44,5 +43,5 @@
 - Office first/hybrid
 - After works
 - Efficient meetings
-- Office chairs with arm rests
+- Ergonomic Chairs
 - Lunch exercise
