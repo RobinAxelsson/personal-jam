@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,46 +12,60 @@
             padding: 20px;
             color: #333;
         }
+
         .container {
             max-width: 800px;
             margin: auto;
         }
+
         header {
             text-align: center;
             margin-bottom: 50px;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             margin: 0;
         }
+
         h2 {
             margin-top: 10px;
             font-size: 20px;
             color: #666;
         }
+
         section {
             margin-bottom: 30px;
         }
+
         h3 {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
             font-size: 18px;
             color: #333;
         }
-        p, li {
+
+        p,
+        li {
             line-height: 1.5;
         }
-        .experience, .education, .projects, .text-content {
+
+        .experience,
+        .education,
+        .projects,
+        .text-content {
             margin-left: 20px;
         }
 
         .profile-picture img {
-            width: 300px; 
-            height: 300px; 
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             object-fit: cover;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -59,8 +74,23 @@
             </div>
             <p></p>
             <h1>Robin Salih Axelsson</h1>
-            <h2>System .NET Developer former Design Engineer</h2>
+            <h2 id="heading">System .NET Developer former Design Engineer</h2>
         </header>
+        <script>
+            const headings = [
+                "System .NET Developer former Design Engineer", // 0
+                ".NET Software Developer",                      // 1
+                "Full Stack Developer",                         // 2
+                "Backend Engineer",                             // 3
+                "Backend Developer",                            // 4
+            ]
+            const urlParams = new URLSearchParams(window.location.search);
+            const h = urlParams.get("h");
+
+            if (!isNaN(h) && h >= 0 && h < headings.length) {
+                document.getElementById('heading').textContent = headings[h];
+            }
+        </script>
         <section>
             <h3>Contact</h3>
             <p>Email: <a href="mailto:axelsson.robin@outlook.com">axelsson.robin@outlook.com</a></p>
@@ -72,16 +102,24 @@
         <section>
             <h3>Profile</h3>
             <div class="text-content">
-                <p>I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for writing code I changed my career and never looked back.</p>
-                <p>I love writing clean, specific and well abstracted code that is easy to maintain and to understand. I always have some projects, I read books about OOD and practice coding for the fun of it. I get ideas and epiphanies about problems around the clock (which is not always a good thing) and I do spend the extra time to understand something thoroughly.</p>
-                <p>I have a strong mental game from my years in competitive sailing and have a neverending energy and stamina when it comes to problem solving. In a team, I work autonomously, take initiatives and I am not afraid to ask questions and learn from the people around me.</p>
+                <p>I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design
+                    Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for
+                    writing code I changed my career and never looked back.</p>
+                <p>I love writing clean, specific and well abstracted code that is easy to maintain and to understand. I
+                    always have some projects, I read books about OOD and practice coding for the fun of it. I get ideas
+                    and epiphanies about problems around the clock (which is not always a good thing) and I do spend the
+                    extra time to understand something thoroughly.</p>
+                <p>I have a strong mental game from my years in competitive sailing and have a neverending energy and
+                    stamina when it comes to problem solving. In a team, I work autonomously, take initiatives and I am
+                    not afraid to ask questions and learn from the people around me.</p>
             </div>
         </section>
         <section>
             <h3>Skills</h3>
             <ul>
                 <li>Programming Languages: C#, JavaScript/TypeScript, Python, PowerShell, Bash, C, T-SQL</li>
-                <li>Frameworks/Libraries: .NET, NHibernate, X-Unit, ASP.NET Web Api, SignalR, Entity Famework, React.js, Node.js, Express.js, Microsoft WPF</li>
+                <li>Frameworks/Libraries: .NET, NHibernate, X-Unit, ASP.NET Web Api, SignalR, Entity Famework, React.js,
+                    Node.js, Express.js, Microsoft WPF</li>
                 <li>Tools: Git, Docker, Postman/Newman, Azure DevOps, GitHub Actions</li>
                 <li>Other: SCRUM, TDD, CI/CD, Siemens TeamCenter, CATIA V5</li>
             </ul>
@@ -89,10 +127,22 @@
         <section>
             <h3>Experience</h3>
             <div class="experience">
-                <p><strong>System Developer</strong> - Iver Sverige, Gothenburg, Feb 2023 - Present</p>
+                <p><strong>Software Engineer</strong> - Bokio, Gothenburg, Feb 2024 - Present</p>
+                <ul>
+                    <li>Part of a fintech SaaS company building a book keeping application for the swedish market</li>
+                    <li>Tech-stack: Azure App Service -> React -> ASP.NET -> MS SQL Server</li>
+                    <li>Working in a self organizing .NET Platform team of 5 developers</li>
+                    <li>Developing backend login security features, secure file uploading, rest api integrations and
+                        logging to Azure Application Insights</li>
+                    <li>Tech: ASP.NET, Entity Framework Core, MS SQL Server, Azure, REST-API</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <p><strong>System Developer</strong> - Iver Sverige, Gothenburg, Feb 2023 - April 2024</p>
                 <ul>
                     <li>Collaborated in the Team "Time & People" a SCRUM team of 3 developers</li>
-                    <li>Participating in developing and designing end to end features in the same room as the business</li>
+                    <li>Participating in developing and designing end to end features in the same room as the business
+                    </li>
                     <li>Maintaining and developing in a hugh code base (more then 3.3 million lines of code)</li>
                     <li>Designing and developing business automation features</li>
                     <li>Team responsible for git management and hot fixes in the Azure DevOps Pipeline</li>
@@ -111,7 +161,8 @@
                 </ul>
             </div>
             <div class="experience">
-                <p><strong>Full Stack Cloud Developer Consultant</strong> - Software by Quokka, Gothenburg Feb 2022 - Feb 2023</p>
+                <p><strong>Full Stack Cloud Developer Consultant</strong> - Software by Quokka, Gothenburg Feb 2022 -
+                    Feb 2023</p>
                 <ul>
                     <li>Consultant at Volvo Cars</li>
                 </ul>
@@ -125,21 +176,24 @@
                 </ul>
             </div>
             <div class="experience">
-                <p><strong>Design Engineer</strong> - CEVT (China Euro Vehicle Company), Gothenburg Feb 2020 - May 2020</p>
+                <p><strong>Design Engineer</strong> - CEVT (China Euro Vehicle Company), Gothenburg Feb 2020 - May 2020
+                </p>
                 <ul>
-                    <li>Responsible for the design of sheet metal Console in the fuel system of the 
+                    <li>Responsible for the design of sheet metal Console in the fuel system of the
                         CMA platform (Volvo XC40, Lynk&co: 01, 02, 03).</li>
-                    <li>Assisting System Engineers with management of CAD-parts in the PLM system Siemens TeamCenter.</li>
+                    <li>Assisting System Engineers with management of CAD-parts in the PLM system Siemens TeamCenter.
+                    </li>
                     <li>Driving communication with interfaceing Chineese team.</li>
                     <li>Tech: PLM Siemens TeamCenter, Catia V5</li>
                 </ul>
             </div>
             <div class="experience">
-                <p><strong>Design Engineer Internship</strong> - CEVT (China Euro Vehicle Company), Gothenburg Feb 2019 - May 2019</p>
+                <p><strong>Design Engineer Internship</strong> - CEVT (China Euro Vehicle Company), Gothenburg Feb 2019
+                    - May 2019</p>
                 <ul>
-                    <li>Responsible for redesigning and tolerancing a lock-unit housing in injection 
-                        molded plastic for Lync & Co 01 (2021) model. The goal was to pass the Euro 
-                        NCAP impact demands of 2020 and the work was made as a part of the Interior 
+                    <li>Responsible for redesigning and tolerancing a lock-unit housing in injection
+                        molded plastic for Lync & Co 01 (2021) model. The goal was to pass the Euro
+                        NCAP impact demands of 2020 and the work was made as a part of the Interior
                         Design Team.</li>
                     <li>Tech: Catia V5</li>
                 </ul>
@@ -149,7 +203,8 @@
             <h3>Education</h3>
             <div class="education">
                 <p><strong>.NET Developer Voccational Degree</strong> - Teknikhögskolan, 2020 - 2022</p>
-                <p><strong>CAD-Engineer - Mechanical Design Voccational Degree</strong> - YRGO Lindholmen, 2017 - 2019</p>
+                <p><strong>CAD-Engineer - Mechanical Design Voccational Degree</strong> - YRGO Lindholmen, 2017 - 2019
+                </p>
                 <p><strong>Psychologist: Sports Programme</strong> - Umeå University, 2012 - 2013</p>
                 <p><strong>Basics of Psychology</strong> - Gothenburg University, 2011 - 2012</p>
                 <p><strong>High School Diploma in Science & Sail Racing</strong> Lerums Gymnasium 2007 - 2011</p>
@@ -159,27 +214,51 @@
             <h3>Projects</h3>
             <div class="projects">
                 <p><strong>Timer and Worker Module in Cendot by Iver 1998-Present - Iver Sverige</strong>
-                    <br>Cendot is a monolithic desktop app that is distributed on Citrix servers to the Iver Employees. Cendots architecture is of MVVM design and is all written in C#. The core domain logic is also used in company owned apps as dll:s or nugets in web apps, worker services and REST API:s. As a diverse IT-Service company with its own self made business eco-system (Cendot) and its own development appartment, Iver process owners have an intimate connection with our developer team. Together we design and discuss new features that automate processes, simplifys time reporting, pricing and invoicing. We also enable new pricing models and business concepts.
-                    <br><br>C#, Microsoft WPF, T-SQL, NHibernate, Citrix, Rest-API, Azure DevOps, Azure Application Insights
+                    <br>Cendot is a monolithic desktop app that is distributed on Citrix servers to the Iver Employees.
+                    Cendots architecture is of MVVM design and is all written in C#. The core domain logic is also used
+                    in company owned apps as dll:s or nugets in web apps, worker services and REST API:s. As a diverse
+                    IT-Service company with its own self made business eco-system (Cendot) and its own development
+                    appartment, Iver process owners have an intimate connection with our developer team. Together we
+                    design and discuss new features that automate processes, simplifys time reporting, pricing and
+                    invoicing. We also enable new pricing models and business concepts.
+                    <br><br>C#, Microsoft WPF, T-SQL, NHibernate, Citrix, Rest-API, Azure DevOps, Azure Application
+                    Insights
                 </p>
                 <p><strong>Software Update Management System (SUMS) - Document Creation Service - Volvo Cars</strong>
-                    <br>This applications purpose is to generate Software Update Management System (SUMS) traceability documents for car variant certification. This is to be able to oblige with stricter EU and other regulations for modern cars. With the Software-PLM platform SystemWeaver as source for data we designed a core app that integrates with the SystemWeaver nuget API and collects the relevant data following a preprogrammed set of extensive business rules (and outputs a different readable documents). 
-                    <br><br>My main contribution was development of the applications testing projects (integration and unit test), dependency management, driving code refactoring and code design.
-                    <br><br>C#, X-Unit, Microsoft Dependency Injection, ASP.NET Web API, PowerShell, AzureDevOps, SystemWeaver, Jira, SQL-lite
+                    <br>This applications purpose is to generate Software Update Management System (SUMS) traceability
+                    documents for car variant certification. This is to be able to oblige with stricter EU and other
+                    regulations for modern cars. With the Software-PLM platform SystemWeaver as source for data we
+                    designed a core app that integrates with the SystemWeaver nuget API and collects the relevant data
+                    following a preprogrammed set of extensive business rules (and outputs a different readable
+                    documents).
+                    <br><br>My main contribution was development of the applications testing projects (integration and
+                    unit test), dependency management, driving code refactoring and code design.
+                    <br><br>C#, X-Unit, Microsoft Dependency Injection, ASP.NET Web API, PowerShell, AzureDevOps,
+                    SystemWeaver, Jira, SQL-lite
                 </p>
                 <p><strong>BoostApp PX - ASP.NET Reverse Proxy REST API for company time reports - Nexer Group</strong>
-                    <br>Responsible for building a reverse Proxy API (ASP.NET) in a micro service architecture within a inhouse SCRUM Team. Further responsible for implementing OAuth 2.0 (Microsoft Identity Platform, AD), CI/CD with Azure DevOps and Docker, integration testing and scripting with Postman.
-                    <br><br>C#, ASP.NET Web API, Microsoft Identity Server, Azure DevOps, Docker, HttpClient, Postman, Microsoft Dependency Injection
+                    <br>Responsible for building a reverse Proxy API (ASP.NET) in a micro service architecture within a
+                    inhouse SCRUM Team. Further responsible for implementing OAuth 2.0 (Microsoft Identity Platform,
+                    AD), CI/CD with Azure DevOps and Docker, integration testing and scripting with Postman.
+                    <br><br>C#, ASP.NET Web API, Microsoft Identity Server, Azure DevOps, Docker, HttpClient, Postman,
+                    Microsoft Dependency Injection
                 </p>
                 <p><strong>Ludo V2 Online - .NET multiplayer SignalR Game Engine and Platform - Teknikhögskolan</strong>
-                    <br>Responsible for building a Fullstack ASP.NET Web, Ludo Board Game Platform. Implementations: SQL server with Entity Framework for user and game data, email login, email game invitations, SignalR interactive gaming, token and cookie identification, multiple game rooms, AI players and server side logic. To enable multiple game rooms every game room has its own instance of an game engine IOC container. The project was developed in a two man team.
-                    <br><br>C#, ASP.NET, SignalR, Entity-Framework, JWT, Cookies, Html, JavaScript, CSS, GitHub, Microsoft Dependency Injection
+                    <br>Responsible for building a Fullstack ASP.NET Web, Ludo Board Game Platform. Implementations: SQL
+                    server with Entity Framework for user and game data, email login, email game invitations, SignalR
+                    interactive gaming, token and cookie identification, multiple game rooms, AI players and server side
+                    logic. To enable multiple game rooms every game room has its own instance of an game engine IOC
+                    container. The project was developed in a two man team.
+                    <br><br>C#, ASP.NET, SignalR, Entity-Framework, JWT, Cookies, Html, JavaScript, CSS, GitHub,
+                    Microsoft Dependency Injection
                 </p>
                 <p><strong>GitHub Projects</strong>
-                    <br>My GitHub page is worth a visit <a href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a> (demo on request)
+                    <br>My GitHub page is worth a visit <a
+                        href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a> (demo on request)
                 </p>
             </div>
         </section>
     </div>
 </body>
+
 </html>
