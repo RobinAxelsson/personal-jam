@@ -11,10 +11,11 @@ export default function Hero() {
       </h4>
          <Image
           className={styles.hero__image}
-          src="/images/profile-sea-1290x1290.jpg"
+          src="/CV-portrait.jpg"
           alt="picture of author"
+          //892x775
           height={250}
-          width={250}
+          width={290}
         />
         <table className={styles.hero__job_properties}>
           <tr>
