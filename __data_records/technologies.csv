@@ -2,7 +2,7 @@ Technology;Work;School;Hobby;Score
 .NET;1;1;1;5
 Adobe PhotoShop;0;1;1;2
 Alias Autostudio;0;1;1;1
-ASP.NET Web Api;1;1;1;4
+ASP.NET;1;1;1;5
 Azure App Service;1;1;0;2
 Azure Blob Storage;0;1;0;2
 Azure Cosmos DB;0;1;0;2
@@ -27,6 +27,7 @@ Newman;0;1;1;2
 Next.js;0;0;1;2
 NHibernate;1;0;0;4
 Node.js;0;1;1;3
+NUnit;1;1;0;3
 Postman;1;1;1;3
 PowerShell;1;0;1;2
 Python;0;1;1;3
