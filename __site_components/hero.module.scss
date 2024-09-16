@@ -4,6 +4,7 @@
   @extend %card-general-base;
   padding: 2rem 4rem;
   align-items: center;
+  margin-block: 1rem;
 }
 
 .hero__title {
@@ -17,15 +18,14 @@
 
 .hero__image {
   border-radius: 15%;
-  width: 280px;
-  height: 250px;
+  width: 100%;
+  max-width: 260px;
   border-width: 5px;
   border-color: #fff;
   border-style: solid;
 }
 
 .hero__job_properties {
-  margin-block: 10px;
   text-align: left;
   width: 100%;
   font-size: medium;

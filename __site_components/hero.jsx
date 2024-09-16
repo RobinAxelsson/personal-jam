@@ -35,10 +35,6 @@ export default function Hero() {
             <td>.NET Developer vocational degree <a href="https://teknikhogskolan.se/utbildningar/net_utvecklare/">Teknikhögskolan</a></td>
           </tr>
           <tr>
-            <th>Specialization:</th>
-            <td>Code design, .NET, C#, Test Driven Development, Refactoring.</td>
-          </tr>
-          <tr>
             <th>Would love to:</th>
             <td>Develop frameworks and libraries.</td>
           </tr>
