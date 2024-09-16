@@ -8,7 +8,7 @@
   background: var(--clr-primary);
   color: var(--clr-font-primary);
   border-radius: 10px;
-  margin-top: 70px;
+  margin-bottom: 20px;
   width: 100%;
 
   @include mq(medium) {
@@ -23,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 800px;
+  margin-top: 40px;
   @include mq(medium) {
     padding: 0px;
     max-width: 700px;
