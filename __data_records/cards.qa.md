@@ -1,7 +1,3 @@
-## Questions & Answers
-
----
-
 ## Who am I?
 
 I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for writing code I changed my career and never looked back.
@@ -42,6 +38,6 @@ I have a strong mental game from my years in competitive sailing and have a neve
 
 ---
 
-## Some downsides?
+## Cons?
 
-I can have a to narrow focus, it is a good thing most of the time but it is a good thing for a team to take into account.
+I can dig in to deep sometimes with advanced tasks and at those times it could be hard switching context.
