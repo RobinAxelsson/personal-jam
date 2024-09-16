@@ -16,6 +16,10 @@
   }
 }
 
+.site-footer a {
+  color: var(--clr-primary)
+}
+
 .site-footer__list {
   display: flex;
   flex-direction: column;

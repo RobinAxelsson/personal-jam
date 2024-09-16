@@ -1,9 +1,9 @@
 :root {
-    --clr-primary: hsl(203, 53%, 75%);
+    --clr-primary: #fff;
     --clr-dark-accent: rgb(65, 65, 65);
     --clr-dark-primary: #0c0d0e;
     --clr-light-accent: #0070f3;
     --clr-font-primary: #0c0d0e;
     --clr-bg: rgb(252, 253, 255);
-    --clr-font-contrast: var(--clr-bg);
+    --clr-font-contrast: var(--clr-dark-primary);
 }

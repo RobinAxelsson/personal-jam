@@ -3,7 +3,7 @@
 
 .mobile_nav {
   --mobile_nav-clr-dark: var(--clr-dark-primary);
-  --mobile_nav-clr-light: #fff;
+  --mobile_nav-clr-light: var(--clr-primary);
   --mobile_nav-font-family: 'Roboto', sans-serif;
   --mobile_nav-font-size: 20px;
   --mobile_nav-font-weight: 600;
@@ -27,6 +27,10 @@
   background-color: var(--mobile_nav-clr-dark);
   box-shadow: inset -3px 0px 10px #464343;
   transition-duration: .25s;
+}
+
+.mobile_nav__box a {
+  color: var(--mobile_nav-clr-light);
 }
 
 .mobile_nav__box>* {
