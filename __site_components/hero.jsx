@@ -35,7 +35,7 @@ export default function Hero() {
           </tr>
           <tr>
             <th>Specialization:</th>
-            <td>Object Oriented Design, .NET, C#, Test Driven Development, refactoring and CAD.</td>
+            <td>Code design, .NET, C#, Test Driven Development, Refactoring.</td>
           </tr>
           <tr>
             <th>Would love to:</th>
