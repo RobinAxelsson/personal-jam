@@ -13,9 +13,13 @@ export default function Hero() {
           className={styles.hero__image}
           src="/CV-portrait.jpg"
           alt="picture of author"
-          //892x775
-          height={250}
-          width={290}
+          height={775}
+          width={892}
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}
+          priority={true}
         />
         <table className={styles.hero__job_properties}>
           <tr>
