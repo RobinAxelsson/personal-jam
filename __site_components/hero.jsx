@@ -6,9 +6,9 @@ export default function Hero() {
        <h2 className={styles.hero__title}>
           <span className={styles.accent_word}>Robin</span> Salih Axelsson
       </h2>
-       <h4 className={styles.hero__sub_title}>
-        Full Stack .NET Developer former Design Engineer
-      </h4>
+       <h3 className={styles.hero__sub_title}>
+        Full Stack .NET Developer
+      </h3>
          <Image
           className={styles.hero__image}
           src="/CV-portrait.jpg"
