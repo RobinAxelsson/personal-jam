@@ -1,4 +1,5 @@
 @use '../__site_scss/card';
+@use "../__site_scss/mixins" as *;
 
 .hero {
   @extend %card-general-base;
@@ -6,14 +7,14 @@
   padding-block: 1rem;
   align-items: center;
   
-  @media (min-width: 650px) {
+  @include mq(medium){
     padding-inline: 3rem;
     padding-block: 2rem;
   }
 }
 
 .hero > * {
-  @media (min-width: 650px) {
+  @include mq(medium){
     margin: 1.5rem;
   }
 }
@@ -22,7 +23,7 @@
   width: 100%;
   text-align: center;
   
-  @media (min-width: 650px) {
+  @include mq(medium){
   }
 }
 

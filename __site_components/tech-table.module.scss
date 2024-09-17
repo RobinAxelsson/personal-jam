@@ -1,4 +1,5 @@
 @use '../__site_scss/card';
+@use "../__site_scss/mixins" as *;
 
 .tech_table_container {
   @extend %card-general-base;
@@ -6,23 +7,16 @@
   padding: 2rem;
 }
 
-.tech_table__row:nth-child(even) {
-  background-color: hsla(0, 0%, 100%, 0.7);
-  border-color: hsla(0, 0%, 100%, 0.7);
-  border-style: solid;
-}
-
-.tech_table__title {
-  font-size: x-large;
-}
-
-.tech_table {
-  border-collapse: collapse;
-}
-
-.tech_table__cell {
-}
-
-.tech-table__cell--checkable {
+.tech_table tr th,
+.tech_table tr td {
+  padding-block: 0.2rem;
   text-align: center;
+  @include mq(medium){
+    padding: 0.4rem 0.3rem;
+  }
+}
+
+.tech_table tr th:first-child,
+.tech_table tr td:first-child {
+  text-align: left;
 }
