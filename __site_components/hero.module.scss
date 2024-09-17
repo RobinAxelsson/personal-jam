@@ -4,18 +4,12 @@
 .hero {
   @extend %card-general-base;
   padding-inline: 2rem;
-  padding-block: 1rem;
+  padding-block: 2rem;
   align-items: center;
   
   @include mq(medium){
     padding-inline: 3rem;
     padding-block: 2rem;
-  }
-}
-
-.hero > * {
-  @include mq(medium){
-    margin: 1.5rem;
   }
 }
 
@@ -35,6 +29,12 @@
   margin-bottom: 1rem;
 }
 
+.hero__job_properties {
+  @include mq(medium){
+    padding-left: 10% width;
+  }
+}
+
 .hero__job_properties tr {
   text-align: right;
 }
@@ -43,11 +43,15 @@
   text-align: left;
 }
 
-.hero__job_properties tr:last-child {
-  border-width: 0;
-}
+// .hero__job_properties tr:last-child {
+//   border-width: 10px;
+// }
 
 .hero__job_properties tr th,
 .hero__job_properties tr td {
-  padding: 5px 16px;
+  padding: 0.1rem 0.3rem;
+
+  @include mq(medium){
+    padding-block: 1rem;
+  }
 }

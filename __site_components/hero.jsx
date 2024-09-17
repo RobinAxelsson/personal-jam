@@ -31,24 +31,28 @@ export default function Hero() {
             <td>Gothenburg, Sweden</td>
           </tr>
           <tr>
-            <th>Current position:</th>
-            <td><a href="https://www.bokio.se/">Software Engineer at Bokio</a></td>
+            <th>Job Status:</th>
+            <td>#Open To Work</td>
           </tr>
           <tr>
-            <th>Primary Languages:</th>
-            <td>C#, Python, JavaScript/TypeScript</td>
+            <th>Experience:</th>
+            <td>3 years</td>
+          </tr>
+          <tr>
+            <th>Tech Stack:</th>
+            <td>Azure, React, ASP.NET C#, MS SQL Server</td>
           </tr>
           <tr>
             <th>Education:</th>
             <td>.NET Developer vocational degree <a href="https://teknikhogskolan.se/utbildningar/net_utvecklare/">Teknikhögskolan</a></td>
           </tr>
           <tr>
-            <th>Would love to:</th>
-            <td>Develop frameworks and libraries.</td>
+            <th>Said about me:</th>
+            <td>&quot;He can solve any coding problem in this company&quot;</td>
           </tr>
           <tr>
             <th>Hobbies:</th>
-            <td>Sail Racing, Fitness, Coding, Brazilian Jiu Jitsu</td>
+            <td>Sail Racing, Gym, Coding, Brazilian Jiu Jitsu</td>
           </tr>
         </table>
     </div>
