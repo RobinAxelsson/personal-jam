@@ -20,7 +20,7 @@ function readValidRows() {
 }
 
 function createValidRowObjects(rows) {
-    const rowObjects = rows.slice(1, rows.length - 1).map(x => {
+    const rowObjects = rows.slice(1, rows.length).map(x => {
         const techColumns = x.split(';');
 
         if (techColumns.length !== 5) {
