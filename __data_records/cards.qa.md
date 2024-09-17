@@ -20,7 +20,7 @@ I have a wide understanding of CAD and PLM systems from my time as a Design Engi
 
 ---
 
-## Am I programming nerd?
+## Do I Love Writing Code?
 
 Yes, I love writing clean, specific and well abstracted code that is easy to maintain and to understand. I always have some projects, I read books about OOD and practice coding for the fun of it. I get ideas and epiphanies about problems around the clock (which is not always a good thing) and I do spend the extra time to understand something thoroughly.
 
@@ -32,12 +32,12 @@ It is something very rewarding with the instant feedback and incremental progres
 
 ---
 
-## What are my pros?
+## Some good sides?
 
 I have a strong mental game from my years in competitive sailing and have a never ending energy and stamina when it comes to problem solving. In a team I work autonomously, take initiatives and I am not afraid to ask questions and learn from the people around me.
 
 ---
 
-## Cons?
+## Some downsides?
 
 I can dig in to deep sometimes with advanced tasks and at those times it could be hard switching context.
