@@ -7,7 +7,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: var(--clr-primary);
   color: var(--clr-font-primary);
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 20px;
   width: 100%;
 
@@ -27,7 +27,7 @@
   @include mq(medium) {
     padding: 0px;
     max-width: 700px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 

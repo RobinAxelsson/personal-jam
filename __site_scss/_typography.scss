@@ -65,6 +65,10 @@ ul {
   list-style: none;
 }
 
+li {
+  font-size: var(--fs-400);
+}
+
 th,
 td {
   font-size: 1rem;
@@ -77,6 +81,7 @@ td {
 a {
   color: var(--clr-font-contrast);
   text-decoration: solid;
+  font-size: var(--fs-400);
 }
 
 a:hover {
