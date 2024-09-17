@@ -19,8 +19,7 @@ const navLinks = [
   "School of Thought;/school-of-thought",
   "Q&A;/qa",
   "CV;/CV.html",
-  "GitHub;https://github.com/RobinAxelsson",
-  "Contact;/contact"
+  "GitHub;https://github.com/RobinAxelsson"
 ].map(x => {
   const split = x.split(';');
   if(split.length !== 2) throw new Error("Should be two, got: " + split)
