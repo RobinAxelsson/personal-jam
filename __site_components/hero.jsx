@@ -20,6 +20,8 @@ export default function Hero() {
             height: 'auto',
           }}
           priority={true}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
         />
         <table className={styles.hero__job_properties}>
           <tr>
