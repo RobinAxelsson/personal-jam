@@ -11,10 +11,10 @@ export const SiteFooter = () => {
           <h3>© 2024 Robin Salih Axelsson</h3>
         </li>
         <li className={style("site-footer__item site-footer__item--link")}>
-          <a href="https://www.linkedin.com/in/axelsson-robin/">My LinkedIn</a>
+          <a href="https://www.linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a>
         </li>
         <li className={style("site-footer__item site-footer__item--link")}>
-          <a href="https://www.github.com/robinaxelsson">My GitHub</a>
+          <a href="https://www.github.com/robinaxelsson">github.com/robinaxelsson</a>
         </li>
         <li className={style("site-footer__item site-footer__item--email")}>
           <span className="accent-word"><a href="mailto:axelsson.robin@outlook.com">axelsson.robin@outlook.com</a></span>
