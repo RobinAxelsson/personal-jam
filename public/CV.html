@@ -75,29 +75,31 @@
             <p></p>
             <h1>Robin Salih Axelsson</h1>
             <h2 id="heading">System .NET Developer former Design Engineer</h2>
-        </header>
-        <script>
-            const headings = [
-                "System .NET Developer former Design Engineer", // 0
-                ".NET Software Developer",                      // 1
-                "Full Stack Developer",                         // 2
-                "Backend Engineer",                             // 3
-                "Backend Developer",                            // 4
-            ]
-            const urlParams = new URLSearchParams(window.location.search);
-            const h = urlParams.get("h");
+            <script>
+                const headings = [
+                    "System .NET Developer former Design Engineer", // 0
+                    ".NET Software Developer",                      // 1
+                    "Full Stack Developer",                         // 2
+                    "Backend Engineer",                             // 3
+                    "Backend Developer",                            // 4
+                ]
 
-            if (!isNaN(h) && h >= 0 && h < headings.length) {
-                document.getElementById('heading').textContent = headings[h];
-            }
-        </script>
+                document.getElementById('heading').textContent = headings[0];
+
+                const urlParams = new URLSearchParams(window.location.search);
+                let h = parseInt(urlParams.get("h"), 10);
+            
+                if (!isNaN(h) && h >= 0 && h < headings.length) {
+                    document.getElementById('heading').textContent = headings[h];
+                }
+            </script>
+        </header>
         <section>
             <h3>Contact</h3>
             <p>Email: <a href="mailto:axelsson.robin@outlook.com">axelsson.robin@outlook.com</a></p>
             <p>Linkedin: <a href="https://linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a></p>
             <p>GitHub: <a href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a></p>
             <p>Personal Homepage: <a href="https://salihaxelsson.com/">https://salihaxelsson.com</a></p>
-            <p>Live CV: <a href="https://salihaxelsson.com/cv">https://salihaxelsson.com/cv</a></p>
         </section>
         <section>
             <h3>Profile</h3>
