@@ -5,10 +5,10 @@ export default function Hero() {
     <div className={styles.hero}>
        <h2 className={styles.hero__title}>
           <span className={styles.accent_word}>Robin</span> Salih Axelsson
+        <h3 className={styles.hero__sub_title}>
+          Full Stack .NET Developer
+        </h3>
       </h2>
-       <h3 className={styles.hero__sub_title}>
-        Full Stack .NET Developer
-      </h3>
          <Image
           className={styles.hero__image}
           src="/CV-portrait.jpg"
