@@ -14,7 +14,7 @@
 - Get things done
 - Laugh together and have fun
 - Give each other feedback
-- Keep it clean
+- Keep it secure
 
 ---
 
