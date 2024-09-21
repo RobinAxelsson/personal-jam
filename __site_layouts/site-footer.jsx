@@ -13,9 +13,6 @@ export const SiteFooter = () => {
         <li className={style("site-footer__item site-footer__item--link")}>
           <a href="https://www.linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a>
         </li>
-        <li className={style("site-footer__item site-footer__item--email")}>
-          <span className="accent-word"><a href="mailto:axelsson.robin@outlook.com">axelsson.robin@outlook.com</a></span>
-        </li>
       </ul>
     </footer>
   );
