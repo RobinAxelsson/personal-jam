@@ -13,6 +13,9 @@ export const SiteFooter = () => {
         <li className={style("site-footer__item site-footer__item--link")}>
           <a href="https://www.linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a>
         </li>
+        <li className={style("site-footer__item site-footer__item--link")}>
+          <a href="https://www.github.com/robinaxelsson">github.com/robinaxelsson</a>
+        </li>
       </ul>
     </footer>
   );
