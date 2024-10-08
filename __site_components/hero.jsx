@@ -35,10 +35,6 @@ export default function Hero() {
             <td>Software Engineer, Bokio Group AB</td>
           </tr>
           <tr>
-            <th>Hire:</th>
-            <td>From 15th October</td>
-          </tr>
-          <tr>
             <th>Experience:</th>
             <td>3 years</td>
           </tr>
