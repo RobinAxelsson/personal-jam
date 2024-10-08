@@ -1,21 +1,29 @@
 @use "../__site_scss/mixins" as *;
 
-.site-header {
+.site_header {
   width: 100%;
   top: 0;
   position: fixed;
-  min-height: 60px;
+  height: var(--nav-bar-height-small);
   color: #fff;
   background-color: var(--clr-dark-primary);
   box-shadow: inset 0px -3px 10px #464343;
+  transition: 0.3s ease transform;
+  transform: translateY(0%);
 
   @include mq(medium){
     display: flex;
     align-items: center;
     justify-content: center;
+    height: var(--nav-bar-height-medium);
   }
 }
 
-.site-header a {
+.site_header_hidden {
+  transition: 0.3s ease transform;
+  transform: translateY(-100%);
+}
+
+.site_header a {
   color: var(--clr-primary)
 }

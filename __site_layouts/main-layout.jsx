@@ -9,10 +9,10 @@ const MainLayout = ({ children }) => {
     <>
       <Head>
         <title>.NET Full stack developer</title>
-        <meta property="og:image" content="/images/profile.jpg" />
+        <meta property="og:image" content="CV-portrait.jpg" />
         <meta property="og:description" content="Personal page" />
         <meta property="og:url" content="https://salihaxelsson.com/" />
-        <meta name="twitter:card" content="/images/profile.jpg" />
+        <meta name="twitter:card" content="/CV-portrait.jpg" />
       </Head>
       <Header />
       <div className={styles.topImageCanvas}></div>

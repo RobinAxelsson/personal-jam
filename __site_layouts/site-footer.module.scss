@@ -1,6 +1,6 @@
 @use "../__site_scss/mixins" as *;
 
-.site-footer {
+.site_footer {
   background-color: var(--clr-dark-primary);
   position: absolute;
   right: 0;
@@ -16,21 +16,21 @@
   }
 }
 
-.site-footer a {
+.site_footer a {
   color: var(--clr-primary)
 }
 
-.site-footer__list {
+.site_footer ul {
   display: flex;
   flex-direction: column;
   margin: var(--default-margin);
 }
 
-.site-footer__item {
+.site_footer li {
   margin: 0.2rem;
 }
 
-.site-footer__item--title h3 {
+.site_footer h3 {
   color: #fff;
   margin: 1px;
 }

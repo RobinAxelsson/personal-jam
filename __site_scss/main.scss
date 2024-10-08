@@ -2,3 +2,9 @@
 @use 'colors';
 @use 'typography';
 @use 'card';
+@use "../__site_scss/mixins" as *;
+
+:root {
+    --nav-bar-height-small: 60px;
+    --nav-bar-height-medium: 80px;
+}

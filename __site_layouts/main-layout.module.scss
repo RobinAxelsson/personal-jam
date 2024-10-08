@@ -1,19 +1,12 @@
-@use '../__site_scss/mixins';
+@use '../__site_scss/mixins' as *;
 
 .siteMain {
-  padding-top: 50px;
+  margin-top: var(--nav-bar-height-small);
   padding-bottom: 500px;
   display: flex;
   justify-content: center;
-}
 
-.topImageCanvas {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  opacity: 0.9;
-  // background-image: url("/images/bg-water_1920-1280.jpg");
-  width: 100%;
-  height: 300px;
+  @include mq(medium) {
+    margin-top: var(--nav-bar-height-medium);
+  }
 }
