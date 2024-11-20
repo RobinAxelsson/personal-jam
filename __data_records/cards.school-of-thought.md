@@ -54,4 +54,4 @@
 - C++
 - GO
 - C
-- A little bit of Assembly
+- x86 Assembly
