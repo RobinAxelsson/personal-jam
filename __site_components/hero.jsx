@@ -32,7 +32,7 @@ export default function Hero() {
           </tr>
           <tr>
             <th>Job Status:</th>
-            <td>Software Engineer, Bokio Group AB</td>
+            <td>Open to work</td>
           </tr>
           <tr>
             <th>Experience:</th>
