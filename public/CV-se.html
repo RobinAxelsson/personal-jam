@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Salih Axelsson CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        p,
+        li {
+            line-height: 1.5;
+        }
+
+        .experience,
+        .education,
+        .projects,
+        .text-content {
+            margin-left: 20px;
+        }
+
+        .profile-picture img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        table tr th {
+            text-align: left;
+        }
+
+        table tr > * {
+            padding-right: 0.5rem;
+        }
+
+        .skills table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .skills th, .skills td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .skills th {
+            background-color: #f2f2f2;
+        }
+        .skills tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .skills tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-picture">
+                <img src="CV-portrait.jpg" alt="Profile Picture">
+            </div>
+            <p></p>
+            <h1>Robin Salih Axelsson</h1>
+            <h2 id="heading">.NET Utvecklare, Full-Stack</h2>
+            <script>
+                const headings = [
+                    "Full Stack .NET Utvecklare", // 0
+                    ".NET Software Developer",                      // 1
+                    "Full Stack Developer",                         // 2
+                    "Backend Engineer",                             // 3
+                    "Backend Developer",                            // 4
+                    "System .NET Developer",                        // 5
+                ]
+
+                document.getElementById('heading').textContent = headings[0];
+
+                const urlParams = new URLSearchParams(window.location.search);
+                let h = parseInt(urlParams.get("h"), 10);
+            
+                if (!isNaN(h) && h >= 0 && h < headings.length) {
+                    document.getElementById('heading').textContent = headings[h];
+                }
+            </script>
+        </header>
+        <section>
+            <h3>Contact</h3>
+            <table>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td><a href="https://linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub:</td>
+                    <td><a href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a></td>
+                </tr>
+                <tr>
+                    <td>Sida:</td>
+                    <td><a href="https://salihaxelsson.com/">salihaxelsson.com</a></td>
+                </tr>
+                <tr>
+                    <td>CV:</td>
+                    <td><a href="https://salihaxelsson.com/cv">salihaxelsson.com/cv</a></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Profil</h3>
+            <table>
+                <tr>
+                  <th>Plats:</th>
+                  <td>Göteborg</td>
+                </tr>
+                <tr>
+                    <th>Arbetsstatus:</th>
+                    <td>Öppen för arbete</td>
+                  </tr>
+                <tr>
+                  <th>Erfarenhet:</th>
+                  <td>3 år</td>
+                </tr>
+                <tr>
+                  <th>Tech Stack:</th>
+                  <td>Azure, React, ASP.NET C#, MS SQL Server</td>
+                </tr>
+                <tr>
+                  <th>Utbildning:</th>
+                  <td>.NET Utvecklare yrkeshögskoleexamen, Teknikhögskolan (se <a href="Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</td>
+                </tr>
+                <tr>
+                  <th>Sagt om mig:</th>
+                  <td>&quot;Han kan lösa alla kodproblem i företaget&quot;</td>
+                </tr>
+                <tr>
+                  <th>Hobbies:</th>
+                  <td>Kappsegling, Gym, Programmering, Brazilian Jiu Jitsu</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Introduktion</h3>
+            <div class="text-content">
+                <p>Jag är en .NET utvecklare från Göteborg som aldrig slutar att utvecklas. Innan covid så jobbade jag som designingenjör i fordonsindustrin i Göteborg men 
+                när jag upptäckte min talang och passion för programmering bytte jag karriär, något som jag aldrig har ångrat.</p>
+                <p>Jag gillar att skriva bra kod, tydlig, väl abstraherad, ren, lätt att förstå, lätt att underhålla och testa. Jag har alltid något eget programmeringsprojekt på gång, läser böcker om programmering och får nya idéer och lösningar vid alla möjliga tider på dygnet (vilket kanske inte alltid är så bra). Jag lägger gärna den extra tiden det tar att få en djupare förståelse - det är en av de saker som motiverar mig.</p>
+                <p>Från mina år inom kappsegling på bl.a. juniorlandslagsnivå har jag utvecklat en stark mental förmåga, framförallt när det gäller uthållighet, fokus och problemlösning. I ett team så är jag duktig på att kommunicera, ta till mig feedback, söka upp information, jobba autonomt, ställa frågor och lära från människorna omkring mig.</p>
+            </div>
+        </section>
+        <section>
+            <h3>Färdigheter</h3>
+            <ul>
+                <li>Språk: C#, JavaScript/TypeScript, Python, PowerShell, T-SQL</li>
+                <li>Ramverk/bibliotek: .NET, NHibernate, X-Unit, ASP.NET, Entity Framework, React.js, Microsoft WPF</li>
+                <li>Verktyg: Git, Docker, Azure DevOps, GitHub Actions</li>
+                <p>För en komplett översikt på teknologier se: <a href="https://salihaxelsson.com/tech">salihaxelsson.com/tech</a></p>
+            </ul>
+        </section>
+        <section>
+            <h3>Erfarenhet</h3>
+            <div class="experience">
+                <p><strong>Software Engineer</strong> - Bokio, Göteborg, April 2024 - Oktober 2024</p>
+                <ul>
+                    <li>Som del av ett fintech SaaS företag byggde vi en bokförings app för den svenska marknaden.</li>
+                    <li>Tech-stack: Azure App Service -> React -> ASP.NET -> MS SQL Server</li>
+                    <li>Arbetade i ett självorganiserat .NET platforms team med 5 utvecklare</li>
+                    <li>Utvecklade personligen backend login features, säker filuppladdning, Rest API integration och loggning till Application Insights.</li>
+                    <li>Tech: ASP.NET, Entity Framework Core, MS SQL Server, Azure, REST-API</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <p><strong>Systemutvecklare</strong> - Iver Sverige, Göteborg, Feb 2023 - April 2024</p>
+                <ul>
+                    <li>Jobbade i teamet "Time & People", ett SCRUM team med 3 utvecklare. Deltog i utvecklingen och designbesluten av end to end features i direkt samarbete med våran kund.
+                    </li>
+                    <li>Underhålla och utveckla i en kolossal kodbas (mer än 3.3 miljoner rader kod).</li>
+                    <li>Ta fram och utveckla affärsfunktioner för automatisering</li>
+                    <li>Ansvarig för git hantering och hotfixes i Azure Devops</li>
+                    <li>Tech: Microsoft WPF, .NET, ASP.NET, NHibernate, MS SQL Server, Azure, REST-API</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <p><strong>Full Stack Cloud Developer Consultant</strong> - Software by Quokka/Volvo Cars, Göteborg Feb 2022 -
+                    Feb 2023</p>
+                <ul>
+                    <li>Arbetade i ett SCRUM-team med 4 utvecklare inom SAFE</li>
+                    <li>Deltog i designen av en ny intern app för dataextrahering</li>
+                    <li>Ansvarig för att designa en bas för enhetstest och Postman-testning</li>
+                    <li>Drivande i refaktorering och tillämpning av OOD-praktiker</li>
+                    <li>Teknik: .NET, ASP.NET, SystemWeaverApi, REST-API, SQL-lite, X-Unit, Azure</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <p><strong>Praktik Backendutvecklare</strong> - Nexer Group, Göteborg Okt 2021 - Dec 2021</p>
+                <ul>
+                    <li>Samarbetade i ett inhouse SCRUM team inom en microservice arkitektur.</li>
+                    <li>Ansvarig omskrivning/ny design av ett ASP.NET Rest API</li>
+                    <li>Tech stack: Angular/Graph QL/ASP.NET/Azure Storage</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>Education</h3>
+            <div class="education">
+                <p><strong>.NET Utvecklare Yrkesehögskoleexamen (see <a href="/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">kurser</a>)</strong> - Teknikhögskolan, 2020 - 2022</p>
+                <p><strong>CAD-Engineer - Mechanical Design yrkeshögskoleexamen</strong> - YRGO Lindholmen, 2017 - 2019
+                </p>
+                <p><strong>Psykologprogrammet: idrottsinriktning</strong> - Umeå universitet, 2012 - 2013</p>
+                <p><strong>Studentexamen Natur/Kappsegling</strong> Lerums gymnasium 2007 - 2011</p>
+            </div>
+        </section>
+        <section>
+            <h3>Färdigheter utökat</h3>
+            <table class="skills">
+                <thead>
+                    <tr>
+                        <th>Teknologi</th>
+                        <th>Arbete</th>
+                        <th>Skola</th>
+                        <th>Hobby</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>.NET</td><td>✓</td><td>✓</td><td>✓</td><td>★★★★★</td></tr>
+                    <tr><td>ASP.NET</td><td>✓</td><td>✓</td><td>✓</td><td>★★★★★</td></tr>
+                    <tr><td>Azure Development</td><td>✓</td><td>✓</td><td></td><td>★★★☆☆</td></tr>
+                    <tr><td>Azure Blob Storage</td><td></td><td>✓</td><td></td><td>★★☆☆☆</td></tr>
+                    <tr><td>Azure Cosmos DB</td><td></td><td>✓</td><td></td><td>★★☆☆☆</td></tr>
+                    <tr><td>Azure DevOps</td><td>✓</td><td></td><td></td><td>★★★★☆</td></tr>
+                    <tr><td>Azure Functions</td><td></td><td>✓</td><td></td><td>★★★☆☆</td></tr>
+                    <tr><td>C#</td><td>✓</td><td>✓</td><td>✓</td><td>★★★★★</td></tr>
+                    <tr><td>Dapper</td><td>✓</td><td></td><td>✓</td><td>★★☆☆☆</td></tr>
+                    <tr><td>Docker</td><td>✓</td><td>✓</td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>Entity Framework</td><td>✓</td><td>✓</td><td></td><td>★★★☆☆</td></tr>
+                    <tr><td>Express.js</td><td></td><td>✓</td><td>✓</td><td>★★☆☆☆</td></tr>
+                    <tr><td>Git</td><td>✓</td><td>✓</td><td>✓</td><td>★★★★★</td></tr>
+                    <tr><td>GitHub Actions</td><td></td><td>✓</td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>JavaScript</td><td>✓</td><td>✓</td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>Linux</td><td></td><td></td><td>✓</td><td>★★☆☆☆</td></tr>
+                    <tr><td>Microsoft Dependency Injection</td><td>✓</td><td>✓</td><td>✓</td><td>★★★★★</td></tr>
+                    <tr><td>Microsoft Identity Server</td><td>✓</td><td></td><td></td><td>★★☆☆☆</td></tr>
+                    <tr><td>Microsoft SQL Server</td><td>✓</td><td>✓</td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>Microsoft WPF</td><td>✓</td><td>✓</td><td></td><td>★★☆☆☆</td></tr>
+                    <tr><td>Node.js</td><td></td><td>✓</td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>NuGet packetering</td><td></td><td></td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>PowerShell</td><td>✓</td><td></td><td>✓</td><td>★★☆☆☆</td></tr>
+                    <tr><td>Python</td><td></td><td>✓</td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>React.js</td><td></td><td>✓</td><td>✓</td><td>★★☆☆☆</td></tr>
+                    <tr><td>TypeScript</td><td>✓</td><td>✓</td><td>✓</td><td>★★★☆☆</td></tr>
+                    <tr><td>X-Unit</td><td>✓</td><td>✓</td><td>✓</td><td>★★★★★</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>GitHub projekt</h3>
+                <p>
+                    Min GitHub sida är väl presenterad och värd ett besök <a
+                        href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a> (demo görs på begäran)
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+
+
