@@ -49,5 +49,5 @@ export default function TechTable({ technologies }) {
   );
 }
 
-const convertBin = (number) => (number == "1" ? "✔️" : "❌");
+const convertBin = (number) => (number == "1" ? "✓" : "");
 const convertStars = (number) => "★".repeat(number) + "☆".repeat(5 - number);

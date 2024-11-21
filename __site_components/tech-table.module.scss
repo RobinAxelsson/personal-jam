@@ -7,9 +7,14 @@
   padding: 2rem;
 }
 
+.tech_table {
+  border-collapse: collapse;
+}
+
 .tech_table tr th,
 .tech_table tr td {
-  padding-block: 0.2rem;
+  font-size: var(--fs-200);
+  border-bottom: 1px solid #ccc;
   text-align: center;
   @include mq(medium){
     padding: 0.4rem 0.3rem;
@@ -18,5 +23,6 @@
 
 .tech_table tr th:first-child,
 .tech_table tr td:first-child {
+  padding: 0.5rem;
   text-align: left;
 }
