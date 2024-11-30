@@ -35,10 +35,6 @@ export default function Hero() {
             <td>Open to work</td>
           </tr>
           <tr>
-            <th>Experience:</th>
-            <td>3 years</td>
-          </tr>
-          <tr>
             <th>Tech Stack:</th>
             <td>Azure, React, ASP.NET C#, MS SQL Server</td>
           </tr>
