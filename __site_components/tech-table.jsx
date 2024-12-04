@@ -13,7 +13,7 @@ export default function TechTable({ technologies }) {
         >
           <th className={styles.tech_table__cell} key="technology">
           </th>
-          <th className={styles.tech_table__cell} key="professional">
+          {/* <th className={styles.tech_table__cell} key="professional">
             {headers.professional}
           </th>
           <th className={styles.tech_table__cell} key="examined">
@@ -21,7 +21,7 @@ export default function TechTable({ technologies }) {
           </th>
           <th className={styles.tech_table__cell} key="private">
             {headers.private}
-          </th>
+          </th> */}
           <th className={styles.tech_table__cell} key="grade"></th>
         </tr>
       }
@@ -30,7 +30,7 @@ export default function TechTable({ technologies }) {
           <td className={styles.tech_table__cell} key={tech.technology}>
             {tech.technology}
           </td>
-          <td className={styles.tech_table__cell + " " + styles['tech-table__cell--checkable']} key="professional">
+          {/* <td className={styles.tech_table__cell + " " + styles['tech-table__cell--checkable']} key="professional">
             {convertBin(tech.professional)}
           </td>
           <td className={styles.tech_table__cell + " " + styles['tech-table__cell--checkable']} key="tech.examined">
@@ -38,7 +38,7 @@ export default function TechTable({ technologies }) {
           </td>
           <td className={styles.tech_table__cell + " " + styles['tech-table__cell--checkable']} key="private">
             {convertBin(tech.private)}
-          </td>
+          </td> */}
           <td className={styles.tech_table__cell}  key="tech.grade">
             {convertStars(tech.grade)}
           </td>
