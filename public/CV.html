@@ -22,23 +22,29 @@
             margin-bottom: 30px;
         }
 
-/* Fonts */
+        /* Fonts */
         h1,
         h2 {
             margin: 0;
         }
 
         h2 {
-            margin-top: 10px;
-            font-size: 20px;
-            color: #666;
-        }
-
-        h3 {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
             font-size: 18px;
             color: #333;
+        }
+
+        h3 {
+            padding: 0;
+            margin-top: 0.8 rem;
+            margin-bottom: 0.5rem;
+            font-size: 16px;
+        }
+
+        p {
+            margin-block: 0.5rem;
+            font-size: 16px;
         }
 
         p,
@@ -46,7 +52,11 @@
             line-height: 1.5;
         }
 
-/* Sections */
+        .sub-header {
+            border: none
+        }
+
+        /* Sections */
         .page {
             margin: auto;
             padding: 25mm;
@@ -54,12 +64,12 @@
             height: 297mm;
             border: 1px solid #333;
         }
-        
-        
+
+
         .experience,
         .education,
         .projects,
-        .paragraphs {
+        .section-content {
             margin-left: 20px;
         }
 
@@ -69,7 +79,8 @@
             border-radius: 50%;
             object-fit: cover;
         }
-/* Profile table */
+
+        /* Profile table */
         table tr th {
             text-align: left;
             height: 2rem;
@@ -81,7 +92,7 @@
             height: 2rem;
         }
 
-/* Skills table */
+        /* Skills table */
 
         .skills-container {
             width: 100%;
@@ -126,60 +137,43 @@
             </div>
             <p></p>
             <h1>Robin Salih Axelsson</h1>
-            <h2 id="heading">System .NET Developer former Design Engineer</h2>
-            <script>
-                const headings = [
-                    "System .NET Developer former Design Engineer", // 0
-                    ".NET Software Developer",                      // 1
-                    "Full Stack Developer",                         // 2
-                    "Backend Engineer",                             // 3
-                    "Backend Developer",                            // 4
-                    "System .NET Developer",                        // 5
-                ]
-
-                document.getElementById('heading').textContent = headings[0];
-
-                const urlParams = new URLSearchParams(window.location.search);
-                let h = parseInt(urlParams.get("h"), 10);
-
-                if (!isNaN(h) && h >= 0 && h < headings.length) {
-                    document.getElementById('heading').textContent = headings[h];
-                }
-            </script>
+            <h2 class="sub-header">System .NET Developer</h2>
         </header>
         <section>
-            <h3>Profile</h3>
-            <table class="profile-table">
-                <tr>
-                    <th>Location:</th>
-                    <td>Gothenburg, Sweden</td>
-                </tr>
-                <tr>
-                    <th>Job Status:</th>
-                    <td>Open to work</td>
-                </tr>
-                <tr>
-                    <th>Tech Stack:</th>
-                    <td>Azure, React, C# .NET, MS SQL Server</td>
-                </tr>
-                <tr>
-                    <th>Education:</th>
-                    <td>.NET Developer vocational degree, Teknikhögskolan (see <a
-                            href="Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</td>
-                </tr>
-                <tr>
-                    <th>Said about me:</th>
-                    <td>&quot;He can solve any coding problem in this company&quot;</td>
-                </tr>
-                <tr>
-                    <th>Hobbies:</th>
-                    <td>Sail Racing, Gym, Coding, Brazilian Jiu Jitsu</td>
-                </tr>
-            </table>
+            <h2>Profile</h2>
+            <div class="section-content">
+                <table class="profile-table">
+                    <tr>
+                        <th>Location:</th>
+                        <td>Gothenburg, Sweden</td>
+                    </tr>
+                    <tr>
+                        <th>Job Status:</th>
+                        <td>Open to work</td>
+                    </tr>
+                    <tr>
+                        <th>Tech Stack:</th>
+                        <td>Azure, React, C# .NET, MS SQL Server</td>
+                    </tr>
+                    <tr>
+                        <th>Education:</th>
+                        <td>.NET Developer vocational degree, Teknikhögskolan (see <a
+                                href="Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</td>
+                    </tr>
+                    <tr>
+                        <th>Said about me:</th>
+                        <td>&quot;He can solve any coding problem in this company&quot;</td>
+                    </tr>
+                    <tr>
+                        <th>Hobbies:</th>
+                        <td>Sail Racing, Gym, Coding, Brazilian Jiu Jitsu</td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <section>
-            <h3>Introduction</h3>
-            <div class="paragraphs">
+            <h2>Introduction</h2>
+            <div class="section-content">
                 <p>I am a .NET developer from Gothenburg who never stops learning. Prior to Corona I worked as a Design
                     Engineer in the automotive industry of Gothenburg but when I discovered my talent and passion for
                     writing code I changed my career and never looked back.</p>
@@ -195,7 +189,7 @@
     </div>
     <div class="page">
         <section>
-            <h3>Skill Assessment</h3>
+            <h2>Skill Assessment</h2>
             <div class="skills-container">
                 <table class="skills-table">
                     <tbody>
@@ -354,7 +348,7 @@
     </div>
     <div class="page">
         <section>
-            <h3>Experience</h3>
+            <h2>Experience</h2>
             <div class="experience">
                 <p><strong>Software Engineer</strong> - Bokio, Gothenburg, April 2024 - October 2024</p>
                 <ul>
@@ -426,10 +420,10 @@
     </div>
     <div class="page">
         <section>
-            <h3>Highlighted Projects</h3>
+            <h2>Highlighted Projects</h2>
             <div class="projects">
-                <p><strong>Exchange Rates Fetcher SOAP to REST - Bokio</strong>
-                    <br>Bokio is a bookkeeping web app targeting big and small companies on the Swedish market.
+                <h3>Exchange Rates Fetcher SOAP to REST - Bokio</h3>
+                <p>Bokio is a bookkeeping web app targeting big and small companies on the Swedish market.
                     Bokio has some banking features that rely on having up-to-date exchange rates from the Swedish
                     currency.
                     The problem was that our current implimentation SOAP was soon end of life and will be replaced by a
@@ -440,8 +434,8 @@
                     directly if the server sync was down.
                     <br><br>C#, Azure, ASP.NET, Entity Framework, T-SQL, DefaultHttpClientFactory, SocketsHttpHandler
                 </p>
-                <p><strong>Timer and Worker Module in Cendot by Iver 1998-Present - Iver Sverige</strong>
-                    <br>Cendot is a monolithic desktop app that is distributed on Citrix servers to the Iver Employees.
+                <h3>Timer and Worker Module in Cendot by Iver 1998-Present - Iver Sverige</h3>
+                <p>Cendot is a monolithic desktop app that is distributed on Citrix servers to the Iver Employees.
                     Cendots architecture is of MVVM design and is all written in C#. The core domain logic is also used
                     in company owned apps as dll:s or nugets in web apps, worker services and REST API:s. As a diverse
                     IT-Service company with its own self made business eco-system (Cendot) and its own development
@@ -451,8 +445,8 @@
                     <br><br>C#, Microsoft WPF, T-SQL, NHibernate, Citrix, Rest-API, Azure DevOps, Azure Application
                     Insights
                 </p>
-                <p><strong>Software Update Management System (SUMS) - Document Creation Service - Volvo Cars</strong>
-                    <br>This applications purpose is to generate Software Update Management System (SUMS) traceability
+                <h3>Software Update Management System (SUMS) - Data Summery Service - Volvo Cars</h3>
+                <p>This applications purpose is to generate Software Update Management System (SUMS) traceability
                     documents for car variant certification. This is to be able to oblige with stricter EU and other
                     regulations for modern cars. With the Software-PLM platform SystemWeaver as source for data we
                     designed a core app that integrates with the SystemWeaver nuget API and collects the relevant data
@@ -463,20 +457,19 @@
                     <br><br>C#, X-Unit, Microsoft Dependency Injection, ASP.NET Web API, PowerShell, AzureDevOps,
                     SystemWeaver, Jira, SQL-lite
                 </p>
-                <p><strong>BoostApp PX - ASP.NET Reverse Proxy REST API for company time reports - Nexer Group</strong>
-                    <br>Responsible for building a reverse Proxy API (ASP.NET) in a micro service architecture within a
+                <h3>BoostApp PX - ASP.NET Reverse Proxy REST API for company time reports - Nexer Group</h3>
+                <p>Responsible for building a reverse Proxy API (ASP.NET) in a micro service architecture within a
                     inhouse SCRUM Team. Further responsible for implementing OAuth 2.0 (Microsoft Identity Platform,
                     AD), CI/CD with Azure DevOps and Docker, integration testing and scripting with Postman.
                     <br><br>C#, ASP.NET Web API, Microsoft Identity Server, Azure DevOps, Docker, HttpClient, Postman,
                     Microsoft Dependency Injection
                 </p>
-             
             </div>
         </section>
     </div>
     <div class="page">
-        <p><strong>Ludo V2 Online - .NET multiplayer SignalR Game Engine and Platform - Teknikhögskolan</strong>
-            <br>Responsible for building a Fullstack ASP.NET Web, Ludo Board Game Platform. Implementations: SQL
+        <h3>Ludo V2 Online - .NET multiplayer SignalR Game Engine and Platform - Teknikhögskolan</h3>
+        <p>Responsible for building a Fullstack ASP.NET Web, Ludo Board Game Platform. Implementations: SQL
             server with Entity Framework for user and game data, email login, email game invitations, SignalR
             interactive gaming, token and cookie identification, multiple game rooms, AI players and server side
             logic. To enable multiple game rooms every game room has its own instance of an game engine IOC
@@ -485,7 +478,7 @@
             Microsoft Dependency Injection<br><br>
         </p>
         <section>
-            <h3>Education</h3>
+            <h2>Education</h2>
             <div class="education">
                 <p><strong>.NET Developer Voccational Degree (see <a
                             href="/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</strong> -
@@ -499,7 +492,7 @@
         </section>
 
         <section>
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <table>
                 <tr>
                     <td>LinkedIn:</td>
