@@ -66,16 +66,48 @@
 
         table tr th {
             text-align: left;
+            height: 2rem;
+
         }
 
         table tr > * {
             padding-right: 0.5rem;
+            height: 2rem;
         }
 
+        .skills-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .skills {
+            margin: 2rem;
+            width: 50%;
+            border-collapse: collapse;
+            height: 2rem;
+        }
+        .skills th, .skills td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            height: 1rem;
+        }
+        .skills th {
+            background-color: #f2f2f2;
+        }
+        .skills tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .skills tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
     </style>
 </head>
 
 <body>
+    <!-- <div class="a4-page"></div>
+    <div class="a4-page"></div> -->
     <div class="container">
         <header>
             <div class="profile-picture">
@@ -104,27 +136,6 @@
                 }
             </script>
         </header>
-        <section>
-            <h3>Contact</h3>
-            <table>
-                <tr>
-                    <td>LinkedIn:</td>
-                    <td><a href="https://linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a></td>
-                </tr>
-                <tr>
-                    <td>GitHub:</td>
-                    <td><a href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a></td>
-                </tr>
-                <tr>
-                    <td>Site:</td>
-                    <td><a href="https://salihaxelsson.com/">salihaxelsson.com</a></td>
-                </tr>
-                <tr>
-                    <td>CV:</td>
-                    <td><a href="https://salihaxelsson.com/cv">salihaxelsson.com/cv</a></td>
-                </tr>
-            </table>
-        </section>
         <section>
             <h3>Profile</h3>
             <table>
@@ -170,13 +181,161 @@
             </div>
         </section>
         <section>
-            <h3>Skills</h3>
-            <ul>
-                <li>Programming Languages: C#, JavaScript/TypeScript, Python, PowerShell, T-SQL</li>
-                <li>Frameworks/Libraries: .NET, NHibernate, X-Unit, ASP.NET, Entity Famework, React.js, Microsoft WPF</li>
-                <li>Tools: Git, Docker, Postman/Newman, Azure DevOps, GitHub Actions</li>
-                <p>*for more comprehensive skill visualisation see: <a href="https://salihaxelsson.com/tech">salihaxelsson.com/tech</a></p>
-            </ul>
+            <h3>Skills Assessment</h3>
+            <div class="skills-container">
+                <table class="skills">
+                    <tbody>
+                        <tr>
+                            <td>.NET</td>
+                            <td>★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>ASP.NET</td>
+                            <td>★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>Azure App Service</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Azure Blob Storage</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Azure Cosmos DB</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Azure DevOps</td>
+                            <td>★★★★☆</td>
+                        </tr>
+                        <tr>
+                            <td>Azure Functions</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Bash</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Burp Suite</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>Docker</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Entity Framework</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Express.js</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Git</td>
+                            <td>★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>GitHub Actions</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Linux</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="skills">
+                    <tbody>
+                        <tr>
+                            <td>MS-Test</td>
+                            <td>★★★★☆</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Dependency Injection</td>
+                            <td>★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Identity Server</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft SQL Server</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft WPF</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>NHibernate</td>
+                            <td>★★★★☆</td>
+                        </tr>
+                        <tr>
+                            <td>NUnit</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Next.js</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>NuGet packaging</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Postman</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>PowerShell</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>React.js</td>
+                            <td>★★☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>SignalR</td>
+                            <td>★☆☆☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>TypeScript</td>
+                            <td>★★★☆☆</td>
+                        </tr>
+                        <tr>
+                            <td>X-Unit</td>
+                            <td>★★★★★</td>
+                        </tr>
+                        <tr>
+                            <td>x86 Assembly</td>
+                            <td>★☆☆☆☆</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <section>
             <h3>Experience</h3>
@@ -308,11 +467,28 @@
                     <br><br>C#, ASP.NET, SignalR, Entity-Framework, JWT, Cookies, Html, JavaScript, CSS, GitHub,
                     Microsoft Dependency Injection
                 </p>
-                <p><strong>GitHub Projects</strong>
-                    <br>My GitHub page is worth a visit <a
-                        href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a> (demo on request)
-                </p>
             </div>
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <table>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td><a href="https://linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub:</td>
+                    <td><a href="https://github.com/RobinAxelsson/">github.com/robinaxelsson</a> (demo on request)</td>
+                </tr>
+                <tr>
+                    <td>Site:</td>
+                    <td><a href="https://salihaxelsson.com/">salihaxelsson.com</a></td>
+                </tr>
+                <tr>
+                    <td>Latest CV:</td>
+                    <td><a href="https://salihaxelsson.com/cv">salihaxelsson.com/cv</a></td>
+                </tr>
+            </table>
         </section>
     </div>
 </body>
