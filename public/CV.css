@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Fonts */
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+h2 {
+
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.section-header {
+    border-bottom: 2px solid #333;
+}
+
+.occupation-header {
+    border: none;
+    color: #4b4b4b;
+}
+
+h3 {
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-block: 0.5rem;
+    font-size: 1rem;
+}
+
+p,
+li {
+    line-height: 1.5;
+}
+
+/* Sections */
+.page {
+    margin: auto;
+    padding: 25mm;
+    width: 210mm;
+    height: 297mm;
+    border: 1px solid #333;
+}
+
+.section-content {
+    margin-left: 20px;
+}
+
+.profile-picture img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Profile table */
+table tr th {
+    text-align: left;
+    height: 2rem;
+
+}
+
+table tr>* {
+    padding-right: 0.5rem;
+    height: 2rem;
+}
+
+/* Skills table */
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-table {
+    margin: 2rem;
+    width: 50%;
+    border-collapse: collapse;
+    height: 2rem;
+}
+
+.skills-table th,
+.skills-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    height: 1rem;
+}
+
+.skills-table th {
+    background-color: #f2f2f2;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.skills-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
