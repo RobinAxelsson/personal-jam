@@ -38,7 +38,6 @@ export const Header = () => {
 
 const navLinks = [
   "Start;/",
-  "Technologies;/tech",
   "School of Thought;/school-of-thought",
   "Q&A;/qa",
   "CV;/CV.html",
