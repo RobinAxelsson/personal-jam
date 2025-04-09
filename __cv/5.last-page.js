@@ -17,7 +17,7 @@ export function generateLastPage(eng){
             <h2 class="section-header">Education</h2>
             <div class="section-content">
                 <p><strong>.NET Developer Voccational Degree (see <a
-                            href="/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</strong> -
+                            href="//files/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</strong> -
                     Teknikhögskolan, 2020 - 2022</p>
                 <p><strong>CAD-Engineer - Mechanical Design Voccational Degree</strong> - YRGO Lindholmen, 2017 - 2019
                 </p>
@@ -82,7 +82,7 @@ export function generateLastPage(eng){
         <section>
             <h2 class="section-header">Utildning</h2>
             <div class="section-content">
-                <p><strong>.NET Utvecklare Yrkesehögskoleexamen (se <a href="/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">kurser</a>)</strong> - Teknikhögskolan, 2020 - 2022</p>
+                <p><strong>.NET Utvecklare Yrkesehögskoleexamen (se <a href="//files/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">kurser</a>)</strong> - Teknikhögskolan, 2020 - 2022</p>
                 <p><strong>CAD-Engineer - Mechanical Design yrkeshögskoleexamen</strong> - YRGO Lindholmen, 2017 - 2019
                 </p>
                 <p><strong>Psykologprogrammet: idrottsinriktning</strong> - Umeå universitet, 2012 - 2013</p>

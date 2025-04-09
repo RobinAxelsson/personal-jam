@@ -33,7 +33,7 @@ export function generateFrontPage(eng){
                         <tr>
                             <th>Education:</th>
                             <td>.NET Developer vocational degree, Teknikhögskolan (see <a
-                                    href="Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</td>
+                                    href="/files/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</td>
                         </tr>
                         <tr>
                             <th>Said about me:</th>
@@ -96,7 +96,7 @@ export function generateFrontPage(eng){
                         <tr>
                             <th>Utbildning:</th>
                             <td>Teknikhögskolan .NET Utvecklare Yrkeshögskoleexamen (se <a
-                                    href="Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">kurser</a>)</td>
+                                    href="/files/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">kurser</a>)</td>
                         </tr>
                         <tr>
                             <th>Sagt om mig:</th>
