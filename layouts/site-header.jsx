@@ -1,5 +1,5 @@
-import { MobileNav } from "../__site_components/mobile-nav";
-import { WideNav } from "../__site_components/wide-nav";
+import { MobileNav } from "../components/mobile-nav";
+import { WideNav } from "../components/wide-nav";
 import styles from './site-header.module.scss'
 import { useState, useEffect } from 'react';
 

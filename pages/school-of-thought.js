@@ -1,10 +1,10 @@
 import fs from 'fs'
-import MarkdownCard from "../__site_components/markdown-card"
+import MarkdownCard from "../components/markdown-card"
 
 export async function getStaticProps() {
   return {
     props: {
-      schoolOfThought: getMarkdownContent('markdown-content/cards.school-of-thought.md')
+      schoolOfThought: getMarkdownContent('markdown/cards.school-of-thought.md')
     },
   };
 }

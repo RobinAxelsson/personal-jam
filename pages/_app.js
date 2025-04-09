@@ -1,5 +1,5 @@
-import MainLayout from "../__site_layouts/main-layout";
-import "../__site_scss/main.scss";
+import MainLayout from "../layouts/main-layout";
+import "../styles/main.scss";
 
 function App({ Component, pageProps }) {
   return (

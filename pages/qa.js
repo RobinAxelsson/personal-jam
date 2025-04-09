@@ -1,10 +1,10 @@
-import MarkdownCard from "../__site_components/markdown-card"
+import MarkdownCard from "../components/markdown-card"
 import fs from 'fs';
 
 export async function getStaticProps() {
   return {
     props: {
-      qaMarkdown: getMarkdownContent('markdown-content/cards.qa.md')
+      qaMarkdown: getMarkdownContent('markdown/cards.qa.md')
     },
   };
 }

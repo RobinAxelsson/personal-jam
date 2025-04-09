@@ -1,5 +1,5 @@
-@use '../__site_scss/card';
-@use "../__site_scss/mixins" as *;
+@use '../styles/card';
+@use "../styles/mixins" as *;
 
 .hero {
   @extend %card-general-base;

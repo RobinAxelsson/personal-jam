@@ -1,10 +1,10 @@
 import fs from 'fs'
-import MarkdownCard from "../__site_components/markdown-card";
-import CardHero from "../__site_components/hero"
+import MarkdownCard from "../components/markdown-card";
+import CardHero from "../components/hero"
 export async function getStaticProps() {
   return {
     props: {
-      toRecruitersMarkdown: getMarkdownContent('markdown-content/cards.to-recruiters.md'),
+      toRecruitersMarkdown: getMarkdownContent('markdown/cards.to-recruiters.md'),
     },
   };
 }
