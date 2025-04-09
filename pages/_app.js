@@ -4,8 +4,7 @@ import "../styles/main.scss";
 function App({ Component, pageProps }) {
   return (
     <>
-      <MainLayout
-      >
+      <MainLayout>
         <Component {...pageProps} />
       </MainLayout>
     </>

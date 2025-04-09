@@ -1,6 +1,7 @@
 import fs from 'fs'
 import MarkdownCard from "../components/markdown-card";
 import CardHero from "../components/hero"
+
 export async function getStaticProps() {
   return {
     props: {
@@ -9,7 +10,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function SchoolOfThoughtPage({ toRecruitersMarkdown }) {
+export default function DemoInfoCard({ toRecruitersMarkdown }) {
   return (
     <div className="card-collection">
         <CardHero />
