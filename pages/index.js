@@ -1,6 +1,6 @@
 import fs from 'fs'
 import MarkdownCard from "../components/markdown-card";
-import CardHero from "../components/hero"
+import Hero from "../components/hero"
 
 export async function getStaticProps() {
   return {
@@ -13,7 +13,7 @@ export async function getStaticProps() {
 export default function DemoInfoCard({ toRecruitersMarkdown }) {
   return (
     <div className="card-collection">
-        <CardHero />
+        <Hero />
         <MarkdownCard markdownContent={toRecruitersMarkdown} />
     </div>
   );

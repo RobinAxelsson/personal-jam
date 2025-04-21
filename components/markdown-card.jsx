@@ -4,7 +4,7 @@ export default function MarkdownCard({markdownContent, additionalClassName}) {
   
   let className = "card-general";
   if(typeof additionalClassName === 'string'){
-    className += " " + additionalClassName;
+  className += " " + additionalClassName;
   }
   const sections = markdownContent.split('---').filter(x => !isEmptyOrWhiteSpace(x));
   return sections.map(x => (
