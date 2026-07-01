@@ -9,15 +9,23 @@ const MainLayout = ({ children }) => {
     <>
       <Head>
         <title>.NET Full stack developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
         <meta property="og:image" content="CV-portrait.jpg" />
         <meta property="og:description" content="Personal page" />
         <meta property="og:url" content="https://salihaxelsson.com/" />
         <meta name="twitter:card" content="/CV-portrait.jpg" />
       </Head>
       <Header />
-      <div className={styles.topImageCanvas}></div>
-      <main className={styles.siteMain}>{children}</main>
-      <SiteFooter />
+      <div className={styles.page}>
+        <div className={styles.topImageCanvas}></div>
+        <main className={styles.siteMain}>{children}</main>
+        <SiteFooter />
+      </div>
     </>
   );
 };

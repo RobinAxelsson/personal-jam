@@ -1,6 +1,7 @@
-# Robin Salih Axelsson Projects and Resume
+# Robin Salih Axelsson — Personal Site
 
-This is a JAM-app for displaying my projects and resume!
+Next.js personal page presenting my profile and CV, styled after LinkedIn.
 
-Created favicon att this [realfavicongenerator.net](
-https://realfavicongenerator.net/favicon_result?file_id=p1gla67ou71s1613214nb14o648t6#.Y6scJnbMKHt)
+Run locally with `npm run dev`; the site serves on `http://localhost:3000` and `/cv` resolves to the static `CV.html`.
+
+Favicons were generated at [realfavicongenerator.net](https://realfavicongenerator.net/favicon_result?file_id=p1gla67ou71s1613214nb14o648t6#.Y6scJnbMKHt).

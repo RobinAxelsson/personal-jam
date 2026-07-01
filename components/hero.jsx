@@ -8,7 +8,7 @@ export default function Hero() {
           Robin Salih Axelsson
         </h2>
         <h3 className={styles.hero__sub_title}>
-          Full Stack .NET Developer
+          System .NET Developer
         </h3>
         <Image
           className={styles.hero__image}
@@ -17,8 +17,8 @@ export default function Hero() {
           height={775}
           width={892}
           style={{
-            width: '100%',
-            height: 'auto',
+            objectFit: 'cover',
+            objectPosition: 'center 20%',
           }}
           priority={true}
           placeholder="blur"
@@ -33,15 +33,19 @@ export default function Hero() {
           </tr>
           <tr>
             <th>Job Status:</th>
-            <td>Open to work</td>
+            <td>Software Developer at Fujitsu</td>
+          </tr>
+          <tr>
+            <th>Speciality:</th>
+            <td>System &amp; API Integration, Unit &amp; Integration Testing, DevOps/CI-CD</td>
           </tr>
           <tr>
             <th>Tech Stack:</th>
-            <td>Azure, React, ASP.NET C#, MS SQL Server</td>
+            <td>Azure, React, C# .NET, MS SQL Server, Linux, Docker</td>
           </tr>
           <tr>
             <th>Education:</th>
-            <td>.NET Developer vocational degree <a href="https://teknikhogskolan.se/utbildningar/net_utvecklare/">Teknikhögskolan</a></td>
+            <td>.NET Developer vocational degree, Teknikhögskolan (see <a href="/files/Kursplan-.NET-utvecklare-2020-Teknikhögskolan.pdf">courses</a>)</td>
           </tr>
           <tr>
             <th>Said about me:</th>
@@ -49,7 +53,11 @@ export default function Hero() {
           </tr>
           <tr>
             <th>Hobbies:</th>
-            <td>Sail Racing, Gym, Coding, Brazilian Jiu Jitsu</td>
+            <td>Sail racing, gym, coding, friends and family</td>
+          </tr>
+          <tr>
+            <th>Demos:</th>
+            <td>Private &amp; public projects on my <a href="https://github.com/RobinAxelsson">GitHub landing page</a> — open to code challenges and discussing code</td>
           </tr>
         </tbody>
       </table>

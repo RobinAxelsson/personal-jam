@@ -41,7 +41,7 @@ export function generateFrontPage(eng){
                         </tr>
                         <tr>
                             <th>Hobbies:</th>
-                            <td>Sail Racing, Gym, Coding, Brazilian Jiu Jitsu</td>
+                            <td>Sail Racing, Gym, Coding, friends and family</td>
                         </tr>
                     </table>
                 </div>

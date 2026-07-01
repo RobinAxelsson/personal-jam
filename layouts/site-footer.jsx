@@ -5,7 +5,7 @@ export const SiteFooter = () => {
     <footer className={styles.site_footer}>
       <ul>
         <li>
-          <h3>© 2024 Robin Salih Axelsson</h3>
+          <h3>© {new Date().getFullYear()} Robin Salih Axelsson</h3>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/axelsson-robin/">linkedin.com/in/axelsson-robin</a>

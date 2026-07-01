@@ -5,11 +5,12 @@
   top: 0;
   position: fixed;
   height: var(--nav-bar-height-small);
-  color: #fff;
-  background-color: var(--clr-dark-primary);
-  box-shadow: inset 0px -3px 10px #464343;
+  color: var(--clr-li-text);
+  background-color: var(--clr-li-surface);
+  box-shadow: 0 0 0 1px var(--clr-li-border), 0 2px 4px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease transform;
   transform: translateY(0%);
+  z-index: 2;
 
   @include mq(medium){
     display: flex;
@@ -25,5 +26,12 @@
 }
 
 .site_header a {
-  color: var(--clr-primary)
+  color: var(--clr-li-text-muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site_header a:hover {
+  color: var(--clr-li-blue);
+  text-decoration: none;
 }

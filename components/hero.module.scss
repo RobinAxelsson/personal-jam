@@ -16,42 +16,80 @@
 .hero__title_image {
   width: 100%;
   text-align: center;
-  
+
   @include mq(medium){
   }
+}
+
+.hero__title {
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.1rem;
+}
+
+.hero__sub_title {
+  color: var(--clr-li-text-muted);
+  font-weight: 400;
+  margin-top: 0;
 }
 
 .hero__image {
-  border-radius: 10%;
-  border-width: 5px;
-  border-color: #fff;
-  border-style: solid;
+  // Diameter = 1/φ² (≈0.382) of the 34rem info column → ~13rem on desktop;
+  // mobile floors at 10rem so the face stays legible on small screens.
+  --avatar-size: 10rem;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 1px var(--clr-li-border);
+  object-fit: cover;
+  display: block;
+  margin-inline: auto;
+  // Whitespace above:below = 1:φ, so the avatar rests just above optical centre.
+  margin-top: 0.618rem;
   margin-bottom: 1rem;
-}
 
-.hero__job_properties {
-  @include mq(medium){
-    padding-left: 10% width;
+  @include mq(medium) {
+    --avatar-size: 13rem;
+    margin-top: 1rem;
+    margin-bottom: 1.618rem;
   }
 }
 
-.hero__job_properties tr {
-  text-align: right;
+.hero__job_properties {
+  width: 100%;
+  max-width: 34rem;
+  margin-inline: auto;
+  border-collapse: collapse;
+  // Golden-ratio column split: label 38.2% / value 61.8%
+  table-layout: fixed;
+}
+
+.hero__job_properties th {
+  width: 38.2%;
+  text-align: left;
+  vertical-align: top;
+  color: var(--clr-li-text-muted);
+  font-weight: 600;
 }
 
 .hero__job_properties td {
+  width: 61.8%;
   text-align: left;
+  vertical-align: top;
 }
 
-// .hero__job_properties tr:last-child {
-//   border-width: 10px;
-// }
+.hero__job_properties tr:not(:last-child) th,
+.hero__job_properties tr:not(:last-child) td {
+  border-bottom: 1px solid var(--clr-li-border);
+}
 
 .hero__job_properties tr th,
 .hero__job_properties tr td {
-  padding: 0.1rem 0.3rem;
+  // Vertical rhythm tied to the horizontal gutter (~1.618×)
+  padding: 0.5rem 0.75rem;
 
   @include mq(medium){
-    padding-block: 1rem;
+    padding-block: 0.75rem;
   }
 }

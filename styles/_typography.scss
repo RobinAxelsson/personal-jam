@@ -24,8 +24,9 @@
 
 body {
   background-color: var(--clr-bg);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Source Sans 3', -apple-system, system-ui, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--clr-li-text);
   }
 
 h1,
@@ -36,13 +37,21 @@ p,
 li,
 th,
 td {
-  color: var(--clr-font-primary);
+  color: var(--clr-li-text);
   margin: var(--default-margin);
   line-height: 1.3rem;
 
   @include mq(medium){
     line-height: 1.5rem;
   }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1 {
@@ -85,11 +94,13 @@ td {
 }
 
 a {
-  color: var(--clr-font-contrast);
-  text-decoration: solid;
+  color: var(--clr-li-blue);
+  text-decoration: none;
+  font-weight: 600;
   font-size: var(--fs-400);
 }
 
 a:hover {
+  color: var(--clr-li-blue-hover);
   text-decoration: underline;
 }

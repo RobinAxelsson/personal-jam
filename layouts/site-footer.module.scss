@@ -1,15 +1,12 @@
 @use "../styles/mixins" as *;
 
 .site_footer {
-  background-color: var(--clr-dark-primary);
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding-block: 100px;
+  background-color: var(--clr-li-surface);
+  border-top: 1px solid var(--clr-li-border);
+  flex-shrink: 0;
+  padding-block: 64px;
   font-size: large;
   z-index: 0;
-  box-shadow: inset 0px 3px 10px #464343;
 
   @include mq(small) {
     padding-left: 120px;
@@ -17,7 +14,13 @@
 }
 
 .site_footer a {
-  color: var(--clr-primary)
+  color: var(--clr-li-text-muted);
+  text-decoration: none;
+}
+
+.site_footer a:hover {
+  color: var(--clr-li-blue);
+  text-decoration: underline;
 }
 
 .site_footer ul {
@@ -31,6 +34,7 @@
 }
 
 .site_footer h3 {
-  color: #fff;
+  color: var(--clr-li-text-muted);
+  font-weight: 600;
   margin: 1px;
 }

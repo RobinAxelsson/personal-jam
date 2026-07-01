@@ -4,6 +4,15 @@
     --clr-dark-primary: #0c0d0e;
     --clr-light-accent: #0070f3;
     --clr-font-primary: #0c0d0e;
-    --clr-bg: rgb(252, 253, 255);
+    --clr-bg: #f4f2ee;
     --clr-font-contrast: var(--clr-dark-primary);
+
+    /* LinkedIn palette */
+    --clr-li-blue: #0a66c2;
+    --clr-li-blue-hover: #004182;
+    --clr-li-surface: #ffffff;
+    --clr-li-bg: #f4f2ee;
+    --clr-li-border: rgba(0, 0, 0, 0.08);
+    --clr-li-text: rgba(0, 0, 0, 0.9);
+    --clr-li-text-muted: rgba(0, 0, 0, 0.6);
 }

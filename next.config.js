@@ -5,6 +5,12 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com', 'wembleypark.com'],
   },
+  async rewrites() {
+    return [
+      { source: '/cv', destination: '/CV.html' },
+      { source: '/cv-se', destination: '/CV-se.html' },
+    ];
+  },
 };
 
 module.exports = nextConfig;

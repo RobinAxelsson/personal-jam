@@ -2,9 +2,10 @@
 
 
 .mobile_nav {
-  --mobile_nav-clr-dark: var(--clr-dark-primary);
-  --mobile_nav-clr-light: var(--clr-primary);
-  --mobile_nav-font-family: 'Roboto', sans-serif;
+  --mobile_nav-clr-surface: var(--clr-li-surface);
+  --mobile_nav-clr-text: var(--clr-li-text);
+  --mobile_nav-clr-hover: rgba(0, 0, 0, 0.08);
+  --mobile_nav-font-family: 'Source Sans 3', sans-serif;
   --mobile_nav-font-size: 20px;
   --mobile_nav-font-weight: 600;
   --mobile_nav-padding: 12px 24px;
@@ -23,19 +24,19 @@
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: var(--mobile_nav-clr-dark);
-  box-shadow: inset -3px 0px 10px #464343;
+  background-color: var(--mobile_nav-clr-surface);
+  box-shadow: 1px 0 0 var(--clr-li-border), 2px 0 8px rgba(0, 0, 0, 0.08);
   transition-duration: .25s;
 }
 
 .mobile_nav__box a {
-  color: var(--mobile_nav-clr-light);
+  color: var(--mobile_nav-clr-text);
 }
 
 .mobile_nav__box>* {
   display: block;
   padding: var(--mobile_nav-padding);
-  color: var(--mobile_nav-clr-light);
+  color: var(--mobile_nav-clr-text);
   font-family: var(--mobile_nav-font-family);
   font-size: var(--mobile_nav-font-size);
   font-weight: var(--mobile_nav-font-weight);
@@ -44,7 +45,7 @@
 }
 
 .mobile_nav__item:hover {
-  background-color: var(--mobile_nav-clr-light);
+  background-color: var(--mobile_nav-clr-hover);
 }
 
 
@@ -87,7 +88,7 @@
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: var(--mobile_nav-clr-light);
+  background-color: var(--mobile_nav-clr-text);
   transition-duration: .25s;
 }
 

@@ -1,8 +1,16 @@
 @use '../styles/mixins' as *;
 
+// Sticky-footer column: main grows to fill the viewport, footer follows content.
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .siteMain {
   margin-top: var(--nav-bar-height-small);
-  padding-bottom: 500px;
+  padding-bottom: 3rem;
+  flex: 1 0 auto;
   display: flex;
   justify-content: center;
 

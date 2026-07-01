@@ -38,9 +38,7 @@ export const Header = () => {
 
 const navLinks = [
   "Start;/",
-  "School of Thought;/school-of-thought",
-  "Q&A;/qa",
-  "CV;/CV.html",
+  "CV;/cv",
   "GitHub;https://github.com/RobinAxelsson"
 ].map(x => {
   const split = x.split(';');
